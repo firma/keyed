@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="zh-cn"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"><meta name="format-detection" content="telephone=no"><meta name="format-detection" content="email=no"><meta name="description"><meta name="keywords" content="Hexo, Gruntjs, Nodejs, Reactjs, Vuejs"><title>rust-start - keyed</title><link rel="stylesheet" href="/css/main_style.min.css"><link rel="icon" href="/favicon.ico"></head><body><input id="navi" type="checkbox"><ul class="main-navication"><li><a href="/"><span>Home</span></a></li><li><a href="https://github.com"><span>Github</span></a></li><li><a href="https://www.v2ex.com/"><span>V2EX</span></a></li></ul><div class="wrapper" id="wrap"><div class="post-header"><label class="navi-button light" for="navi">MENU</label><img class="background" src="http://callfiles.ueibo.com/hexo-theme-laughing/post_background.jpg"><div class="post-title"><h1 class="title">rust-start</h1><ul class="meta"><li><i class="icon icon-author"></i>Keyed</li><li><i class="icon icon-clock"></i>1 Minutes</li><li><i class="icon icon-calendar"></i>June 5, 2016</li></ul></div></div><div class="article-content" style="max-width:800px"><h3 id="1-Rust介绍"><a href="#1-Rust介绍" class="headerlink" title="1. Rust介绍"></a>1. Rust介绍</h3><ul>
+<li><p>Rust(blog)是一门强调安全、并发、高效的系统编程语言。其中四个关键词，系统编程、安全、并发、高效，是Rust语言的核心特征，也是区别于其他编程语言的首要因素。</p>
+<ul>
+<li>Memory safety without garbage collection</li>
+<li>Concurrency without data races</li>
+<li>Abstraction without overhead</li>
+</ul>
+</li>
+<li><p>除此之外，我再补充一些关键词，以便读者更直观地了解Rust：静态类型/编译式语言/静态编译/动态编译、泛型/函数式/面向对象、模式匹配/ADT、DST/Associated Types/闭包(Closures)、Static/Dynamic/Multiple-Dispatch、 没有虚拟机(VM)、没有垃圾收集器(GC)、没有运行时(Runtime)、没有空指针/野指针/内存越界/缓冲区溢出/段错误、没有数据竞争(Data Race)……</p>
+</li>
+<li><p>rust 的开发推进非常有节奏，说每三个月发布一个版本，基本上都非常准时地做到了，road map 里定好的东西，都按时按质按量出现了，体现了良好的工程管理；从这一点上，这几年出现的新语言鲜有管理得这么好的，有充分的理由让大家相信 rust 的前景：一切都会有的。</p>
+<ul>
+<li>rust 没有想着跟别的新语言竞争，它的目标是 c++，所以它的许多特性都搔到了 c++ 程序员的痒处，比如自动类型推断、内置高级数据类型、函数式编程、泛型编程等等，除了指针类型有点多，让 c++ 程序员觉得比 c++ 还复杂外，其它都是一眼望去就是“业界最佳解决方案”。</li>
+<li>rust 有一些不符合审美观的东西，比如很多缩写，比如很多符号，但考虑到我自己没有出力改变这个状况，就接受吧；当然，也有人看不惯它的其它特性，然后就喷，这很正常。</li>
+<li>得益于 rust 优秀的并发模型，在软实时系统上有着卓越的表现，rust 已经受到原来的最忠实的一群 c++ 用户的关注、喜爱和追捧，这群人就是 game developers，这些开发主机游戏的家伙，极端注重性能，所以长期在沉浸在 c++ 之中，但接触到 rust 后，已经有许多人开始尝试使用 rust 开发游戏，而且也反馈、贡献了许多东西给 rust 开发团队。</li>
+</ul>
+</li>
+</ul>
+</div><div class="article-meta" style="max-width:800px"></div><div class="article-comment" style="max-width:800px"><div class="ds-thread" id="ds-thread" data-thread-key="cjq3daz1x0007j236tsgnthf2" data-title="rust-start" data-url="http://yoursite.com/2016/06/05/rust-start/" site-name="ueibo"></div><script>var siteName = document.getElementById('ds-thread').getAttribute('site-name');
+var duoshuoQuery = {short_name: siteName};
+(function() {
+  var ds = document.createElement('script');
+  ds.type = 'text/javascript';ds.async = true;
+  ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+  ds.charset = 'UTF-8';
+  (document.getElementsByTagName('head')[0] 
+  || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();</script></div><ul class="navication"><li class="home"><a href="/"><i class="icon icon-home"></i></a></li><li><a href="/2016/06/05/php or nginx shell/"><i class="icon icon-arror-left"></i></a></li><li><a href="/2015/06/01/iptable/"><i class="icon icon-arror-right"></i></a></li></ul><div class="page-footer"><div class="top"><ul class="social"><li><a href="https://github.com/firma" title="Github" target="_blank"><i class="icon icon-github"></i></a></li><li><a href="http://blog.keyed.com" title="Weibo" target="_blank"><i class="icon icon-weibo"></i></a></li><li><a href="http://blog.keyed.com" title="SegmentFault" target="_blank"><i class="icon icon-segmentfault"></i></a></li></ul></div><div class="bottom"><p class="copyright">© 2018 keyed<br><small>POWER BY <a href="https://hexo.io" target="_blank">HEXO</a></small><small>, THEME BY <a href="https://github.com/BoizZ/hexo-theme-laughing" target="_blank">LAUGHING</a></small></p></div></div></div><script>var wrap = document.getElementById('wrap');
+window.onload = function () {
+  wrap.className += ' done';
+}</script></body></html>

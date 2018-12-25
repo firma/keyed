@@ -1,0 +1,54 @@
+<!DOCTYPE html><html lang="zh-cn"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"><meta name="format-detection" content="telephone=no"><meta name="format-detection" content="email=no"><meta name="description"><meta name="keywords" content="Hexo, Gruntjs, Nodejs, Reactjs, Vuejs"><title>android-package - keyed</title><link rel="stylesheet" href="/css/main_style.min.css"><link rel="icon" href="/favicon.ico"></head><body><input id="navi" type="checkbox"><ul class="main-navication"><li><a href="/"><span>Home</span></a></li><li><a href="https://github.com"><span>Github</span></a></li><li><a href="https://www.v2ex.com/"><span>V2EX</span></a></li></ul><div class="wrapper" id="wrap"><div class="post-header"><label class="navi-button light" for="navi">MENU</label><img class="background" src="http://callfiles.ueibo.com/hexo-theme-laughing/post_background.jpg"><div class="post-title"><h1 class="title">android-package</h1><ul class="meta"><li><i class="icon icon-author"></i>Keyed</li><li><i class="icon icon-clock"></i>5 Minutes</li><li><i class="icon icon-calendar"></i>June 1, 2015</li></ul></div></div><div class="article-content" style="max-width:800px"><ol>
+<li><p>生成签名</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">keytool -genkey -v -keystore release-key.keystore  -alias key-alias -keyalg RSA -keysize 2048 -validity 10000</span><br></pre></td></tr></table></figure>
+<ul>
+<li>[注意].我这边环境变量已经配置了，注意上面的release-key这个名字可以自己取名，同时my-key-alias也是自己取名，其中第二个名称alias参数后边的别名，在后面你在为应用签名的时候需要用到，所以暂时记录一下这个别名。<br>上面的命令我们需要输入密钥库(keystore)密码和对应秘钥的密码，然后设置名字，组织，国家，省份相关的信息，最后会生成release-key.keystore的签名文件。</li>
+</ul>
+</li>
+<li><p>Gradle配置</p>
+<ul>
+<li>然后进行修改项目中gradle.properties文件，进行添加如下的代码(注意下面的签名和别名的名称和上一步放入的release-key.keystore 要一样，下面两项分别填写签名和别名的密码)-我取的密码为test12345<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">MYAPP_RELEASE_STORE_FILE=release-key.keystore</span><br><span class="line">MYAPP_RELEASE_KEY_ALIAS=test_alias</span><br><span class="line">MYAPP_RELEASE_STORE_PASSWORD=test12345</span><br><span class="line">MYAPP_RELEASE_KEY_PASSWORD=test12345</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol>
+<p>这一步我们是进行[注意].以上的签名秘钥请大家一定要妥善保管，因为在应用发布的时候需要的。全局的gradlde进行变量化的配置，后边我们会在后边的步骤中给相应的应用进行签名。<br>[注意].以上的签名秘钥请大家一定要妥善保管，因为在应用发布的时候需要的。</p>
+<ul>
+<li><p>给应用添加签名-配置局部应用Gradle文件<br>直接在工程目录下得android/app/build.gradle中以下节点添加如下内容:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">android &#123;</span><br><span class="line">    ...</span><br><span class="line">    defaultConfig &#123; ... &#125;</span><br><span class="line">    signingConfigs &#123;</span><br><span class="line">        release &#123;</span><br><span class="line">            storeFile file(MYAPP_RELEASE_STORE_FILE)</span><br><span class="line">            storePassword MYAPP_RELEASE_STORE_PASSWORD</span><br><span class="line">            keyAlias MYAPP_RELEASE_KEY_ALIAS</span><br><span class="line">            keyPassword MYAPP_RELEASE_KEY_PASSWORD</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    buildTypes &#123;</span><br><span class="line">        release &#123;</span><br><span class="line">            ...</span><br><span class="line">            signingConfig signingConfigs.release</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">…</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ol start="3">
+<li><p>生成签名包</p>
+<ol>
+<li><p>对存在react.gradle文件的项目打包<br>命令行切到react native主目录，然后运行下面的命令，请注意下面 android就是Android项目的目录名称</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd android &amp;&amp; ./gradlew assembleRelease</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>对与不存在react.gradle文件的项目打包</p>
+<ul>
+<li>这边因为react.gradle文件不存在，主要针对第四讲课程中的项目(Android原生项目移植到React Native平台)来进行举例。<br>首先命令切换到该react native项目的主目录，然后运行以下的命令，生成assets文件夹<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p android/app/src/main/assets</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<p>紧接着运行以下命令，进行生成inde.android.bundle文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">react-native bundle --platform android --dev false --entry-file index.android.js \</span><br><span class="line">  --bundle-output android/app/src/main/assets/index.android.bundle \</span><br><span class="line">  --assets-dest android/app/src/main/res/</span><br></pre></td></tr></table></figure></p>
+<p>最后运行之前的命令，进行代码和资源文件打包，生成的带有签名的apk还是在上面的目录中。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd android &amp;&amp; ./gradlew assembleRelease</span><br></pre></td></tr></table></figure></p>
+<ol start="4">
+<li>运行Apk<br>上面的步骤我们已经完成了项目的签名打包在对应的目录中生成中apk文件，下面我们直接运行以下的命令进行将apk安装到设备中，我这边直接采用了模拟器进行测试了。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd android &amp;&amp; ./gradlew installRelease</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</div><div class="article-meta" style="max-width:800px"></div><div class="article-comment" style="max-width:800px"><div class="ds-thread" id="ds-thread" data-thread-key="cjq3daz1m0000j236y4cmtu5v" data-title="android-package" data-url="http://yoursite.com/2015/06/01/android-package/" site-name="ueibo"></div><script>var siteName = document.getElementById('ds-thread').getAttribute('site-name');
+var duoshuoQuery = {short_name: siteName};
+(function() {
+  var ds = document.createElement('script');
+  ds.type = 'text/javascript';ds.async = true;
+  ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+  ds.charset = 'UTF-8';
+  (document.getElementsByTagName('head')[0] 
+  || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();</script></div><ul class="navication"><li class="home"><a href="/"><i class="icon icon-home"></i></a></li><li><a href="/2015/06/01/git-flow/"><i class="icon icon-arror-left"></i></a></li><li><a href="/2015/06/01/maven/"><i class="icon icon-arror-right"></i></a></li></ul><div class="page-footer"><div class="top"><ul class="social"><li><a href="https://github.com/firma" title="Github" target="_blank"><i class="icon icon-github"></i></a></li><li><a href="http://blog.keyed.com" title="Weibo" target="_blank"><i class="icon icon-weibo"></i></a></li><li><a href="http://blog.keyed.com" title="SegmentFault" target="_blank"><i class="icon icon-segmentfault"></i></a></li></ul></div><div class="bottom"><p class="copyright">© 2018 keyed<br><small>POWER BY <a href="https://hexo.io" target="_blank">HEXO</a></small><small>, THEME BY <a href="https://github.com/BoizZ/hexo-theme-laughing" target="_blank">LAUGHING</a></small></p></div></div></div><script>var wrap = document.getElementById('wrap');
+window.onload = function () {
+  wrap.className += ' done';
+}</script></body></html>
