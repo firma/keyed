@@ -1,21 +1,5 @@
 [
   {
-    "title": "Introducing AnyLanguageModel: One API for Local and Remote LLMs on Apple Platforms",
-    "summary": "",
-    "url": "https://huggingface.co/blog/anylanguagemodel",
-    "source": "Hugging Face Blog",
-    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
-    "score": 8
-  },
-  {
-    "title": "Welcome GPT OSS, the new open-source model family from OpenAI!",
-    "summary": "",
-    "url": "https://huggingface.co/blog/welcome-openai-gpt-oss",
-    "source": "Hugging Face Blog",
-    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
-    "score": 8
-  },
-  {
     "title": "From OpenAI to Open LLMs with Messages API on Hugging Face",
     "summary": "",
     "url": "https://huggingface.co/blog/tgi-messages-api",

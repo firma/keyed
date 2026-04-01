@@ -20,6 +20,11 @@
       "title": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable",
       "url": "https://deepmind.google/blog/gemini-3-1-flash-live-making-audio-ai-more-natural-and-reliable/"
     },
+    "233985198": {
+      "seenAt": "2026-04-01T09:52:00.159Z",
+      "title": "Welcome GPT OSS, the new open-source model family from OpenAI!",
+      "url": "https://huggingface.co/blog/welcome-openai-gpt-oss"
+    },
     "241707121": {
       "seenAt": "2026-04-01T08:54:45.223Z",
       "title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
@@ -39,6 +44,11 @@
       "seenAt": "2026-04-01T08:56:40.730Z",
       "title": "Gemini Robotics 1.5 brings AI agents into the physical world",
       "url": "https://deepmind.google/blog/gemini-robotics-15-brings-ai-agents-into-the-physical-world/"
+    },
+    "1283438182": {
+      "seenAt": "2026-04-01T09:52:00.159Z",
+      "title": "Introducing AnyLanguageModel: One API for Local and Remote LLMs on Apple Platforms",
+      "url": "https://huggingface.co/blog/anylanguagemodel"
     },
     "1351417477": {
       "seenAt": "2026-04-01T09:21:38.393Z",
@@ -62,6 +72,11 @@
     }
   },
   "runs": [
+    {
+      "publishedAt": "2026-04-01T09:52:00.159Z",
+      "file": "ai-brief-20260401-095200.md",
+      "count": 2
+    },
     {
       "publishedAt": "2026-04-01T09:51:59.915Z",
       "file": "ai-brief-20260401-095159.md",
