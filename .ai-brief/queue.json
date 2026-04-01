@@ -1,0 +1,178 @@
+[
+  {
+    "title": "Improved Gemini audio models for powerful voice experiences",
+    "summary": "",
+    "url": "https://deepmind.google/blog/improved-gemini-audio-models-for-powerful-voice-experiences/",
+    "source": "Google DeepMind Blog",
+    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
+    "score": 6
+  },
+  {
+    "title": "Build with Nano Banana Pro, our Gemini 3 Pro Image model",
+    "summary": "",
+    "url": "https://deepmind.google/blog/build-with-nano-banana-pro-our-gemini-3-pro-image-model/",
+    "source": "Google DeepMind Blog",
+    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
+    "score": 6
+  },
+  {
+    "title": "Gemini Robotics 1.5 brings AI agents into the physical world",
+    "summary": "We’re powering an era of physical agents — enabling robots to perceive, plan, think, use tools and act to better solve complex, multi-step tasks.",
+    "url": "https://deepmind.google/blog/gemini-robotics-15-brings-ai-agents-into-the-physical-world/",
+    "source": "Google DeepMind Blog",
+    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
+    "score": 6
+  },
+  {
+    "title": "Introducing the Gemini 2.5 Computer Use model",
+    "summary": "Available in preview via the API, our Computer Use model is a specialized model built on Gemini 2.5 Pro’s capabilities to power agents that can interact with user interfaces.",
+    "url": "https://deepmind.google/blog/introducing-the-gemini-25-computer-use-model/",
+    "source": "Google DeepMind Blog",
+    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
+    "score": 6
+  },
+  {
+    "title": "Gemini 2.5: Updates to our family of thinking models",
+    "summary": "Explore the latest Gemini 2.5 model updates with enhanced performance and accuracy: Gemini 2.5 Pro now stable, Flash generally available, and the new Flash-Lite in preview.",
+    "url": "https://deepmind.google/blog/gemini-25-updates-to-our-family-of-thinking-models/",
+    "source": "Google DeepMind Blog",
+    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
+    "score": 6
+  },
+  {
+    "title": "We’re expanding our Gemini 2.5 family of models",
+    "summary": "Gemini 2.5 Flash and Pro are now generally available, and we’re introducing 2.5 Flash-Lite, our most cost-efficient and fastest 2.5 model yet.",
+    "url": "https://deepmind.google/blog/were-expanding-our-gemini-25-family-of-models/",
+    "source": "Google DeepMind Blog",
+    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
+    "score": 6
+  },
+  {
+    "title": "Gemini 2.5: Our most intelligent models are getting even better",
+    "summary": "Gemini 2.5 Pro continues to be loved by developers as the best model for coding, and 2.5 Flash is getting even better with a new update. We’re bringing new capabilities to our models, including Deep Think, an experimenta",
+    "url": "https://deepmind.google/blog/gemini-25-our-world-leading-model-is-getting-even-better/",
+    "source": "Google DeepMind Blog",
+    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
+    "score": 6
+  },
+  {
+    "title": "AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms",
+    "summary": "New AI agent evolves algorithms for math and practical applications in computing by combining the creativity of large language models with automated evaluators",
+    "url": "https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/",
+    "source": "Google DeepMind Blog",
+    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
+    "score": 6
+  },
+  {
+    "title": "Gemini 2.5: Our most intelligent AI model",
+    "summary": "Gemini 2.5 is our most intelligent AI model, now with thinking built in.",
+    "url": "https://deepmind.google/blog/gemini-2-5-our-most-intelligent-ai-model/",
+    "source": "Google DeepMind Blog",
+    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
+    "score": 6
+  },
+  {
+    "title": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable",
+    "summary": "Our latest voice model has improved precision and lower latency to make voice interactions more fluid, natural and precise.",
+    "url": "https://deepmind.google/blog/gemini-3-1-flash-live-making-audio-ai-more-natural-and-reliable/",
+    "source": "Google DeepMind Blog",
+    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
+    "score": 4
+  },
+  {
+    "title": "Introducing AnyLanguageModel: One API for Local and Remote LLMs on Apple Platforms",
+    "summary": "",
+    "url": "https://huggingface.co/blog/anylanguagemodel",
+    "source": "Hugging Face Blog",
+    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
+    "score": 8
+  },
+  {
+    "title": "Welcome GPT OSS, the new open-source model family from OpenAI!",
+    "summary": "",
+    "url": "https://huggingface.co/blog/welcome-openai-gpt-oss",
+    "source": "Hugging Face Blog",
+    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
+    "score": 8
+  },
+  {
+    "title": "From OpenAI to Open LLMs with Messages API on Hugging Face",
+    "summary": "",
+    "url": "https://huggingface.co/blog/tgi-messages-api",
+    "source": "Hugging Face Blog",
+    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
+    "score": 8
+  },
+  {
+    "title": "We Got Claude to Build CUDA Kernels and teach open models!",
+    "summary": "",
+    "url": "https://huggingface.co/blog/upskill",
+    "source": "Hugging Face Blog",
+    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
+    "score": 6
+  },
+  {
+    "title": "Unlocking Agentic RL Training for GPT-OSS: A Practical Retrospective",
+    "summary": "",
+    "url": "https://huggingface.co/blog/LinkedIn/gpt-oss-agentic-rl",
+    "source": "Hugging Face Blog",
+    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
+    "score": 6
+  },
+  {
+    "title": "We Got Claude to Fine-Tune an Open Source LLM",
+    "summary": "",
+    "url": "https://huggingface.co/blog/hf-skills-training",
+    "source": "Hugging Face Blog",
+    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
+    "score": 6
+  },
+  {
+    "title": "Accelerating Qwen3-8B Agent on Intel® Core™ Ultra with Depth-Pruned Draft Models",
+    "summary": "",
+    "url": "https://huggingface.co/blog/intel-qwen3-agent",
+    "source": "Hugging Face Blog",
+    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
+    "score": 6
+  },
+  {
+    "title": "Tricks from OpenAI gpt-oss YOU 🫵 can use with transformers",
+    "summary": "",
+    "url": "https://huggingface.co/blog/faster-transformers",
+    "source": "Hugging Face Blog",
+    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
+    "score": 6
+  },
+  {
+    "title": "Jupyter Agents: training LLMs to reason with notebooks",
+    "summary": "",
+    "url": "https://huggingface.co/blog/jupyter-agent-2",
+    "source": "Hugging Face Blog",
+    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
+    "score": 6
+  },
+  {
+    "title": "How to deploy and fine-tune DeepSeek models on AWS",
+    "summary": "",
+    "url": "https://huggingface.co/blog/deepseek-r1-aws",
+    "source": "Hugging Face Blog",
+    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
+    "score": 6
+  },
+  {
+    "title": "CO₂ Emissions and Models Performance: Insights from the Open LLM Leaderboard",
+    "summary": "",
+    "url": "https://huggingface.co/blog/leaderboard-emissions-analysis",
+    "source": "Hugging Face Blog",
+    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
+    "score": 6
+  },
+  {
+    "title": "Investing in Performance: Fine-tune small models with LLM insights - a CFM case study",
+    "summary": "",
+    "url": "https://huggingface.co/blog/cfm-case-study",
+    "source": "Hugging Face Blog",
+    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
+    "score": 6
+  }
+]

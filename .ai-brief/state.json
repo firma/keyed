@@ -1,0 +1,21 @@
+{
+  "seen": {
+    "241707121": {
+      "seenAt": "2026-04-01T08:54:45.223Z",
+      "title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
+      "url": "https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks/"
+    },
+    "1555636228": {
+      "seenAt": "2026-04-01T08:54:45.223Z",
+      "title": "Introducing Gemini 2.0: our new AI model for the agentic era",
+      "url": "https://deepmind.google/blog/introducing-gemini-20-our-new-ai-model-for-the-agentic-era/"
+    }
+  },
+  "runs": [
+    {
+      "publishedAt": "2026-04-01T08:54:45.223Z",
+      "file": "ai-brief-20260401-085445.md",
+      "count": 2
+    }
+  ]
+}
