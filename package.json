@@ -8,8 +8,8 @@
   "scripts": {
     "ai:collect": "node automation/ai-collector.js",
     "ai:brief": "node automation/ai-brief.js",
-    "ai:deploy": "bash scripts/hexo-deploy.sh",
-    "ai:run-once": "bash scripts/ai-run-once.sh"
+    "ai:deploy": "bash automation/hexo-deploy.sh",
+    "ai:run-once": "bash automation/ai-run-once.sh"
   },
   "dependencies": {
     "hexo": "^3.2.0",

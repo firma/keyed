@@ -3,7 +3,7 @@
 This mode is optimized for high-frequency short posts.
 
 ## Files
-- `scripts/ai-brief-config.json`
+- `automation/ai-brief-config.json`
 - `automation/ai-brief.js`
 - `.ai-brief/queue.json`
 - `.ai-brief/state.json`
@@ -27,9 +27,9 @@ This is the publishing side of the blog/news line. The intended one-shot flow is
 
 1. `node automation/ai-collector.js`
 2. `node automation/ai-brief.js`
-3. `bash scripts/hexo-deploy.sh`
-4. `bash scripts/ai-push.sh`
+3. `bash automation/hexo-deploy.sh`
+4. `bash automation/ai-push.sh`
 
-Or just run `bash scripts/ai-run-once.sh` / `npm run ai:run-once`.
+Or just run `bash automation/ai-run-once.sh` / `npm run ai:run-once`.
 
 Deployment is token-driven through `HEXO_DEPLOY_REPO`; `_config.yml` stays clean and should not contain secrets.
