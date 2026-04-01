@@ -1,21 +1,5 @@
 [
   {
-    "title": "Unlocking Agentic RL Training for GPT-OSS: A Practical Retrospective",
-    "summary": "",
-    "url": "https://huggingface.co/blog/LinkedIn/gpt-oss-agentic-rl",
-    "source": "Hugging Face Blog",
-    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
-    "score": 6
-  },
-  {
-    "title": "We Got Claude to Fine-Tune an Open Source LLM",
-    "summary": "",
-    "url": "https://huggingface.co/blog/hf-skills-training",
-    "source": "Hugging Face Blog",
-    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
-    "score": 6
-  },
-  {
     "title": "Accelerating Qwen3-8B Agent on Intel® Core™ Ultra with Depth-Pruned Draft Models",
     "summary": "",
     "url": "https://huggingface.co/blog/intel-qwen3-agent",

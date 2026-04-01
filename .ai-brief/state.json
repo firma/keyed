@@ -30,6 +30,11 @@
       "title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
       "url": "https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks/"
     },
+    "566389973": {
+      "seenAt": "2026-04-01T09:52:42.835Z",
+      "title": "We Got Claude to Fine-Tune an Open Source LLM",
+      "url": "https://huggingface.co/blog/hf-skills-training"
+    },
     "584271769": {
       "seenAt": "2026-04-01T09:21:50.073Z",
       "title": "Gemini 2.5: Our most intelligent models are getting even better",
@@ -44,6 +49,11 @@
       "seenAt": "2026-04-01T09:52:14.643Z",
       "title": "We Got Claude to Build CUDA Kernels and teach open models!",
       "url": "https://huggingface.co/blog/upskill"
+    },
+    "1056536292": {
+      "seenAt": "2026-04-01T09:52:42.834Z",
+      "title": "Unlocking Agentic RL Training for GPT-OSS: A Practical Retrospective",
+      "url": "https://huggingface.co/blog/LinkedIn/gpt-oss-agentic-rl"
     },
     "1148485509": {
       "seenAt": "2026-04-01T08:56:40.730Z",
@@ -82,6 +92,11 @@
     }
   },
   "runs": [
+    {
+      "publishedAt": "2026-04-01T09:52:42.835Z",
+      "file": "ai-brief-20260401-095242.md",
+      "count": 2
+    },
     {
       "publishedAt": "2026-04-01T09:52:14.643Z",
       "file": "ai-brief-20260401-095214.md",
