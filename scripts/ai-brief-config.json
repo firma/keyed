@@ -1,0 +1,12 @@
+{
+  "repoPath": "/home/brankefu/projects/keyed",
+  "postDir": "/home/brankefu/projects/keyed/source/_posts",
+  "stateDir": "/home/brankefu/projects/keyed/.ai-brief",
+  "language": "zh-CN",
+  "mode": "direct-publish",
+  "minItems": 1,
+  "maxItems": 2,
+  "categories": ["AI快讯", "AI动态"],
+  "tags": ["AI", "快讯", "资讯"],
+  "runLabel": "ai-brief"
+}
