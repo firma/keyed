@@ -15,6 +15,16 @@
       "title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
       "url": "https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks/"
     },
+    "584271769": {
+      "seenAt": "2026-04-01T09:21:50.073Z",
+      "title": "Gemini 2.5: Our most intelligent models are getting even better",
+      "url": "https://deepmind.google/blog/gemini-25-our-world-leading-model-is-getting-even-better/"
+    },
+    "598315891": {
+      "seenAt": "2026-04-01T09:21:50.074Z",
+      "title": "AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms",
+      "url": "https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/"
+    },
     "1148485509": {
       "seenAt": "2026-04-01T08:56:40.730Z",
       "title": "Gemini Robotics 1.5 brings AI agents into the physical world",
@@ -42,6 +52,11 @@
     }
   },
   "runs": [
+    {
+      "publishedAt": "2026-04-01T09:21:50.074Z",
+      "file": "ai-brief-20260401-092150.md",
+      "count": 2
+    },
     {
       "publishedAt": "2026-04-01T09:21:38.393Z",
       "file": "ai-brief-20260401-092138.md",
