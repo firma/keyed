@@ -1,0 +1,6 @@
+.hexo-deploy.yml
+.hexo-deploy.yml.tmp
+_config.yml.bak.deploy
+public/
+.deploy_git/
+.DS_Store
