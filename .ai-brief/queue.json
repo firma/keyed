@@ -1,21 +1,5 @@
 [
   {
-    "title": "Accelerating Qwen3-8B Agent on Intel® Core™ Ultra with Depth-Pruned Draft Models",
-    "summary": "",
-    "url": "https://huggingface.co/blog/intel-qwen3-agent",
-    "source": "Hugging Face Blog",
-    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
-    "score": 6
-  },
-  {
-    "title": "Tricks from OpenAI gpt-oss YOU 🫵 can use with transformers",
-    "summary": "",
-    "url": "https://huggingface.co/blog/faster-transformers",
-    "source": "Hugging Face Blog",
-    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
-    "score": 6
-  },
-  {
     "title": "Jupyter Agents: training LLMs to reason with notebooks",
     "summary": "",
     "url": "https://huggingface.co/blog/jupyter-agent-2",

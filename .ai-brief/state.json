@@ -50,10 +50,20 @@
       "title": "We Got Claude to Build CUDA Kernels and teach open models!",
       "url": "https://huggingface.co/blog/upskill"
     },
+    "746289559": {
+      "seenAt": "2026-04-01T09:52:43.098Z",
+      "title": "Tricks from OpenAI gpt-oss YOU 🫵 can use with transformers",
+      "url": "https://huggingface.co/blog/faster-transformers"
+    },
     "1056536292": {
       "seenAt": "2026-04-01T09:52:42.834Z",
       "title": "Unlocking Agentic RL Training for GPT-OSS: A Practical Retrospective",
       "url": "https://huggingface.co/blog/LinkedIn/gpt-oss-agentic-rl"
+    },
+    "1110525008": {
+      "seenAt": "2026-04-01T09:52:43.097Z",
+      "title": "Accelerating Qwen3-8B Agent on Intel® Core™ Ultra with Depth-Pruned Draft Models",
+      "url": "https://huggingface.co/blog/intel-qwen3-agent"
     },
     "1148485509": {
       "seenAt": "2026-04-01T08:56:40.730Z",
@@ -92,6 +102,11 @@
     }
   },
   "runs": [
+    {
+      "publishedAt": "2026-04-01T09:52:43.098Z",
+      "file": "ai-brief-20260401-095243.md",
+      "count": 2
+    },
     {
       "publishedAt": "2026-04-01T09:52:42.835Z",
       "file": "ai-brief-20260401-095242.md",
