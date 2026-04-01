@@ -4,7 +4,7 @@ This mode is optimized for high-frequency short posts.
 
 ## Files
 - `scripts/ai-brief-config.json`
-- `scripts/ai-brief.js`
+- `automation/ai-brief.js`
 - `.ai-brief/queue.json`
 - `.ai-brief/state.json`
 
@@ -25,8 +25,8 @@ One run publishes 1-2 curated items into a single Hexo post.
 ## Notes
 This is the publishing side of the blog/news line. The intended one-shot flow is:
 
-1. `node scripts/ai-collector.js`
-2. `node scripts/ai-brief.js`
+1. `node automation/ai-collector.js`
+2. `node automation/ai-brief.js`
 3. `bash scripts/hexo-deploy.sh`
 4. `bash scripts/ai-push.sh`
 

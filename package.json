@@ -6,8 +6,8 @@
     "version": "3.2.2"
   },
   "scripts": {
-    "ai:collect": "node scripts/ai-collector.js",
-    "ai:brief": "node scripts/ai-brief.js",
+    "ai:collect": "node automation/ai-collector.js",
+    "ai:brief": "node automation/ai-brief.js",
     "ai:deploy": "bash scripts/hexo-deploy.sh",
     "ai:run-once": "bash scripts/ai-run-once.sh"
   },

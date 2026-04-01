@@ -2,7 +2,7 @@
 
 ## Files
 - `scripts/ai-daily-config.json` — runtime config
-- `scripts/ai-daily.js` — turns queued items into a Hexo post and commits it
+- `automation/ai-daily.js` — turns queued items into a Hexo post and commits it
 - `.ai-daily/queue.json` — pending AI news items to publish
 - `.ai-daily/state.json` — dedupe state
 

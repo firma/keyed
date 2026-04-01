@@ -2,10 +2,10 @@
 set -euo pipefail
 cd /home/brankefu/projects/keyed
 
-node scripts/ai-collector.js
+node automation/ai-collector.js
 
 brief_status=0
-if ! node scripts/ai-brief.js; then
+if ! node automation/ai-brief.js; then
   brief_status=$?
 fi
 

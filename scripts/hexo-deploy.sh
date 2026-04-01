@@ -9,4 +9,4 @@ fi
 read -r TOKEN < "$TOKEN_FILE"
 export HEXO_DEPLOY_REPO="https://${TOKEN}@github.com/firma/keyed.git"
 export HEXO_DEPLOY_BRANCH="gh-pages"
-node scripts/hexo-deploy.js
+node automation/hexo-deploy.js
