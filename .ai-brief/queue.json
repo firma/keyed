@@ -14,21 +14,5 @@
     "source": "Hugging Face Blog",
     "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
     "score": 6
-  },
-  {
-    "title": "CO₂ Emissions and Models Performance: Insights from the Open LLM Leaderboard",
-    "summary": "",
-    "url": "https://huggingface.co/blog/leaderboard-emissions-analysis",
-    "source": "Hugging Face Blog",
-    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
-    "score": 6
-  },
-  {
-    "title": "Investing in Performance: Fine-tune small models with LLM insights - a CFM case study",
-    "summary": "",
-    "url": "https://huggingface.co/blog/cfm-case-study",
-    "source": "Hugging Face Blog",
-    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
-    "score": 6
   }
 ]

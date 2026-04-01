@@ -95,10 +95,20 @@
       "title": "Improved Gemini audio models for powerful voice experiences",
       "url": "https://deepmind.google/blog/improved-gemini-audio-models-for-powerful-voice-experiences/"
     },
+    "1467994972": {
+      "seenAt": "2026-04-01T12:44:04.705Z",
+      "title": "Investing in Performance: Fine-tune small models with LLM insights - a CFM case study",
+      "url": "https://huggingface.co/blog/cfm-case-study"
+    },
     "1555636228": {
       "seenAt": "2026-04-01T08:54:45.223Z",
       "title": "Introducing Gemini 2.0: our new AI model for the agentic era",
       "url": "https://deepmind.google/blog/introducing-gemini-20-our-new-ai-model-for-the-agentic-era/"
+    },
+    "1572903042": {
+      "seenAt": "2026-04-01T12:44:04.705Z",
+      "title": "CO₂ Emissions and Models Performance: Insights from the Open LLM Leaderboard",
+      "url": "https://huggingface.co/blog/leaderboard-emissions-analysis"
     },
     "1751052443": {
       "seenAt": "2026-04-01T09:52:14.643Z",
@@ -112,6 +122,11 @@
     }
   },
   "runs": [
+    {
+      "publishedAt": "2026-04-01T12:44:04.705Z",
+      "file": "ai-brief-20260401-124404.md",
+      "count": 2
+    },
     {
       "publishedAt": "2026-04-01T09:53:30.979Z",
       "file": "ai-brief-20260401-095330.md",
