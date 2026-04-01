@@ -1,21 +1,5 @@
 [
   {
-    "title": "Gemini 2.5: Our most intelligent AI model",
-    "summary": "Gemini 2.5 is our most intelligent AI model, now with thinking built in.",
-    "url": "https://deepmind.google/blog/gemini-2-5-our-most-intelligent-ai-model/",
-    "source": "Google DeepMind Blog",
-    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
-    "score": 6
-  },
-  {
-    "title": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable",
-    "summary": "Our latest voice model has improved precision and lower latency to make voice interactions more fluid, natural and precise.",
-    "url": "https://deepmind.google/blog/gemini-3-1-flash-live-making-audio-ai-more-natural-and-reliable/",
-    "source": "Google DeepMind Blog",
-    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
-    "score": 4
-  },
-  {
     "title": "Introducing AnyLanguageModel: One API for Local and Remote LLMs on Apple Platforms",
     "summary": "",
     "url": "https://huggingface.co/blog/anylanguagemodel",
