@@ -40,6 +40,11 @@
       "title": "Gemini 2.5: Our most intelligent models are getting even better",
       "url": "https://deepmind.google/blog/gemini-25-our-world-leading-model-is-getting-even-better/"
     },
+    "597867805": {
+      "seenAt": "2026-04-01T09:53:30.979Z",
+      "title": "How to deploy and fine-tune DeepSeek models on AWS",
+      "url": "https://huggingface.co/blog/deepseek-r1-aws"
+    },
     "598315891": {
       "seenAt": "2026-04-01T09:21:50.074Z",
       "title": "AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms",
@@ -54,6 +59,11 @@
       "seenAt": "2026-04-01T09:52:43.098Z",
       "title": "Tricks from OpenAI gpt-oss YOU 🫵 can use with transformers",
       "url": "https://huggingface.co/blog/faster-transformers"
+    },
+    "1024275669": {
+      "seenAt": "2026-04-01T09:53:30.979Z",
+      "title": "Jupyter Agents: training LLMs to reason with notebooks",
+      "url": "https://huggingface.co/blog/jupyter-agent-2"
     },
     "1056536292": {
       "seenAt": "2026-04-01T09:52:42.834Z",
@@ -102,6 +112,11 @@
     }
   },
   "runs": [
+    {
+      "publishedAt": "2026-04-01T09:53:30.979Z",
+      "file": "ai-brief-20260401-095330.md",
+      "count": 2
+    },
     {
       "publishedAt": "2026-04-01T09:52:43.098Z",
       "file": "ai-brief-20260401-095243.md",
