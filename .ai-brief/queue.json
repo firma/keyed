@@ -1,21 +1,5 @@
 [
   {
-    "title": "Gemini Robotics 1.5 brings AI agents into the physical world",
-    "summary": "We’re powering an era of physical agents — enabling robots to perceive, plan, think, use tools and act to better solve complex, multi-step tasks.",
-    "url": "https://deepmind.google/blog/gemini-robotics-15-brings-ai-agents-into-the-physical-world/",
-    "source": "Google DeepMind Blog",
-    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
-    "score": 6
-  },
-  {
-    "title": "Introducing the Gemini 2.5 Computer Use model",
-    "summary": "Available in preview via the API, our Computer Use model is a specialized model built on Gemini 2.5 Pro’s capabilities to power agents that can interact with user interfaces.",
-    "url": "https://deepmind.google/blog/introducing-the-gemini-25-computer-use-model/",
-    "source": "Google DeepMind Blog",
-    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
-    "score": 6
-  },
-  {
     "title": "Gemini 2.5: Updates to our family of thinking models",
     "summary": "Explore the latest Gemini 2.5 model updates with enhanced performance and accuracy: Gemini 2.5 Pro now stable, Flash generally available, and the new Flash-Lite in preview.",
     "url": "https://deepmind.google/blog/gemini-25-updates-to-our-family-of-thinking-models/",

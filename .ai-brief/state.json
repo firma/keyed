@@ -10,6 +10,11 @@
       "title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
       "url": "https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks/"
     },
+    "1148485509": {
+      "seenAt": "2026-04-01T08:56:40.730Z",
+      "title": "Gemini Robotics 1.5 brings AI agents into the physical world",
+      "url": "https://deepmind.google/blog/gemini-robotics-15-brings-ai-agents-into-the-physical-world/"
+    },
     "1357735243": {
       "seenAt": "2026-04-01T08:56:30.849Z",
       "title": "Improved Gemini audio models for powerful voice experiences",
@@ -19,9 +24,19 @@
       "seenAt": "2026-04-01T08:54:45.223Z",
       "title": "Introducing Gemini 2.0: our new AI model for the agentic era",
       "url": "https://deepmind.google/blog/introducing-gemini-20-our-new-ai-model-for-the-agentic-era/"
+    },
+    "1784300633": {
+      "seenAt": "2026-04-01T08:56:40.730Z",
+      "title": "Introducing the Gemini 2.5 Computer Use model",
+      "url": "https://deepmind.google/blog/introducing-the-gemini-25-computer-use-model/"
     }
   },
   "runs": [
+    {
+      "publishedAt": "2026-04-01T08:56:40.730Z",
+      "file": "ai-brief-20260401-085640.md",
+      "count": 2
+    },
     {
       "publishedAt": "2026-04-01T08:56:30.849Z",
       "file": "ai-brief-20260401-085630.md",
