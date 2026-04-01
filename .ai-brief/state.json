@@ -1,5 +1,10 @@
 {
   "seen": {
+    "104054708": {
+      "seenAt": "2026-04-01T09:21:38.393Z",
+      "title": "We’re expanding our Gemini 2.5 family of models",
+      "url": "https://deepmind.google/blog/were-expanding-our-gemini-25-family-of-models/"
+    },
     "137417014": {
       "seenAt": "2026-04-01T08:56:30.849Z",
       "title": "Build with Nano Banana Pro, our Gemini 3 Pro Image model",
@@ -14,6 +19,11 @@
       "seenAt": "2026-04-01T08:56:40.730Z",
       "title": "Gemini Robotics 1.5 brings AI agents into the physical world",
       "url": "https://deepmind.google/blog/gemini-robotics-15-brings-ai-agents-into-the-physical-world/"
+    },
+    "1351417477": {
+      "seenAt": "2026-04-01T09:21:38.393Z",
+      "title": "Gemini 2.5: Updates to our family of thinking models",
+      "url": "https://deepmind.google/blog/gemini-25-updates-to-our-family-of-thinking-models/"
     },
     "1357735243": {
       "seenAt": "2026-04-01T08:56:30.849Z",
@@ -32,6 +42,11 @@
     }
   },
   "runs": [
+    {
+      "publishedAt": "2026-04-01T09:21:38.393Z",
+      "file": "ai-brief-20260401-092138.md",
+      "count": 2
+    },
     {
       "publishedAt": "2026-04-01T08:56:40.730Z",
       "file": "ai-brief-20260401-085640.md",
