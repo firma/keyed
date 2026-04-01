@@ -1,21 +1,5 @@
 [
   {
-    "title": "From OpenAI to Open LLMs with Messages API on Hugging Face",
-    "summary": "",
-    "url": "https://huggingface.co/blog/tgi-messages-api",
-    "source": "Hugging Face Blog",
-    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
-    "score": 8
-  },
-  {
-    "title": "We Got Claude to Build CUDA Kernels and teach open models!",
-    "summary": "",
-    "url": "https://huggingface.co/blog/upskill",
-    "source": "Hugging Face Blog",
-    "why": "来自高相关 AI 信源，且标题/主题与模型、Agent、开发者工具或开源生态高度相关。",
-    "score": 6
-  },
-  {
     "title": "Unlocking Agentic RL Training for GPT-OSS: A Practical Retrospective",
     "summary": "",
     "url": "https://huggingface.co/blog/LinkedIn/gpt-oss-agentic-rl",

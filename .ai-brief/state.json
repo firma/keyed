@@ -40,6 +40,11 @@
       "title": "AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms",
       "url": "https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/"
     },
+    "611614783": {
+      "seenAt": "2026-04-01T09:52:14.643Z",
+      "title": "We Got Claude to Build CUDA Kernels and teach open models!",
+      "url": "https://huggingface.co/blog/upskill"
+    },
     "1148485509": {
       "seenAt": "2026-04-01T08:56:40.730Z",
       "title": "Gemini Robotics 1.5 brings AI agents into the physical world",
@@ -65,6 +70,11 @@
       "title": "Introducing Gemini 2.0: our new AI model for the agentic era",
       "url": "https://deepmind.google/blog/introducing-gemini-20-our-new-ai-model-for-the-agentic-era/"
     },
+    "1751052443": {
+      "seenAt": "2026-04-01T09:52:14.643Z",
+      "title": "From OpenAI to Open LLMs with Messages API on Hugging Face",
+      "url": "https://huggingface.co/blog/tgi-messages-api"
+    },
     "1784300633": {
       "seenAt": "2026-04-01T08:56:40.730Z",
       "title": "Introducing the Gemini 2.5 Computer Use model",
@@ -72,6 +82,11 @@
     }
   },
   "runs": [
+    {
+      "publishedAt": "2026-04-01T09:52:14.643Z",
+      "file": "ai-brief-20260401-095214.md",
+      "count": 2
+    },
     {
       "publishedAt": "2026-04-01T09:52:00.159Z",
       "file": "ai-brief-20260401-095200.md",
