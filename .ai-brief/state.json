@@ -1,9 +1,19 @@
 {
   "seen": {
+    "137417014": {
+      "seenAt": "2026-04-01T08:56:30.849Z",
+      "title": "Build with Nano Banana Pro, our Gemini 3 Pro Image model",
+      "url": "https://deepmind.google/blog/build-with-nano-banana-pro-our-gemini-3-pro-image-model/"
+    },
     "241707121": {
       "seenAt": "2026-04-01T08:54:45.223Z",
       "title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
       "url": "https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks/"
+    },
+    "1357735243": {
+      "seenAt": "2026-04-01T08:56:30.849Z",
+      "title": "Improved Gemini audio models for powerful voice experiences",
+      "url": "https://deepmind.google/blog/improved-gemini-audio-models-for-powerful-voice-experiences/"
     },
     "1555636228": {
       "seenAt": "2026-04-01T08:54:45.223Z",
@@ -12,6 +22,11 @@
     }
   },
   "runs": [
+    {
+      "publishedAt": "2026-04-01T08:56:30.849Z",
+      "file": "ai-brief-20260401-085630.md",
+      "count": 2
+    },
     {
       "publishedAt": "2026-04-01T08:54:45.223Z",
       "file": "ai-brief-20260401-085445.md",
