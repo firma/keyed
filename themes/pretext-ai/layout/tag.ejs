@@ -1,29 +1,40 @@
-<div class="taxonomy-page">
-  <div class="taxonomy-header">
-    <h1 class="page-title"><%= page.tag ? '#' + page.tag : 'Tags' %></h1>
-    <% if (!page.posts || !page.tag) { %>
-      <p class="page-description">// browse by keyword</p>
-      <div class="taxonomy-stats">
-        <span><span class="stat-val"><%= site.tags.length %></span> tags</span>
-        <span><span class="stat-val"><%= site.posts.length %></span> total posts</span>
+<main class="main-container">
+  <div class="content-wrapper">
+    <div class="content-area">
+      <div class="taxonomy-page">
+        <div class="taxonomy-header">
+          <h1 class="page-title"><%= page.tag ? '#' + page.tag : 'Tags' %></h1>
+          <% if (!page.posts || !page.tag) { %>
+            <p class="page-description">// browse by keyword</p>
+            <div class="taxonomy-stats">
+              <span><span class="stat-val"><%= site.tags.length %></span> tags</span>
+              <span><span class="stat-val"><%= site.posts.length %></span> total posts</span>
+            </div>
+          <% } %>
+        </div>
+
+        <% if (page.posts && page.tag) { %>
+          <div class="posts-grid">
+            <% page.posts.forEach(function(post) { %>
+              <%- partial('_partial/article', {item: post}) %>
+            <% }) %>
+          </div>
+          <%- partial('_partial/pagination') %>
+        <% } else { %>
+          <div class="tag-overview">
+            <% site.tags.sort('name').forEach(function(tag) { %>
+              <a href="<%- url_for(tag.path) %>" class="tag-pill-lg">
+                #<%= tag.name %> <span class="tag-pill-count"><%= tag.posts.length %></span>
+              </a>
+            <% }) %>
+          </div>
+        <% } %>
       </div>
+    </div>
+    <% if (theme.sidebar) { %>
+    <aside class="sidebar">
+      <%- partial('_partial/sidebar') %>
+    </aside>
     <% } %>
   </div>
-
-  <% if (page.posts && page.tag) { %>
-    <div class="posts-grid">
-      <% page.posts.forEach(function(post) { %>
-        <%- partial('_partial/article', {item: post}) %>
-      <% }) %>
-    </div>
-    <%- partial('_partial/pagination') %>
-  <% } else { %>
-    <div class="tag-overview">
-      <% site.tags.sort('name').forEach(function(tag) { %>
-        <a href="<%- url_for(tag.path) %>" class="tag-pill-lg" style="animation-delay:<%= Math.random() * 0.3 %>s">
-          #<%= tag.name %> <span class="tag-pill-count"><%= tag.posts.length %></span>
-        </a>
-      <% }) %>
-    </div>
-  <% } %>
-</div>
+</main>

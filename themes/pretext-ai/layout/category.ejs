@@ -1,40 +1,51 @@
-<div class="taxonomy-page">
-  <div class="taxonomy-header">
-    <h1 class="page-title"><%= page.category || 'Categories' %></h1>
-    <% if (!page.posts || !page.category) { %>
-      <p class="page-description">// content organized by topic</p>
-      <div class="taxonomy-stats">
-        <span><span class="stat-val"><%= site.categories.length %></span> categories</span>
-        <span><span class="stat-val"><%= site.posts.length %></span> total posts</span>
-      </div>
-    <% } %>
-  </div>
+<main class="main-container">
+  <div class="content-wrapper">
+    <div class="content-area">
+      <div class="taxonomy-page">
+        <div class="taxonomy-header">
+          <h1 class="page-title"><%= page.category || 'Categories' %></h1>
+          <% if (!page.posts || !page.category) { %>
+            <p class="page-description">// content organized by topic</p>
+            <div class="taxonomy-stats">
+              <span><span class="stat-val"><%= site.categories.length %></span> categories</span>
+              <span><span class="stat-val"><%= site.posts.length %></span> total posts</span>
+            </div>
+          <% } %>
+        </div>
 
-  <% if (page.posts && page.category) { %>
-    <div class="posts-grid">
-      <% page.posts.forEach(function(post) { %>
-        <%- partial('_partial/article', {item: post}) %>
-      <% }) %>
-    </div>
-    <%- partial('_partial/pagination') %>
-  <% } else { %>
-    <div class="category-overview">
-      <% site.categories.sort('name').forEach(function(cat) { %>
-        <a href="<%- url_for(cat.path) %>" class="taxonomy-card">
-          <div class="taxonomy-card-header">
-            <span class="taxonomy-name"><%= cat.name %></span>
-            <span class="taxonomy-count"><%= cat.posts.length %></span>
-          </div>
-          <div class="taxonomy-card-posts">
-            <% cat.posts.sort('date', -1).limit(3).forEach(function(post) { %>
-              <span class="taxonomy-post-link"><%= post.title || '(Untitled)' %></span>
+        <% if (page.posts && page.category) { %>
+          <div class="posts-grid">
+            <% page.posts.forEach(function(post) { %>
+              <%- partial('_partial/article', {item: post}) %>
             <% }) %>
           </div>
-          <div class="taxonomy-card-footer">
-            latest: <%= cat.posts.length ? date(cat.posts.sort('date', -1).toArray()[0].date, 'YYYY-MM-DD') : '-' %>
+          <%- partial('_partial/pagination') %>
+        <% } else { %>
+          <div class="category-overview">
+            <% site.categories.sort('name').forEach(function(cat) { %>
+              <a href="<%- url_for(cat.path) %>" class="taxonomy-card">
+                <div class="taxonomy-card-header">
+                  <span class="taxonomy-name"><%= cat.name %></span>
+                  <span class="taxonomy-count"><%= cat.posts.length %></span>
+                </div>
+                <div class="taxonomy-card-posts">
+                  <% cat.posts.sort('date', -1).limit(3).forEach(function(post) { %>
+                    <span class="taxonomy-post-link"><%= post.title || '(Untitled)' %></span>
+                  <% }) %>
+                </div>
+                <div class="taxonomy-card-footer">
+                  latest: <%= cat.posts.length ? date(cat.posts.sort('date', -1).toArray()[0].date, 'YYYY-MM-DD') : '-' %>
+                </div>
+              </a>
+            <% }) %>
           </div>
-        </a>
-      <% }) %>
+        <% } %>
+      </div>
     </div>
-  <% } %>
-</div>
+    <% if (theme.sidebar) { %>
+    <aside class="sidebar">
+      <%- partial('_partial/sidebar') %>
+    </aside>
+    <% } %>
+  </div>
+</main>

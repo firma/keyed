@@ -1,29 +1,81 @@
-<section class="hero" id="hero">
+<section class="hero">
+  <div class="hero-grid"></div>
   <div class="hero-inner">
     <canvas id="hero-canvas" class="hero-canvas"></canvas>
     <div class="hero-text">
-      <h1 class="hero-title" data-pretext-hero><%= config.title %></h1>
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        <span>AI Observatory</span>
+      </div>
+      <h1 class="hero-title"><%= config.title %></h1>
       <p class="hero-subtitle"><%= config.subtitle || config.description %></p>
-      <div class="hero-metrics" id="heroMetrics">
-        <span class="metric"><span class="metric-val"><%= site.posts.length %></span> articles</span>
-        <span class="metric-sep">&middot;</span>
-        <span class="metric">
-          <span class="metric-val"><%= site.categories.length %></span> categories
-        </span>
-        <span class="metric-sep">&middot;</span>
-        <span class="metric">
-          <span class="metric-val"><%= site.tags.length %></span> tags
-        </span>
+      <div class="hero-metrics">
+        <div class="metric-card">
+          <span class="metric-val"><%= site.posts.length %></span>
+          <span class="metric-label">Articles</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-val"><%= site.categories.length %></span>
+          <span class="metric-label">Categories</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-val"><%= site.tags.length %></span>
+          <span class="metric-label">Tags</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="posts-section">
-  <div class="posts-grid">
-    <% page.posts.forEach(function(post) { %>
-      <%- partial('_partial/article', {item: post}) %>
-    <% }) %>
+<main class="main-container">
+  <div class="content-wrapper">
+    <div class="content-area">
+      <% if (page.posts.length) { %>
+        <% var featured = page.posts.toArray()[0]; %>
+        <% if (page.current === 1) { %>
+        <article class="featured-card" data-pretext-title>
+          <div class="featured-label"><span class="featured-dot"></span> Featured</div>
+          <h2 class="featured-title">
+            <a href="<%- url_for(featured.path) %>"><%= featured.title || '(Untitled)' %></a>
+          </h2>
+          <% if (featured.excerpt) { %>
+            <p class="featured-excerpt"><%- strip_html(featured.excerpt).substring(0, 400) %></p>
+          <% } %>
+          <div class="featured-meta">
+            <time><%= date(featured.date, 'YYYY-MM-DD') %></time>
+            <% if (featured.categories && featured.categories.length) { %>
+              <% featured.categories.forEach(function(cat) { %>
+                <a href="<%- url_for(cat.path) %>" class="featured-cat"><%= cat.name %></a>
+              <% }) %>
+            <% } %>
+            <% if (featured.tags && featured.tags.length) { %>
+              <% featured.tags.forEach(function(tag) { %>
+                <span class="tag-pill">#<%= tag.name %></span>
+              <% }) %>
+            <% } %>
+          </div>
+          <a href="<%- url_for(featured.path) %>" class="featured-cta">
+            Read full article
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </article>
+        <% } %>
+
+        <% var restPosts = page.current === 1 ? page.posts.toArray().slice(1) : page.posts.toArray(); %>
+        <% if (restPosts.length) { %>
+        <div class="posts-grid">
+          <% restPosts.forEach(function(post) { %>
+            <%- partial('_partial/article', {item: post}) %>
+          <% }) %>
+        </div>
+        <% } %>
+      <% } %>
+      <%- partial('_partial/pagination') %>
+    </div>
+    <% if (theme.sidebar) { %>
+    <aside class="sidebar">
+      <%- partial('_partial/sidebar') %>
+    </aside>
+    <% } %>
   </div>
-  <%- partial('_partial/pagination') %>
-</section>
+</main>
