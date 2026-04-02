@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#07111d"/><stop offset="100%" stop-color="#10233f"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#67e8f9"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient>
+</defs>
+<rect width="1600" height="1000" fill="url(#bg)"/>
+<circle cx="1320" cy="160" r="220" fill="#38bdf8" opacity="0.08"/>
+<circle cx="240" cy="860" r="240" fill="#8b5cf6" opacity="0.08"/>
+<text x="110" y="140" fill="#eef6ff" font-size="58" font-family="Arial, Helvetica, sans-serif" font-weight="700">今天的 AI 生态，正在把行业推向哪一个新阶段？</text>
+<text x="110" y="190" fill="#a9bfd5" font-size="28" font-family="Arial, Helvetica, sans-serif">Model Competition → Agent Systems → Runtime Platforms → Governance</text>
+<rect x="110" y="260" width="1280" height="18" rx="999" fill="#16304f"/>
+<rect x="110" y="260" width="1280" height="18" rx="999" fill="url(#accent)"/>
+<rect x="120" y="350" width="250" height="170" rx="24" fill="#0d1727" stroke="#67e8f9" stroke-opacity="0.35"/>
+<text x="155" y="415" fill="#67e8f9" font-size="28" font-family="Arial, Helvetica, sans-serif">Model Layer</text>
+<text x="155" y="458" fill="#dbe8f4" font-size="22" font-family="Arial, Helvetica, sans-serif">参数 / Benchmark</text>
+<text x="155" y="492" fill="#dbe8f4" font-size="22" font-family="Arial, Helvetica, sans-serif">Context / Price</text>
+<rect x="440" y="350" width="250" height="170" rx="24" fill="#0d1727" stroke="#67e8f9" stroke-opacity="0.35"/>
+<text x="475" y="415" fill="#67e8f9" font-size="28" font-family="Arial, Helvetica, sans-serif">Agent Layer</text>
+<text x="475" y="458" fill="#dbe8f4" font-size="22" font-family="Arial, Helvetica, sans-serif">Codex / Claude</text>
+<text x="475" y="492" fill="#dbe8f4" font-size="22" font-family="Arial, Helvetica, sans-serif">Autonomy / Tasks</text>
+<rect x="760" y="350" width="250" height="170" rx="24" fill="#0d1727" stroke="#67e8f9" stroke-opacity="0.35"/>
+<text x="790" y="415" fill="#67e8f9" font-size="28" font-family="Arial, Helvetica, sans-serif">Runtime Layer</text>
+<text x="790" y="458" fill="#dbe8f4" font-size="22" font-family="Arial, Helvetica, sans-serif">Memory / Tools</text>
+<text x="790" y="492" fill="#dbe8f4" font-size="22" font-family="Arial, Helvetica, sans-serif">Recovery / Permissions</text>
+<rect x="1080" y="350" width="250" height="170" rx="24" fill="#0d1727" stroke="#67e8f9" stroke-opacity="0.35"/>
+<text x="1110" y="415" fill="#67e8f9" font-size="28" font-family="Arial, Helvetica, sans-serif">Governance</text>
+<text x="1110" y="458" fill="#dbe8f4" font-size="22" font-family="Arial, Helvetica, sans-serif">Audit / Policy</text>
+<text x="1110" y="492" fill="#dbe8f4" font-size="22" font-family="Arial, Helvetica, sans-serif">Org Deployment</text>
+<line x1="370" y1="435" x2="440" y2="435" stroke="#8bb6d7" stroke-width="5"/>
+<line x1="690" y1="435" x2="760" y2="435" stroke="#8bb6d7" stroke-width="5"/>
+<line x1="1010" y1="435" x2="1080" y2="435" stroke="#8bb6d7" stroke-width="5"/>
+<rect x="120" y="620" width="1220" height="220" rx="28" fill="#0b1626" stroke="#8b5cf6" stroke-opacity="0.22"/>
+<text x="160" y="690" fill="#f3f8ff" font-size="36" font-family="Arial, Helvetica, sans-serif" font-weight="700">今天最关键的四条产业信号</text>
+<text x="160" y="745" fill="#d7e6f2" font-size="26" font-family="Arial, Helvetica, sans-serif">• OpenAI 正在把 Codex 推向统一开发平台</text>
+<text x="160" y="790" fill="#d7e6f2" font-size="26" font-family="Arial, Helvetica, sans-serif">• Anthropic 持续把 Agent 运行时与 Harness 拉到行业中心</text>
+<text x="160" y="835" fill="#d7e6f2" font-size="26" font-family="Arial, Helvetica, sans-serif">• Apple 正把 Agent 能力吸入主流 IDE 与开发工具链</text>
+<text x="160" y="880" fill="#d7e6f2" font-size="26" font-family="Arial, Helvetica, sans-serif">• 行业价值正从“更强模型”迁移到“更可靠系统”</text>
+</svg>
