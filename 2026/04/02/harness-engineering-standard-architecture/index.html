@@ -52,7 +52,7 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
-  <body>
+  <body class="page-post">
     <header>
       
 <div id="header-outer">
@@ -89,24 +89,40 @@
 
     </header>
     <div id="container">
-      <article class="article-shell">
-  <div class="article-eyebrow">Keyed AI · Editorial</div>
-  <h1 class="article-title">Harness Engineering 标准设计：下一代 AI Agent 产品为什么会长成一套运行时系统</h1>
-  <div class="article-submeta">
-    <span>2026-04-02</span>
-    
-      <span>技术架构</span>
-    
-      <span>AI产品</span>
-    
-      <span>行业观察</span>
-    
-    
-      <span>6 tags</span>
-    
+      <article class="article-shell article-shell-post">
+  <div class="article-topline">
+    <div class="article-eyebrow">小触AI · Editorial</div>
+    <a class="article-home-link" href="/">Back to Index</a>
   </div>
-  <div class="article-content" itemprop="articleBody">
-    <p><img src="/images/2026/04/harness-engineering-architecture.svg" alt=""></p>
+
+  <header class="article-header-block">
+    <h1 class="article-title">Harness Engineering 标准设计：下一代 AI Agent 产品为什么会长成一套运行时系统</h1>
+    <div class="article-submeta">
+      <span>2026-04-02</span>
+      
+        <span>技术架构</span>
+      
+        <span>AI产品</span>
+      
+        <span>行业观察</span>
+      
+      
+        <span>6 tags</span>
+      
+    </div>
+  </header>
+
+  
+  
+    <div class="article-hero-image-wrap">
+      <img class="article-hero-image" src="/images/2026/04/harness-engineering-architecture.svg" alt="Harness Engineering 标准设计：下一代 AI Agent 产品为什么会长成一套运行时系统">
+    </div>
+  
+
+  <div class="article-layout-grid">
+    <main class="article-main-column">
+      <div class="article-content" itemprop="articleBody">
+        
 <p>在过去两年，AI 产品行业有一种很常见的误判：很多人把“模型能力提升”直接等同于“产品能力提升”。</p>
 <p>于是我们看到大量产品讨论都集中在模型层：谁的 benchmark 更高、谁的上下文更长、谁的价格更低、谁的推理更强。</p>
 <p>但当 AI 真正进入工作流、进入终端、进入仓库、进入团队协作之后，问题开始完全不一样。</p>
@@ -257,203 +273,47 @@
 <li>AI Agent、终端工具与企业工作流产品的近期演进趋势</li>
 </ul>
 
+      </div>
+    </main>
+
+    <aside class="article-side-column">
+      <section class="article-side-card">
+        <p class="article-side-title">Article Meta</p>
+        <div class="article-side-list">
+          <div>
+            <span>Published</span>
+            <strong>2026-04-02</strong>
+          </div>
+          
+          <div>
+            <span>Category</span>
+            <strong>技术架构 · AI产品 · 行业观察</strong>
+          </div>
+          
+          
+          <div>
+            <span>Tags</span>
+            <strong>Claude Code · Harness Engineering · AI Agent · 系统设计 · 多代理 · AI工具</strong>
+          </div>
+          
+        </div>
+      </section>
+
+      
+    </aside>
   </div>
+
   <div class="article-footer-nav">
     
     
-      <a href="/">今天的 AI 生态，正在把行业推向哪一个新阶段？ →</a>
+      <a href="/2026/04/02/ai-ecosystem-frontier-2026-04-02/">
+        <span>下一篇</span>
+        <strong>今天的 AI 生态，正在把行业推向哪一个新阶段？</strong>
+      </a>
     
   </div>
 </article>
 
-      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
-
-  <div id="toc" class="toc-aside">
-  <strong class="toc-title">文章目录</strong>
- 
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#导读"><span class="toc-number">1.</span> <span class="toc-text">导读</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#核心要点"><span class="toc-number">2.</span> <span class="toc-text">核心要点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是-Harness-Engineering"><span class="toc-number">3.</span> <span class="toc-text">什么是 Harness Engineering</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一套标准设计，应至少包含六层架构"><span class="toc-number">4.</span> <span class="toc-text">一套标准设计，应至少包含六层架构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、控制平面：Prompt-是系统政策层"><span class="toc-number">4.1.</span> <span class="toc-text">一、控制平面：Prompt 是系统政策层</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、查询循环：让-Agent-真正“持续工作”"><span class="toc-number">4.2.</span> <span class="toc-text">二、查询循环：让 Agent 真正“持续工作”</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、工具与权限：把行动能力装进笼子里"><span class="toc-number">4.3.</span> <span class="toc-text">三、工具与权限：把行动能力装进笼子里</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四、上下文治理：Memory-是预算制度，不是仓库"><span class="toc-number">4.4.</span> <span class="toc-text">四、上下文治理：Memory 是预算制度，不是仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#五、错误恢复：生产系统必须允许失败"><span class="toc-number">4.5.</span> <span class="toc-text">五、错误恢复：生产系统必须允许失败</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#六、多代理与验证：把复杂度拆开，把风险分散"><span class="toc-number">4.6.</span> <span class="toc-text">六、多代理与验证：把复杂度拆开，把风险分散</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Harness-Engineering-为什么会成为行业分水岭"><span class="toc-number">5.</span> <span class="toc-text">Harness Engineering 为什么会成为行业分水岭</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#第一层：模型接入型产品"><span class="toc-number">5.1.</span> <span class="toc-text">第一层：模型接入型产品</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第二层：工具增强型产品"><span class="toc-number">5.2.</span> <span class="toc-text">第二层：工具增强型产品</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第三层：运行时系统型产品"><span class="toc-number">5.3.</span> <span class="toc-text">第三层：运行时系统型产品</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#前沿-AI-工具行业，未来会往哪里走"><span class="toc-number">6.</span> <span class="toc-text">前沿 AI 工具行业，未来会往哪里走</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-开发者工具会继续跑在最前面"><span class="toc-number">6.1.</span> <span class="toc-text">1. 开发者工具会继续跑在最前面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-企业买单的核心会从“更聪明”转向“更可控”"><span class="toc-number">6.2.</span> <span class="toc-text">2. 企业买单的核心会从“更聪明”转向“更可控”</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-工具协议与运行时标准会变得越来越重要"><span class="toc-number">6.3.</span> <span class="toc-text">3. 工具协议与运行时标准会变得越来越重要</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-多代理将从“实验特性”变成“默认能力”"><span class="toc-number">6.4.</span> <span class="toc-text">4. 多代理将从“实验特性”变成“默认能力”</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-AI-工具会越来越像“认知执行基础设施”"><span class="toc-number">6.5.</span> <span class="toc-text">5. AI 工具会越来越像“认知执行基础设施”</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结语"><span class="toc-number">7.</span> <span class="toc-text">结语</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考信息"><span class="toc-number">8.</span> <span class="toc-text">参考信息</span></a></li></ol>
- 
-  </div>
-
-<div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
-<aside class="clearfix">
-
-  
-
-
-  
-<div class="categorieslist">
-	<p class="asidetitle">分类</p>
-		<ul>
-		
-		  
-			<li><a href="/categories/技术架构/AI产品/" title="AI产品">AI产品<sup>1</sup></a></li>
-		  
-		
-		  
-			<li><a href="/categories/AI快讯/AI动态/" title="AI动态">AI动态<sup>12</sup></a></li>
-		  
-		
-		  
-			<li><a href="/categories/AI快讯/" title="AI快讯">AI快讯<sup>12</sup></a></li>
-		  
-		
-		  
-			<li><a href="/categories/AI资讯/" title="AI资讯">AI资讯<sup>3</sup></a></li>
-		  
-		
-		  
-			<li><a href="/categories/技术架构/" title="技术架构">技术架构<sup>1</sup></a></li>
-		  
-		
-		  
-			<li><a href="/categories/AI资讯/技术架构/" title="技术架构">技术架构<sup>1</sup></a></li>
-		  
-		
-		  
-			<li><a href="/categories/AI资讯/行业观察/技术架构/" title="技术架构">技术架构<sup>1</sup></a></li>
-		  
-		
-		  
-			<li><a href="/categories/AI资讯/行业观察/" title="行业观察">行业观察<sup>2</sup></a></li>
-		  
-		
-		  
-			<li><a href="/categories/AI资讯/技术架构/行业观察/" title="行业观察">行业观察<sup>1</sup></a></li>
-		  
-		
-		  
-			<li><a href="/categories/技术架构/AI产品/行业观察/" title="行业观察">行业观察<sup>1</sup></a></li>
-		  
-		
-		</ul>
-</div>
-
-
-  
-<div class="tagslist">
-	<p class="asidetitle">标签</p>
-		<ul class="clearfix">
-		
-			
-				<li><a href="/tags/AI/" title="AI">AI<sup>14</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/快讯/" title="快讯">快讯<sup>12</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/资讯/" title="资讯">资讯<sup>12</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Anthropic/" title="Anthropic">Anthropic<sup>3</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/OpenAI/" title="OpenAI">OpenAI<sup>2</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Agent/" title="Agent">Agent<sup>2</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/AI编程/" title="AI编程">AI编程<sup>2</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Claude-Code/" title="Claude Code">Claude Code<sup>2</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Harness-Engineering/" title="Harness Engineering">Harness Engineering<sup>2</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Cursor/" title="Cursor">Cursor<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Xcode/" title="Xcode">Xcode<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/AI生态/" title="AI生态">AI生态<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/架构设计/" title="架构设计">架构设计<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/AI-Agent/" title="AI Agent">AI Agent<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/系统设计/" title="系统设计">系统设计<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/多代理/" title="多代理">多代理<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/AI工具/" title="AI工具">AI工具<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Polymarket/" title="Polymarket">Polymarket<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/预测市场/" title="预测市场">预测市场<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/概率/" title="概率">概率<sup>1</sup></a></li>
-			
-		
-		</ul>
-</div>
-
-
-  <div class="linkslist">
-  <p class="asidetitle">友情链接</p>
-    <ul>
-        
-          <li>
-            
-            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
-            
-          </li>
-        
-          <li>
-            
-            	<a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
-            
-          </li>
-        
-    </ul>
-</div>
-
-  
-
-
-  <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
-</div>
-
-  <div class="weiboshow">
-  <p class="asidetitle">新浪微博</p>
-    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=null&verifier=b3593ceb&dpc=1"></iframe>
-</div>
-
-
-</aside>
-</div>
     </div>
     <footer><div id="footer">
   <div class="footer-grid">

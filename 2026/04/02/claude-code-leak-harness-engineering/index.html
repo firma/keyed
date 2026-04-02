@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
-  <body>
+  <body class="page-post">
     <header>
       
 <div id="header-outer">
@@ -81,24 +81,40 @@
 
     </header>
     <div id="container">
-      <article class="article-shell">
-  <div class="article-eyebrow">Keyed AI · Editorial</div>
-  <h1 class="article-title">Claude Code 泄漏事件，真正泄漏给行业的是什么？</h1>
-  <div class="article-submeta">
-    <span>2026-04-02</span>
-    
-      <span>AI资讯</span>
-    
-      <span>技术架构</span>
-    
-      <span>行业观察</span>
-    
-    
-      <span>6 tags</span>
-    
+      <article class="article-shell article-shell-post">
+  <div class="article-topline">
+    <div class="article-eyebrow">小触AI · Editorial</div>
+    <a class="article-home-link" href="/">Back to Index</a>
   </div>
-  <div class="article-content" itemprop="articleBody">
-    <p><img src="/images/2026/04/claude-code-leak-cover.svg" alt=""></p>
+
+  <header class="article-header-block">
+    <h1 class="article-title">Claude Code 泄漏事件，真正泄漏给行业的是什么？</h1>
+    <div class="article-submeta">
+      <span>2026-04-02</span>
+      
+        <span>AI资讯</span>
+      
+        <span>技术架构</span>
+      
+        <span>行业观察</span>
+      
+      
+        <span>6 tags</span>
+      
+    </div>
+  </header>
+
+  
+  
+    <div class="article-hero-image-wrap">
+      <img class="article-hero-image" src="/images/2026/04/claude-code-leak-cover.svg" alt="Claude Code 泄漏事件，真正泄漏给行业的是什么？">
+    </div>
+  
+
+  <div class="article-layout-grid">
+    <main class="article-main-column">
+      <div class="article-content" itemprop="articleBody">
+        
 <p>最近 Claude Code 泄漏事件在开发者圈里迅速发酵。表面上看，这像是一场典型的软件发布事故：源代码或相关调试映射文件意外暴露，外界开始围观、拆解、转述、放大。但如果只把它理解成一次“代码被看见了”的新闻，其实低估了这件事的价值。</p>
 <p>真正值得行业认真看的，不只是泄漏本身，而是它让外界第一次较完整地看到：<strong>一个高能力 AI coding agent 产品，到底是如何被工程化地组织起来的。</strong></p>
 <p>对于过去一年一直在做 AI Agent、AI 编程、终端助手、开发者工作流产品的人来说，这件事的重要性甚至不在八卦层面，而在方法论层面。因为它把一个事实彻底摆到了台面上：</p>
@@ -271,205 +287,52 @@
 <li>开发者对 Claude Code 泄漏结构与工程实现的公开技术拆解</li>
 </ul>
 
+      </div>
+    </main>
+
+    <aside class="article-side-column">
+      <section class="article-side-card">
+        <p class="article-side-title">Article Meta</p>
+        <div class="article-side-list">
+          <div>
+            <span>Published</span>
+            <strong>2026-04-02</strong>
+          </div>
+          
+          <div>
+            <span>Category</span>
+            <strong>AI资讯 · 技术架构 · 行业观察</strong>
+          </div>
+          
+          
+          <div>
+            <span>Tags</span>
+            <strong>Anthropic · Agent · AI编程 · Claude Code · Harness Engineering · 架构设计</strong>
+          </div>
+          
+        </div>
+      </section>
+
+      
+    </aside>
   </div>
+
   <div class="article-footer-nav">
     
-      <a href="/">← 今天的 AI 生态，正在把行业推向哪一个新阶段？</a>
+      <a href="/2026/04/02/ai-ecosystem-frontier-2026-04-02/">
+        <span>上一篇</span>
+        <strong>今天的 AI 生态，正在把行业推向哪一个新阶段？</strong>
+      </a>
     
     
-      <a href="/">从 Polymarket 看 AI 行业预期：预测市场正在如何给模型与产品竞争定价 →</a>
+      <a href="/2026/04/02/polymarket-ai-pricing/">
+        <span>下一篇</span>
+        <strong>从 Polymarket 看 AI 行业预期：预测市场正在如何给模型与产品竞争定价</strong>
+      </a>
     
   </div>
 </article>
 
-      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
-
-  <div id="toc" class="toc-aside">
-  <strong class="toc-title">文章目录</strong>
- 
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#导读"><span class="toc-number">1.</span> <span class="toc-text">导读</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#核心要点"><span class="toc-number">2.</span> <span class="toc-text">核心要点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#这次事件泄漏出来的，不只是代码"><span class="toc-number">3.</span> <span class="toc-text">这次事件泄漏出来的，不只是代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么-Prompt-不是核心壁垒，Harness-才是"><span class="toc-number">4.</span> <span class="toc-text">为什么 Prompt 不是核心壁垒，Harness 才是</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Harness-Engineering-标准设计，应该包含什么"><span class="toc-number">5.</span> <span class="toc-text">Harness Engineering 标准设计，应该包含什么</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-控制平面：Prompt-是控制，不是人格"><span class="toc-number">5.1.</span> <span class="toc-text">1. 控制平面：Prompt 是控制，不是人格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Query-Loop：代理系统的心跳"><span class="toc-number">5.2.</span> <span class="toc-text">2. Query Loop：代理系统的心跳</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-权限与中断：为什么-Agent-不能直接碰世界"><span class="toc-number">5.3.</span> <span class="toc-text">3. 权限与中断：为什么 Agent 不能直接碰世界</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-上下文治理：Memory-不是越多越好"><span class="toc-number">5.4.</span> <span class="toc-text">4. 上下文治理：Memory 不是越多越好</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-错误恢复：把失败当成常态来设计"><span class="toc-number">5.5.</span> <span class="toc-text">5. 错误恢复：把失败当成常态来设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-多代理与验证：用结构来对冲模型不稳定性"><span class="toc-number">5.6.</span> <span class="toc-text">6. 多代理与验证：用结构来对冲模型不稳定性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对-AI-编程工具行业来说，这意味着什么"><span class="toc-number">6.</span> <span class="toc-text">对 AI 编程工具行业来说，这意味着什么</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#短期看：认知差被迅速抹平"><span class="toc-number">6.1.</span> <span class="toc-text">短期看：认知差被迅速抹平</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#中期看：产品竞争会转向系统设计竞争"><span class="toc-number">6.2.</span> <span class="toc-text">中期看：产品竞争会转向系统设计竞争</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#长期看：前沿-AI-工具会越来越像操作系统层产品"><span class="toc-number">6.3.</span> <span class="toc-text">长期看：前沿 AI 工具会越来越像操作系统层产品</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#我对前沿-AI-工具行业的看法"><span class="toc-number">7.</span> <span class="toc-text">我对前沿 AI 工具行业的看法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-模型会继续进步，但模型差距不再解释全部竞争格局"><span class="toc-number">7.1.</span> <span class="toc-text">1. 模型会继续进步，但模型差距不再解释全部竞争格局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Harness-会成为-AI-产品经理和工程负责人的核心能力"><span class="toc-number">7.2.</span> <span class="toc-text">2. Harness 会成为 AI 产品经理和工程负责人的核心能力</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-安全与可控性会从“成本项”变成“销售项”"><span class="toc-number">7.3.</span> <span class="toc-text">3. 安全与可控性会从“成本项”变成“销售项”</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-开发者工具会率先完成这轮架构升级"><span class="toc-number">7.4.</span> <span class="toc-text">4. 开发者工具会率先完成这轮架构升级</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-下一批头部产品，竞争的是“稳定自治”而不是“惊艳演示”"><span class="toc-number">7.5.</span> <span class="toc-text">5. 下一批头部产品，竞争的是“稳定自治”而不是“惊艳演示”</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结语"><span class="toc-number">8.</span> <span class="toc-text">结语</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考信息"><span class="toc-number">9.</span> <span class="toc-text">参考信息</span></a></li></ol>
- 
-  </div>
-
-<div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
-<aside class="clearfix">
-
-  
-
-
-  
-<div class="categorieslist">
-	<p class="asidetitle">分类</p>
-		<ul>
-		
-		  
-			<li><a href="/categories/技术架构/AI产品/" title="AI产品">AI产品<sup>1</sup></a></li>
-		  
-		
-		  
-			<li><a href="/categories/AI快讯/AI动态/" title="AI动态">AI动态<sup>12</sup></a></li>
-		  
-		
-		  
-			<li><a href="/categories/AI快讯/" title="AI快讯">AI快讯<sup>12</sup></a></li>
-		  
-		
-		  
-			<li><a href="/categories/AI资讯/" title="AI资讯">AI资讯<sup>3</sup></a></li>
-		  
-		
-		  
-			<li><a href="/categories/技术架构/" title="技术架构">技术架构<sup>1</sup></a></li>
-		  
-		
-		  
-			<li><a href="/categories/AI资讯/技术架构/" title="技术架构">技术架构<sup>1</sup></a></li>
-		  
-		
-		  
-			<li><a href="/categories/AI资讯/行业观察/技术架构/" title="技术架构">技术架构<sup>1</sup></a></li>
-		  
-		
-		  
-			<li><a href="/categories/AI资讯/行业观察/" title="行业观察">行业观察<sup>2</sup></a></li>
-		  
-		
-		  
-			<li><a href="/categories/AI资讯/技术架构/行业观察/" title="行业观察">行业观察<sup>1</sup></a></li>
-		  
-		
-		  
-			<li><a href="/categories/技术架构/AI产品/行业观察/" title="行业观察">行业观察<sup>1</sup></a></li>
-		  
-		
-		</ul>
-</div>
-
-
-  
-<div class="tagslist">
-	<p class="asidetitle">标签</p>
-		<ul class="clearfix">
-		
-			
-				<li><a href="/tags/AI/" title="AI">AI<sup>14</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/快讯/" title="快讯">快讯<sup>12</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/资讯/" title="资讯">资讯<sup>12</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Anthropic/" title="Anthropic">Anthropic<sup>3</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/OpenAI/" title="OpenAI">OpenAI<sup>2</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Agent/" title="Agent">Agent<sup>2</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/AI编程/" title="AI编程">AI编程<sup>2</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Claude-Code/" title="Claude Code">Claude Code<sup>2</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Harness-Engineering/" title="Harness Engineering">Harness Engineering<sup>2</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Cursor/" title="Cursor">Cursor<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Xcode/" title="Xcode">Xcode<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/AI生态/" title="AI生态">AI生态<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/架构设计/" title="架构设计">架构设计<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/AI-Agent/" title="AI Agent">AI Agent<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/系统设计/" title="系统设计">系统设计<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/多代理/" title="多代理">多代理<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/AI工具/" title="AI工具">AI工具<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Polymarket/" title="Polymarket">Polymarket<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/预测市场/" title="预测市场">预测市场<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/概率/" title="概率">概率<sup>1</sup></a></li>
-			
-		
-		</ul>
-</div>
-
-
-  <div class="linkslist">
-  <p class="asidetitle">友情链接</p>
-    <ul>
-        
-          <li>
-            
-            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
-            
-          </li>
-        
-          <li>
-            
-            	<a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
-            
-          </li>
-        
-    </ul>
-</div>
-
-  
-
-
-  <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
-</div>
-
-  <div class="weiboshow">
-  <p class="asidetitle">新浪微博</p>
-    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=null&verifier=b3593ceb&dpc=1"></iframe>
-</div>
-
-
-</aside>
-</div>
     </div>
     <footer><div id="footer">
   <div class="footer-grid">
