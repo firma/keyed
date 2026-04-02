@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#08111f"/><stop offset="100%" stop-color="#132b4f"/></linearGradient>
+  <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0f172a" stop-opacity="0.94"/><stop offset="100%" stop-color="#111827" stop-opacity="0.92"/></linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="90" y="80" width="1420" height="740" rx="36" fill="url(#panel)" stroke="#60a5fa" stroke-opacity="0.25"/>
+<text x="130" y="190" fill="#eaf2ff" font-size="62" font-family="Arial, Helvetica, sans-serif" font-weight="700">今天的 AI 生态，正在把行业推向哪一个新阶段？</text>
+<text x="130" y="255" fill="#bfdbfe" font-size="34" font-family="Arial, Helvetica, sans-serif">从模型竞赛，走向 Agent Runtime、开发者工作台与企业级治理竞争</text>
+<rect x="130" y="335" width="400" height="300" rx="24" fill="#0b1220" stroke="#38bdf8" stroke-opacity="0.4"/>
+<text x="165" y="390" fill="#67e8f9" font-size="28" font-family="Arial, Helvetica, sans-serif">今日信号</text>
+<text x="165" y="450" fill="#f8fafc" font-size="30" font-family="Arial, Helvetica, sans-serif">• OpenAI 强化 Codex</text>
+<text x="165" y="500" fill="#f8fafc" font-size="30" font-family="Arial, Helvetica, sans-serif">• Claude Code 架构外溢</text>
+<text x="165" y="550" fill="#f8fafc" font-size="30" font-family="Arial, Helvetica, sans-serif">• Cursor 压低 agent 成本</text>
+<text x="165" y="600" fill="#f8fafc" font-size="30" font-family="Arial, Helvetica, sans-serif">• Xcode 接入 MCP 与代理</text>
+<rect x="580" y="335" width="790" height="300" rx="24" fill="#07111f" stroke="#22d3ee" stroke-opacity="0.35"/>
+<text x="620" y="390" fill="#67e8f9" font-size="28" font-family="Arial, Helvetica, sans-serif">行业重心迁移</text>
+<text x="620" y="450" fill="#e2e8f0" font-size="34" font-family="Arial, Helvetica, sans-serif">Model → Agent → Runtime → Governance</text>
+<text x="620" y="515" fill="#cbd5e1" font-size="28" font-family="Arial, Helvetica, sans-serif">单点模型能力不再解释全部竞争力</text>
+<text x="620" y="565" fill="#cbd5e1" font-size="28" font-family="Arial, Helvetica, sans-serif">未来护城河来自执行、权限、记忆、恢复、多代理</text>
+<text x="130" y="730" fill="#93c5fd" font-size="26" font-family="Arial, Helvetica, sans-serif">Keyed AI · Daily Frontier Report</text>
+</svg>
