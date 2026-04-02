@@ -1,0 +1,736 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>Harness Engineering 标准设计：下一代 AI Agent 产品为什么会长成一套运行时系统 | Keyed AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="keyed">
+    
+
+    
+    <meta name="description" content="在过去两年，AI 产品行业有一种很常见的误判：很多人把“模型能力提升”直接等同于“产品能力提升”。
+于是我们看到大量产品讨论都集中在模型层：谁的 benchmark 更高、谁的上下文更长、谁的价格更低、谁的推理更强。
+但当 AI 真正进入工作流、进入终端、进入仓库、进入团队协作之后，问题开始完全不一样。
+企业和开发者真正关心的，已经不是“模型回答得聪不聪明”，而是：
+
+它能不能稳定地完成一个复杂">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Harness Engineering 标准设计：下一代 AI Agent 产品为什么会长成一套运行时系统">
+<meta property="og:url" content="https://keyed.cn/2026/04/02/harness-engineering-standard-architecture/index.html">
+<meta property="og:site_name" content="Keyed AI">
+<meta property="og:description" content="在过去两年，AI 产品行业有一种很常见的误判：很多人把“模型能力提升”直接等同于“产品能力提升”。
+于是我们看到大量产品讨论都集中在模型层：谁的 benchmark 更高、谁的上下文更长、谁的价格更低、谁的推理更强。
+但当 AI 真正进入工作流、进入终端、进入仓库、进入团队协作之后，问题开始完全不一样。
+企业和开发者真正关心的，已经不是“模型回答得聪不聪明”，而是：
+
+它能不能稳定地完成一个复杂">
+<meta property="og:image" content="https://keyed.cn/images/2026/04/harness-engineering-architecture.svg">
+<meta property="og:updated_time" content="2026-04-02T05:35:02.038Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Harness Engineering 标准设计：下一代 AI Agent 产品为什么会长成一套运行时系统">
+<meta name="twitter:description" content="在过去两年，AI 产品行业有一种很常见的误判：很多人把“模型能力提升”直接等同于“产品能力提升”。
+于是我们看到大量产品讨论都集中在模型层：谁的 benchmark 更高、谁的上下文更长、谁的价格更低、谁的推理更强。
+但当 AI 真正进入工作流、进入终端、进入仓库、进入团队协作之后，问题开始完全不一样。
+企业和开发者真正关心的，已经不是“模型回答得聪不聪明”，而是：
+
+它能不能稳定地完成一个复杂">
+<meta name="twitter:image" content="https://keyed.cn/images/2026/04/harness-engineering-architecture.svg">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Keyed AI" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Keyed AI" title="Keyed AI"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Keyed AI">Keyed AI</a></h1>
+				<h2 class="blog-motto">AI 高质量快讯</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:keyed.cn">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2026/04/02/harness-engineering-standard-architecture/" title="Harness Engineering 标准设计：下一代 AI Agent 产品为什么会长成一套运行时系统" itemprop="url">Harness Engineering 标准设计：下一代 AI Agent 产品为什么会长成一套运行时系统</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="keyed" target="_blank" itemprop="author">keyed</a>
+		
+  <p class="article-time">
+    <time datetime="2026-04-02T06:10:00.000Z" itemprop="datePublished"> 发表于 2026-04-02</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#导读"><span class="toc-number">1.</span> <span class="toc-text">导读</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#核心要点"><span class="toc-number">2.</span> <span class="toc-text">核心要点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是-Harness-Engineering"><span class="toc-number">3.</span> <span class="toc-text">什么是 Harness Engineering</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一套标准设计，应至少包含六层架构"><span class="toc-number">4.</span> <span class="toc-text">一套标准设计，应至少包含六层架构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、控制平面：Prompt-是系统政策层"><span class="toc-number">4.1.</span> <span class="toc-text">一、控制平面：Prompt 是系统政策层</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、查询循环：让-Agent-真正“持续工作”"><span class="toc-number">4.2.</span> <span class="toc-text">二、查询循环：让 Agent 真正“持续工作”</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、工具与权限：把行动能力装进笼子里"><span class="toc-number">4.3.</span> <span class="toc-text">三、工具与权限：把行动能力装进笼子里</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四、上下文治理：Memory-是预算制度，不是仓库"><span class="toc-number">4.4.</span> <span class="toc-text">四、上下文治理：Memory 是预算制度，不是仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#五、错误恢复：生产系统必须允许失败"><span class="toc-number">4.5.</span> <span class="toc-text">五、错误恢复：生产系统必须允许失败</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#六、多代理与验证：把复杂度拆开，把风险分散"><span class="toc-number">4.6.</span> <span class="toc-text">六、多代理与验证：把复杂度拆开，把风险分散</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Harness-Engineering-为什么会成为行业分水岭"><span class="toc-number">5.</span> <span class="toc-text">Harness Engineering 为什么会成为行业分水岭</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#第一层：模型接入型产品"><span class="toc-number">5.1.</span> <span class="toc-text">第一层：模型接入型产品</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第二层：工具增强型产品"><span class="toc-number">5.2.</span> <span class="toc-text">第二层：工具增强型产品</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第三层：运行时系统型产品"><span class="toc-number">5.3.</span> <span class="toc-text">第三层：运行时系统型产品</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#前沿-AI-工具行业，未来会往哪里走"><span class="toc-number">6.</span> <span class="toc-text">前沿 AI 工具行业，未来会往哪里走</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-开发者工具会继续跑在最前面"><span class="toc-number">6.1.</span> <span class="toc-text">1. 开发者工具会继续跑在最前面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-企业买单的核心会从“更聪明”转向“更可控”"><span class="toc-number">6.2.</span> <span class="toc-text">2. 企业买单的核心会从“更聪明”转向“更可控”</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-工具协议与运行时标准会变得越来越重要"><span class="toc-number">6.3.</span> <span class="toc-text">3. 工具协议与运行时标准会变得越来越重要</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-多代理将从“实验特性”变成“默认能力”"><span class="toc-number">6.4.</span> <span class="toc-text">4. 多代理将从“实验特性”变成“默认能力”</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-AI-工具会越来越像“认知执行基础设施”"><span class="toc-number">6.5.</span> <span class="toc-text">5. AI 工具会越来越像“认知执行基础设施”</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结语"><span class="toc-number">7.</span> <span class="toc-text">结语</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考信息"><span class="toc-number">8.</span> <span class="toc-text">参考信息</span></a></li></ol>
+		
+		</div>
+		
+		<p><img src="/images/2026/04/harness-engineering-architecture.svg" alt=""></p>
+<p>在过去两年，AI 产品行业有一种很常见的误判：很多人把“模型能力提升”直接等同于“产品能力提升”。</p>
+<p>于是我们看到大量产品讨论都集中在模型层：谁的 benchmark 更高、谁的上下文更长、谁的价格更低、谁的推理更强。</p>
+<p>但当 AI 真正进入工作流、进入终端、进入仓库、进入团队协作之后，问题开始完全不一样。</p>
+<p>企业和开发者真正关心的，已经不是“模型回答得聪不聪明”，而是：</p>
+<ul>
+<li>它能不能稳定地完成一个复杂任务</li>
+<li>它能不能在权限边界内行动</li>
+<li>它能不能在长上下文里不失真</li>
+<li>它出错之后能不能恢复</li>
+<li>它能不能被团队制度化部署</li>
+<li>它能不能和其他代理、工具、人类一起协作</li>
+</ul>
+<p>这时，真正决定产品形态的，就不是模型本身，而是 Harness Engineering。</p>
+<h2 id="导读"><a href="#导读" class="headerlink" title="导读"></a>导读</h2><p>所谓 Harness Engineering，并不是一个时髦的新名词，它更像是 AI Agent 时代的软件工程必修课。</p>
+<p>它讨论的不是“模型会不会”，而是“模型被接入真实世界之后，系统应该如何把它约束成一个可靠执行体”。</p>
+<p>如果说大模型提供的是认知能力，那么 Harness 提供的就是：</p>
+<ul>
+<li>控制能力</li>
+<li>执行能力</li>
+<li>边界能力</li>
+<li>恢复能力</li>
+<li>协作能力</li>
+<li>制度化能力</li>
+</ul>
+<p>也正因为如此，未来真正领先的 AI Agent 产品，大概率不会只是一个聊天框，也不会只是一个 IDE 插件，而会是一整套可编排、可审计、可恢复、可协作的运行时系统。</p>
+<h2 id="核心要点"><a href="#核心要点" class="headerlink" title="核心要点"></a>核心要点</h2><ul>
+<li>Harness Engineering 的核心任务，是把不稳定的模型输出约束进稳定的工程系统。</li>
+<li>标准化设计至少应覆盖六层：控制平面、查询循环、工具与权限、上下文治理、错误恢复、多代理与验证。</li>
+<li>对企业和开发者而言，真正可用的 AI Agent 产品，价值核心是“可控自治”，而不是单次演示中的惊艳效果。</li>
+<li>未来 AI 工具行业的竞争，将越来越像运行时平台竞争，而不是单纯模型能力竞争。</li>
+<li>开发者工具、终端 Agent、工作流自动化，将是 Harness Engineering 最先成熟的三个商业场景。</li>
+</ul>
+<h2 id="什么是-Harness-Engineering"><a href="#什么是-Harness-Engineering" class="headerlink" title="什么是 Harness Engineering"></a>什么是 Harness Engineering</h2><p>可以把 Harness 理解为 AI Agent 的“运行时骨架”。</p>
+<p>模型本身像大脑，但没有骨架、神经、约束和反射系统，大脑并不能直接变成一个可靠的行动者。</p>
+<p>Harness 负责回答以下问题：</p>
+<ul>
+<li>模型何时推理，何时行动</li>
+<li>它能调用哪些工具</li>
+<li>哪些动作要审批，哪些动作可直接执行</li>
+<li>它的记忆如何组织，如何避免污染</li>
+<li>会话如何持久化，如何恢复</li>
+<li>多个代理之间如何分工与验证</li>
+<li>团队如何把这些规则沉淀成长期制度</li>
+</ul>
+<p>所以 Harness Engineering 的本质，不是做一个更酷的 AI，而是做一个<strong>不会轻易失控的 AI 系统</strong>。</p>
+<h2 id="一套标准设计，应至少包含六层架构"><a href="#一套标准设计，应至少包含六层架构" class="headerlink" title="一套标准设计，应至少包含六层架构"></a>一套标准设计，应至少包含六层架构</h2><h3 id="一、控制平面：Prompt-是系统政策层"><a href="#一、控制平面：Prompt-是系统政策层" class="headerlink" title="一、控制平面：Prompt 是系统政策层"></a>一、控制平面：Prompt 是系统政策层</h3><p>很多人对 Prompt 的理解还停留在“告诉模型怎么说话”。</p>
+<p>但在成熟 Agent 系统里，Prompt 的作用更接近控制平面：它定义系统边界，而不是人格表演。</p>
+<p>一个标准控制平面通常应包含：</p>
+<ul>
+<li>角色与任务边界</li>
+<li>工具调用规则</li>
+<li>风险升级路径</li>
+<li>预算与成本限制</li>
+<li>输出风格与交付标准</li>
+<li>记忆写入约束</li>
+<li>用户确认与中断条件</li>
+<li>子代理调用原则</li>
+</ul>
+<p>Prompt 不是装饰层，而是控制策略入口。</p>
+<h3 id="二、查询循环：让-Agent-真正“持续工作”"><a href="#二、查询循环：让-Agent-真正“持续工作”" class="headerlink" title="二、查询循环：让 Agent 真正“持续工作”"></a>二、查询循环：让 Agent 真正“持续工作”</h3><p>Agent 和 Chatbot 的本质差别，在于循环。</p>
+<p>一个聊天机器人大多是一轮输入、一轮输出；一个 Agent 则必须不断重复：</p>
+<p><strong>理解任务 → 形成计划 → 调用工具 → 读取结果 → 更新状态 → 决定下一步</strong></p>
+<p>这个循环就是 Query Loop。它是整个系统的心跳。</p>
+<p>好的 Query Loop 要解决四个关键问题：</p>
+<ol>
+<li><strong>状态推进</strong>：任务如何逐步接近完成，而不是反复空转。</li>
+<li><strong>决策切换</strong>：什么时候该继续推理，什么时候该执行工具。</li>
+<li><strong>异常管理</strong>：工具失败、权限被拒、上下文不足时怎么办。</li>
+<li><strong>停止条件</strong>：什么时候应该结束，而不是无穷循环。</li>
+</ol>
+<p>没有可靠 Query Loop，就没有真正的 Agent。</p>
+<h3 id="三、工具与权限：把行动能力装进笼子里"><a href="#三、工具与权限：把行动能力装进笼子里" class="headerlink" title="三、工具与权限：把行动能力装进笼子里"></a>三、工具与权限：把行动能力装进笼子里</h3><p>AI Agent 一旦能读文件、改代码、跑命令、调接口，它就不再只是“生成内容”，而是在执行现实动作。</p>
+<p>这意味着权限治理必须前置，而不能事后补洞。</p>
+<p>一套标准设计通常包括：</p>
+<ul>
+<li>工具清单与能力边界</li>
+<li>路径级或参数级权限判断</li>
+<li>allow / ask / deny 三段式策略</li>
+<li>人工审批中断点</li>
+<li>沙箱、隔离目录或受限执行环境</li>
+<li>审计日志与调用记录</li>
+<li>高风险命令黑名单与模式识别</li>
+</ul>
+<p>这层设计的核心原则是：</p>
+<blockquote>
+<p><strong>Agent 可以有行动能力，但不能默认拥有无限行动权。</strong></p>
+</blockquote>
+<h3 id="四、上下文治理：Memory-是预算制度，不是仓库"><a href="#四、上下文治理：Memory-是预算制度，不是仓库" class="headerlink" title="四、上下文治理：Memory 是预算制度，不是仓库"></a>四、上下文治理：Memory 是预算制度，不是仓库</h3><p>大模型上下文窗口再长，也不意味着“把一切都喂进去”是正确策略。</p>
+<p>真正成熟的系统，会把记忆治理当成一种预算制度，而不是堆积制度。</p>
+<p>比较理想的结构通常是：</p>
+<ul>
+<li><strong>常驻索引层</strong>：保留当前最重要的事实、文件位置、任务状态</li>
+<li><strong>主题知识层</strong>：分门别类记录项目结构、偏好、规则、历史决策</li>
+<li><strong>原始观察层</strong>：保留日志与工具结果，但按需检索，不整段常驻</li>
+</ul>
+<p>这能解决三个长期难题：</p>
+<ol>
+<li>上下文膨胀</li>
+<li>错误信息反复污染后续推理</li>
+<li>成本和延迟失控</li>
+</ol>
+<p>Memory 设计得好，Agent 才能在长任务中保持清醒。</p>
+<h3 id="五、错误恢复：生产系统必须允许失败"><a href="#五、错误恢复：生产系统必须允许失败" class="headerlink" title="五、错误恢复：生产系统必须允许失败"></a>五、错误恢复：生产系统必须允许失败</h3><p>几乎所有 AI Agent 产品的早期原型，都有一个共同问题：一旦某一步出错，整个任务就碎了。</p>
+<p>但真实工作流不是这样。真实世界中，失败、打断、误判、超时、审批取消，都是常态。</p>
+<p>因此标准设计必须内建恢复能力：</p>
+<ul>
+<li>文件写入失败后可重试或回滚</li>
+<li>批处理任务可从上次检查点继续</li>
+<li>工具异常不会直接让整轮状态失真</li>
+<li>会话可持久化并恢复上下文</li>
+<li>不确定信息可被标记和复核</li>
+</ul>
+<p>错误恢复不是附加模块，而是生产级 Agent 的基础设施。</p>
+<h3 id="六、多代理与验证：把复杂度拆开，把风险分散"><a href="#六、多代理与验证：把复杂度拆开，把风险分散" class="headerlink" title="六、多代理与验证：把复杂度拆开，把风险分散"></a>六、多代理与验证：把复杂度拆开，把风险分散</h3><p>随着任务复杂度上升，单代理模式会越来越吃力。因为它既要理解任务、又要操作工具、又要校验结果、又要维护上下文，最终非常容易在高压下失真。</p>
+<p>多代理架构的价值就在这里：</p>
+<ul>
+<li>主代理负责规划与汇总</li>
+<li>执行代理处理具体子任务</li>
+<li>验证代理负责复核关键结论</li>
+<li>研究代理负责信息检索与证据整理</li>
+<li>代理之间通过明确协议协作，而不是共享一锅混乱上下文</li>
+</ul>
+<p>这会把模型不稳定性从“单点灾难”变成“局部可控风险”。</p>
+<h2 id="Harness-Engineering-为什么会成为行业分水岭"><a href="#Harness-Engineering-为什么会成为行业分水岭" class="headerlink" title="Harness Engineering 为什么会成为行业分水岭"></a>Harness Engineering 为什么会成为行业分水岭</h2><p>我认为接下来 AI 工具行业会出现一个很明显的分层。</p>
+<h3 id="第一层：模型接入型产品"><a href="#第一层：模型接入型产品" class="headerlink" title="第一层：模型接入型产品"></a>第一层：模型接入型产品</h3><p>这类产品主要是把模型包一层 UI 或工作流，短期能跑得很快，也容易做出 demo，但稳定性和可扩展性通常有限。</p>
+<h3 id="第二层：工具增强型产品"><a href="#第二层：工具增强型产品" class="headerlink" title="第二层：工具增强型产品"></a>第二层：工具增强型产品</h3><p>它们开始加入文件、终端、搜索、数据库、自动化流程，产品能力明显增强，但如果没有严格 runtime 设计，仍然容易在复杂任务下失控。</p>
+<h3 id="第三层：运行时系统型产品"><a href="#第三层：运行时系统型产品" class="headerlink" title="第三层：运行时系统型产品"></a>第三层：运行时系统型产品</h3><p>这类产品的重点已经不是“接入什么模型”，而是“如何组织模型、工具、权限、记忆、恢复与多代理”。</p>
+<p>我认为，真正能穿越未来两三年竞争周期的，大概率会是第三层。</p>
+<p>原因很简单：模型能力会扩散，界面设计会被模仿，但<strong>运行时工程能力的复制成本最高，且最贴近真实生产场景。</strong></p>
+<h2 id="前沿-AI-工具行业，未来会往哪里走"><a href="#前沿-AI-工具行业，未来会往哪里走" class="headerlink" title="前沿 AI 工具行业，未来会往哪里走"></a>前沿 AI 工具行业，未来会往哪里走</h2><p>结合当前趋势，我对这个行业的判断是这样的。</p>
+<h3 id="1-开发者工具会继续跑在最前面"><a href="#1-开发者工具会继续跑在最前面" class="headerlink" title="1. 开发者工具会继续跑在最前面"></a>1. 开发者工具会继续跑在最前面</h3><p>因为代码、终端、Git、测试、CI/CD 这些环境天然结构化、可验证、可回滚，非常适合 Agent 深入接管。所以 AI 编程与工程自动化，会继续是 Harness Engineering 最快商业化的领域。</p>
+<h3 id="2-企业买单的核心会从“更聪明”转向“更可控”"><a href="#2-企业买单的核心会从“更聪明”转向“更可控”" class="headerlink" title="2. 企业买单的核心会从“更聪明”转向“更可控”"></a>2. 企业买单的核心会从“更聪明”转向“更可控”</h3><p>企业不是为了体验惊艳买单，而是为了降低成本、提升效率、控制风险买单。谁能把权限、审计、恢复、隔离、多代理编排做扎实，谁更容易真正进入组织级采购。</p>
+<h3 id="3-工具协议与运行时标准会变得越来越重要"><a href="#3-工具协议与运行时标准会变得越来越重要" class="headerlink" title="3. 工具协议与运行时标准会变得越来越重要"></a>3. 工具协议与运行时标准会变得越来越重要</h3><p>未来行业会越来越依赖统一的工具接入协议、消息协议、记忆层结构、审批流程、会话恢复机制。因为没有标准，系统很难规模化，也很难跨团队复用。</p>
+<h3 id="4-多代理将从“实验特性”变成“默认能力”"><a href="#4-多代理将从“实验特性”变成“默认能力”" class="headerlink" title="4. 多代理将从“实验特性”变成“默认能力”"></a>4. 多代理将从“实验特性”变成“默认能力”</h3><p>今天很多团队还把多代理当作炫技功能，但未来它会成为高复杂任务的默认架构。尤其是在研究、编码、验证、文档、运营自动化这些长链路任务中，多代理几乎不可避免。</p>
+<h3 id="5-AI-工具会越来越像“认知执行基础设施”"><a href="#5-AI-工具会越来越像“认知执行基础设施”" class="headerlink" title="5. AI 工具会越来越像“认知执行基础设施”"></a>5. AI 工具会越来越像“认知执行基础设施”</h3><p>未来最强的 AI 工具，并不只是某个单点应用，而会成为组织内部的一层通用执行基础设施。它既连接模型，也连接系统、权限、知识库与业务流程。</p>
+<p>谁做成这层基础设施，谁就不只是做了一个工具，而是定义了新的工作操作面。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>如果把过去两年的 AI 产品演进总结成一句话，大概是：</p>
+<blockquote>
+<p>从“模型能做什么”，走向“系统允许模型怎样稳定地做事”。</p>
+</blockquote>
+<p>这背后对应的，就是 Harness Engineering 的崛起。</p>
+<p>它不是边角料，不是实现细节，也不是只属于少数底层工程师的话题。它会越来越成为 AI 产品负责人、技术架构师、开发者工具团队、企业自动化团队共同面对的主战场。</p>
+<p>未来的顶级 AI Agent 产品，拼的不是谁更像人，而是谁更像一个可靠系统。</p>
+<p>而一旦行业进入这个阶段，真正的赢家，往往不是最会讲故事的人，而是最会把模型装进制度与运行时的人。</p>
+<h2 id="参考信息"><a href="#参考信息" class="headerlink" title="参考信息"></a>参考信息</h2><ul>
+<li>Harness Engineering：Claude Code 设计指南（book1）</li>
+<li>Claude Code 相关公开技术拆解与行业讨论</li>
+<li>AI Agent、终端工具与企业工作流产品的近期演进趋势</li>
+</ul>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/技术架构/">技术架构</a>►<a class="article-category-link" href="/categories/技术架构/AI产品/">AI产品</a>►<a class="article-category-link" href="/categories/技术架构/AI产品/行业观察/">行业观察</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Claude-Code/">Claude Code</a><a href="/tags/Harness-Engineering/">Harness Engineering</a><a href="/tags/AI-Agent/">AI Agent</a><a href="/tags/系统设计/">系统设计</a><a href="/tags/多代理/">多代理</a><a href="/tags/AI工具/">AI工具</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="https://keyed.cn/2026/04/02/harness-engineering-standard-architecture/" data-title="Harness Engineering 标准设计：下一代 AI Agent 产品为什么会长成一套运行时系统 | Keyed AI" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2026/04/02/claude-code-leak-harness-engineering/"  title="Claude Code 泄漏事件，真正泄漏给行业的是什么？">
+ <strong>下一篇：</strong><br/> 
+ <span>Claude Code 泄漏事件，真正泄漏给行业的是什么？
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#导读"><span class="toc-number">1.</span> <span class="toc-text">导读</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#核心要点"><span class="toc-number">2.</span> <span class="toc-text">核心要点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是-Harness-Engineering"><span class="toc-number">3.</span> <span class="toc-text">什么是 Harness Engineering</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一套标准设计，应至少包含六层架构"><span class="toc-number">4.</span> <span class="toc-text">一套标准设计，应至少包含六层架构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、控制平面：Prompt-是系统政策层"><span class="toc-number">4.1.</span> <span class="toc-text">一、控制平面：Prompt 是系统政策层</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、查询循环：让-Agent-真正“持续工作”"><span class="toc-number">4.2.</span> <span class="toc-text">二、查询循环：让 Agent 真正“持续工作”</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、工具与权限：把行动能力装进笼子里"><span class="toc-number">4.3.</span> <span class="toc-text">三、工具与权限：把行动能力装进笼子里</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四、上下文治理：Memory-是预算制度，不是仓库"><span class="toc-number">4.4.</span> <span class="toc-text">四、上下文治理：Memory 是预算制度，不是仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#五、错误恢复：生产系统必须允许失败"><span class="toc-number">4.5.</span> <span class="toc-text">五、错误恢复：生产系统必须允许失败</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#六、多代理与验证：把复杂度拆开，把风险分散"><span class="toc-number">4.6.</span> <span class="toc-text">六、多代理与验证：把复杂度拆开，把风险分散</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Harness-Engineering-为什么会成为行业分水岭"><span class="toc-number">5.</span> <span class="toc-text">Harness Engineering 为什么会成为行业分水岭</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#第一层：模型接入型产品"><span class="toc-number">5.1.</span> <span class="toc-text">第一层：模型接入型产品</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第二层：工具增强型产品"><span class="toc-number">5.2.</span> <span class="toc-text">第二层：工具增强型产品</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第三层：运行时系统型产品"><span class="toc-number">5.3.</span> <span class="toc-text">第三层：运行时系统型产品</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#前沿-AI-工具行业，未来会往哪里走"><span class="toc-number">6.</span> <span class="toc-text">前沿 AI 工具行业，未来会往哪里走</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-开发者工具会继续跑在最前面"><span class="toc-number">6.1.</span> <span class="toc-text">1. 开发者工具会继续跑在最前面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-企业买单的核心会从“更聪明”转向“更可控”"><span class="toc-number">6.2.</span> <span class="toc-text">2. 企业买单的核心会从“更聪明”转向“更可控”</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-工具协议与运行时标准会变得越来越重要"><span class="toc-number">6.3.</span> <span class="toc-text">3. 工具协议与运行时标准会变得越来越重要</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-多代理将从“实验特性”变成“默认能力”"><span class="toc-number">6.4.</span> <span class="toc-text">4. 多代理将从“实验特性”变成“默认能力”</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-AI-工具会越来越像“认知执行基础设施”"><span class="toc-number">6.5.</span> <span class="toc-text">5. AI 工具会越来越像“认知执行基础设施”</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结语"><span class="toc-number">7.</span> <span class="toc-text">结语</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考信息"><span class="toc-number">8.</span> <span class="toc-text">参考信息</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/技术架构/AI产品/" title="AI产品">AI产品<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/AI快讯/AI动态/" title="AI动态">AI动态<sup>12</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/AI快讯/" title="AI快讯">AI快讯<sup>12</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/AI资讯/" title="AI资讯">AI资讯<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/技术架构/" title="技术架构">技术架构<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/AI资讯/技术架构/" title="技术架构">技术架构<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/AI资讯/行业观察/" title="行业观察">行业观察<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/AI资讯/技术架构/行业观察/" title="行业观察">行业观察<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/技术架构/AI产品/行业观察/" title="行业观察">行业观察<sup>1</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/AI/" title="AI">AI<sup>13</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/快讯/" title="快讯">快讯<sup>12</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/资讯/" title="资讯">资讯<sup>12</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Claude-Code/" title="Claude Code">Claude Code<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Anthropic/" title="Anthropic">Anthropic<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Harness-Engineering/" title="Harness Engineering">Harness Engineering<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Agent/" title="Agent">Agent<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/AI编程/" title="AI编程">AI编程<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/架构设计/" title="架构设计">架构设计<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/AI-Agent/" title="AI Agent">AI Agent<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/系统设计/" title="系统设计">系统设计<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/多代理/" title="多代理">多代理<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/AI工具/" title="AI工具">AI工具<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Polymarket/" title="Polymarket">Polymarket<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/预测市场/" title="预测市场">预测市场<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/概率/" title="概率">概率<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/OpenAI/" title="OpenAI">OpenAI<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Gemini/" title="Gemini">Gemini<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/AI产品/" title="AI产品">AI产品<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=null&verifier=b3593ceb&dpc=1"></iframe>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Larry Page in Google. <br/>
+			This is my blog,believe it or not.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/2176287895" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2026 
+		
+		<a href="/about" target="_blank" title="keyed">keyed</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
