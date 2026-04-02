@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Keyed AI
-subtitle: AI 高质量快讯
-description: 高频 AI 动态、模型发布、Agent、AI 编程与开源生态观察
+title: 小触AI
+subtitle: 聚焦模型、Agent、AI 编程、运行时系统与产业变化的前沿观察站
+description: 聚焦模型、Agent、AI 编程、运行时系统与产业变化的前沿观察站
 author: keyed
 language: zh-CN
 timezone: Asia/Shanghai
