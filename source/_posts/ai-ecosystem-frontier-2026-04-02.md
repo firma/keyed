@@ -89,6 +89,8 @@ Apple 对 OpenAI 与 Anthropic agent 能力的更深接入，也不是一条普�
 
 从产业价值看，这比单次模型发布重要得多。
 
+![](/images/2026/04/ai-ecosystem-power-map-2026-04-02.svg)
+
 ## 这三条线索，合起来说明了什么
 
 如果把 OpenAI、Anthropic 与 Apple 的动作放在一起看，今天 AI 生态给出的答案已经非常清晰：
