@@ -66,7 +66,7 @@
 
 /* --- Reset --- */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; scroll-padding-top: var(--header-height); }
 body {
   font-family: var(--font-sans);
   font-size: 16px;
@@ -82,22 +82,7 @@ a:hover { color: var(--accent2); }
 img { max-width: 100%; height: auto; }
 ul, ol { list-style: none; }
 
-/* --- Scanline Overlay (sci-fi touch) --- */
-body::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 9999;
-  background: repeating-linear-gradient(
-    0deg,
-    var(--scanline) 0px,
-    var(--scanline) 1px,
-    transparent 1px,
-    transparent 3px
-  );
-  opacity: 0.5;
-}
+/* Scanline removed — interfered with scroll readability */
 
 /* --- Pretext Background --- */
 .pretext-bg {
@@ -124,17 +109,18 @@ body::after {
 
 /* --- Header --- */
 .site-header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
   height: var(--header-height);
-  backdrop-filter: var(--header-blur) saturate(180%);
-  -webkit-backdrop-filter: var(--header-blur) saturate(180%);
-  background: color-mix(in srgb, var(--bg) 75%, transparent);
-  border-bottom: 1px solid var(--border-light);
-  transition: background 0.3s;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+.site-header.scrolled {
+  box-shadow: var(--shadow-md);
 }
 .header-inner {
   max-width: var(--content-max);
@@ -241,7 +227,7 @@ body::after {
 .main-container {
   max-width: var(--content-max);
   margin: 0 auto;
-  padding: calc(var(--header-height) + 24px) 24px 60px;
+  padding: 24px 24px 60px;
   min-height: 100vh;
 }
 .content-wrapper {
@@ -254,8 +240,8 @@ body::after {
 
 /* --- Hero Section --- */
 .hero {
-  margin: -24px -24px 40px;
-  padding: 80px 24px 60px;
+  margin: 0 -24px 40px;
+  padding: 60px 24px 50px;
   position: relative;
   overflow: hidden;
   background: linear-gradient(180deg, var(--bg) 0%, var(--bg-surface) 100%);
@@ -894,7 +880,7 @@ body::after {
 /* --- Sidebar --- */
 .sidebar {
   position: sticky;
-  top: calc(var(--header-height) + 24px);
+  top: calc(var(--header-height) + 16px);
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -1110,7 +1096,7 @@ figure.highlight pre { margin: 0; padding: 0; border: none; background: none; }
 
 @media (max-width: 640px) {
   :root { --header-height: 56px; }
-  .main-container { padding: calc(var(--header-height) + 16px) 16px 40px; }
+  .main-container { padding: 16px 16px 40px; }
   .nav-link { padding: 6px 10px; font-size: 0.82rem; }
   .post-card-inner {
     grid-template-columns: 1fr;

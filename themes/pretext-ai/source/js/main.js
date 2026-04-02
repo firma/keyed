@@ -423,11 +423,33 @@
     draw();
   }
 
+  // ─── Header Scroll Shadow ──────────────────────
+  function initHeaderScroll() {
+    var header = $('.site-header');
+    if (!header) return;
+    var ticking = false;
+
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        raf(function () {
+          if (window.scrollY > 10) {
+            header.classList.add('scrolled');
+          } else {
+            header.classList.remove('scrolled');
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+  }
+
   // ─── Initialize ────────────────────────────────
   function init() {
     TextEngine.init();
     initTheme();
     initMobileMenu();
+    initHeaderScroll();
     initHeroCanvas();
     initBrandCanvas();
     initReadingMetrics();
