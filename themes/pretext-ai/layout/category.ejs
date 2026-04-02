@@ -1,0 +1,20 @@
+<div class="taxonomy-page">
+  <h1 class="page-title" data-pretext-title><%= page.category || 'Categories' %></h1>
+  <% if (page.posts) { %>
+    <div class="posts-grid">
+      <% page.posts.forEach(function(post) { %>
+        <%- partial('_partial/article', {item: post}) %>
+      <% }) %>
+    </div>
+    <%- partial('_partial/pagination') %>
+  <% } else { %>
+    <div class="category-overview">
+      <% site.categories.sort('name').forEach(function(cat) { %>
+        <a href="<%- url_for(cat.path) %>" class="taxonomy-card">
+          <span class="taxonomy-name"><%= cat.name %></span>
+          <span class="taxonomy-count"><%= cat.posts.length %> posts</span>
+        </a>
+      <% }) %>
+    </div>
+  <% } %>
+</div>

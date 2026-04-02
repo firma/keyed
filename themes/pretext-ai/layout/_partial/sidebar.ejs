@@ -1,0 +1,85 @@
+<%
+var widgets = theme.widgets || ['search', 'recent_posts', 'categories', 'tags', 'archive'];
+%>
+
+<% if (widgets.indexOf('search') !== -1) { %>
+<div class="widget widget-search">
+  <h3 class="widget-title">Search</h3>
+  <form class="search-form" action="//google.com/search" method="get" target="_blank" rel="noopener">
+    <input type="hidden" name="sitesearch" value="<%= config.url %>">
+    <input type="text" name="q" class="search-input" placeholder="Search articles...">
+  </form>
+</div>
+<% } %>
+
+<% if (widgets.indexOf('recent_posts') !== -1) { %>
+<div class="widget widget-recent">
+  <h3 class="widget-title">Recent Posts</h3>
+  <ul class="widget-list">
+    <% var recentCount = theme.recent_posts_count || 8; %>
+    <% site.posts.sort('date', -1).limit(recentCount).forEach(function(post) { %>
+    <li>
+      <a href="<%- url_for(post.path) %>" class="widget-link">
+        <span class="widget-post-title"><%= post.title || '(Untitled)' %></span>
+        <time class="widget-post-date"><%= date(post.date, 'MM-DD') %></time>
+      </a>
+    </li>
+    <% }) %>
+  </ul>
+</div>
+<% } %>
+
+<% if (widgets.indexOf('categories') !== -1) { %>
+<div class="widget widget-categories">
+  <h3 class="widget-title">Categories</h3>
+  <ul class="widget-list">
+    <% site.categories.sort('name').forEach(function(cat) { %>
+    <li>
+      <a href="<%- url_for(cat.path) %>" class="widget-link">
+        <span><%= cat.name %></span>
+        <span class="widget-count"><%= cat.posts.length %></span>
+      </a>
+    </li>
+    <% }) %>
+  </ul>
+</div>
+<% } %>
+
+<% if (widgets.indexOf('tags') !== -1) { %>
+<div class="widget widget-tags">
+  <h3 class="widget-title">Tags</h3>
+  <div class="tag-cloud">
+    <% site.tags.sort('name').forEach(function(tag) { %>
+      <a href="<%- url_for(tag.path) %>" class="tag-cloud-item" data-count="<%= tag.posts.length %>">
+        #<%= tag.name %>
+      </a>
+    <% }) %>
+  </div>
+</div>
+<% } %>
+
+<% if (widgets.indexOf('archive') !== -1) { %>
+<div class="widget widget-archive">
+  <h3 class="widget-title">Archive</h3>
+  <ul class="widget-list">
+    <% site.posts.sort('date', -1).forEach(function(post) { %>
+    <% var yearMonth = date(post.date, 'YYYY-MM'); %>
+    <% }) %>
+    <%
+    var archiveMap = {};
+    site.posts.sort('date', -1).forEach(function(post) {
+      var ym = date(post.date, 'YYYY / MM');
+      archiveMap[ym] = (archiveMap[ym] || 0) + 1;
+    });
+    %>
+    <% for (var ym in archiveMap) { %>
+    <li>
+      <a href="<%- url_for('/archives') %>" class="widget-link">
+        <span><%= ym %></span>
+        <span class="widget-count"><%= archiveMap[ym] %></span>
+      </a>
+    </li>
+    <% } %>
+  </ul>
+</div>
+<% } %>

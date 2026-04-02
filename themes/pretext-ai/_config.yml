@@ -1,0 +1,47 @@
+# Pretext AI Theme Configuration
+
+# Navigation menu
+menu:
+  Home: /
+  Archives: /archives
+  Categories: /categories
+  Tags: /tags
+
+# Sidebar widgets (order matters)
+widgets:
+  - search
+  - recent_posts
+  - categories
+  - tags
+  - archive
+
+# Sidebar position: left / right
+sidebar: right
+
+# Recent posts count in sidebar
+recent_posts_count: 8
+
+# Excerpt length (characters)
+excerpt_length: 280
+
+# Pretext settings
+pretext:
+  hero_enabled: true
+  canvas_titles: true
+  reading_metrics: true
+  particle_bg: true
+
+# Theme color mode: auto / dark / light
+color_mode: auto
+
+# Social links (leave empty to hide)
+social:
+  github:
+  twitter:
+  email:
+
+# Footer
+since: 2024
+
+# Favicon
+favicon: /images/favicon.ico

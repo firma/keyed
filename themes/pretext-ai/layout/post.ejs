@@ -1,0 +1,48 @@
+<article class="post-full">
+  <header class="post-header">
+    <div class="post-header-meta">
+      <time datetime="<%= date(page.date, 'YYYY-MM-DD') %>" class="post-date-full">
+        <%= date(page.date, 'YYYY-MM-DD') %>
+      </time>
+      <% if (page.categories && page.categories.length) { %>
+        <span class="meta-sep">/</span>
+        <% page.categories.forEach(function(cat, i) { %>
+          <a href="<%- url_for(cat.path) %>" class="category-link"><%= cat.name %></a><%= i < page.categories.length - 1 ? ', ' : '' %>
+        <% }) %>
+      <% } %>
+    </div>
+    <h1 class="post-full-title" data-pretext-title><%= page.title %></h1>
+    <% if (page.tags && page.tags.length) { %>
+    <div class="post-header-tags">
+      <% page.tags.forEach(function(tag) { %>
+        <a href="<%- url_for(tag.path) %>" class="tag-pill">#<%= tag.name %></a>
+      <% }) %>
+    </div>
+    <% } %>
+    <div class="reading-info" id="readingInfo">
+      <span class="reading-metric" id="wordCount"></span>
+      <span class="reading-metric" id="readTime"></span>
+    </div>
+  </header>
+
+  <div class="post-body" id="postBody">
+    <%- page.content %>
+  </div>
+
+  <footer class="post-nav">
+    <% if (page.prev) { %>
+    <a href="<%- url_for(page.prev.path) %>" class="post-nav-link prev">
+      <span class="post-nav-label">&larr; Previous</span>
+      <span class="post-nav-title"><%= page.prev.title %></span>
+    </a>
+    <% } else { %>
+    <span></span>
+    <% } %>
+    <% if (page.next) { %>
+    <a href="<%- url_for(page.next.path) %>" class="post-nav-link next">
+      <span class="post-nav-label">Next &rarr;</span>
+      <span class="post-nav-title"><%= page.next.title %></span>
+    </a>
+    <% } %>
+  </footer>
+</article>

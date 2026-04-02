@@ -1,0 +1,37 @@
+<article class="post-card" data-pretext-title>
+  <div class="post-card-inner">
+    <div class="post-meta">
+      <time datetime="<%= date(item.date, 'YYYY-MM-DD') %>" class="post-date">
+        <span class="date-day"><%= date(item.date, 'DD') %></span>
+        <span class="date-rest"><%= date(item.date, 'MMM YYYY') %></span>
+      </time>
+      <% if (item.categories && item.categories.length) { %>
+      <div class="post-categories">
+        <% item.categories.forEach(function(cat) { %>
+          <a href="<%- url_for(cat.path) %>" class="category-badge"><%= cat.name %></a>
+        <% }) %>
+      </div>
+      <% } %>
+    </div>
+    <div class="post-content-preview">
+      <h2 class="post-title">
+        <a href="<%- url_for(item.path) %>"><%= item.title || '(Untitled)' %></a>
+      </h2>
+      <% if (item.excerpt) { %>
+        <p class="post-excerpt"><%- strip_html(item.excerpt).substring(0, 280) %></p>
+      <% } %>
+      <div class="post-footer">
+        <% if (item.tags && item.tags.length) { %>
+        <div class="post-tags">
+          <% item.tags.forEach(function(tag) { %>
+            <a href="<%- url_for(tag.path) %>" class="tag-pill">#<%= tag.name %></a>
+          <% }) %>
+        </div>
+        <% } %>
+        <a href="<%- url_for(item.path) %>" class="read-more">
+          Read more <span class="arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</article>

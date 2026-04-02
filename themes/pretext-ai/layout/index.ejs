@@ -1,0 +1,29 @@
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <canvas id="hero-canvas" class="hero-canvas"></canvas>
+    <div class="hero-text">
+      <h1 class="hero-title" data-pretext-hero><%= config.title %></h1>
+      <p class="hero-subtitle"><%= config.subtitle || config.description %></p>
+      <div class="hero-metrics" id="heroMetrics">
+        <span class="metric"><span class="metric-val"><%= site.posts.length %></span> articles</span>
+        <span class="metric-sep">&middot;</span>
+        <span class="metric">
+          <span class="metric-val"><%= site.categories.length %></span> categories
+        </span>
+        <span class="metric-sep">&middot;</span>
+        <span class="metric">
+          <span class="metric-val"><%= site.tags.length %></span> tags
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="posts-section">
+  <div class="posts-grid">
+    <% page.posts.forEach(function(post) { %>
+      <%- partial('_partial/article', {item: post}) %>
+    <% }) %>
+  </div>
+  <%- partial('_partial/pagination') %>
+</section>
