@@ -47,69 +47,58 @@
   <body>
     <header>
       
-<div>
-		
-			<div id="imglogo">
-				<a href="/"><img src="/img/logo.png" alt="Keyed AI" title="Keyed AI"/></a>
-			</div>
-			
-			<div id="textlogo">
-				<h1 class="site-name"><a href="/" title="Keyed AI">Keyed AI</a></h1>
-				<h2 class="blog-motto">AI 高质量快讯</h2>
-			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
-			</a></div>
-			<nav class="animated">
-				<ul>
-					<ul>
-					 
-						<li><a href="/">Home</a></li>
-					
-						<li><a href="/archives">Archives</a></li>
-					
-						<li><a href="/about">About</a></li>
-					
-					<li>
- 					
-					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
-						<label>Search</label>
-						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
-						<input type="hidden" name="q" value="site:keyed.cn">
-					</form>
-					
-					</li>
-				</ul>
-			</nav>			
+<div id="header-outer">
+  <div class="header-shell">
+    <div class="branding">
+      <div class="brand-kicker">Keyed AI · Frontier Systems</div>
+      <div id="textlogo">
+        <h1 class="site-name"><a href="/" title="Keyed AI">Keyed AI</a></h1>
+        <p class="blog-motto">高频 AI 动态、模型发布、Agent、AI 编程与开源生态观察</p>
+      </div>
+    </div>
+    <div class="header-right">
+      <nav class="top-nav">
+        
+          <a href="/">Home</a>
+        
+          <a href="/archives">Archives</a>
+        
+          <a href="/about">About</a>
+        
+      </nav>
+      <div class="search-shell">
+        
+          <form action="//google.com/search" method="get" accept-charset="utf-8">
+            <label>Search</label>
+            <input type="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+            <input type="hidden" name="q" value="site:keyed.cn">
+          </form>
+        
+      </div>
+    </div>
+  </div>
 </div>
+
     </header>
     <div id="container">
-      <div id="main" class="post" itemscope itemprop="blogPost">
-  
-	<article itemprop="articleBody"> 
-		<header class="article-info clearfix">
-  <h1 itemprop="name">
+      <article class="article-shell">
+  <div class="article-eyebrow">Keyed AI · Editorial</div>
+  <h1 class="article-title">Claude Code 泄漏事件，真正泄漏给行业的是什么？</h1>
+  <div class="article-submeta">
+    <span>2026-04-02</span>
     
-      <a href="/2026/04/02/claude-code-leak-harness-engineering/" title="Claude Code 泄漏事件，真正泄漏给行业的是什么？" itemprop="url">Claude Code 泄漏事件，真正泄漏给行业的是什么？</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="keyed" target="_blank" itemprop="author">keyed</a>
-		
-  <p class="article-time">
-    <time datetime="2026-04-02T05:40:00.000Z" itemprop="datePublished"> 发表于 2026-04-02</time>
+      <span>AI资讯</span>
     
-  </p>
-</header>
-	<div class="article-content">
-		
-		<div id="toc" class="toc-article">
-			<strong class="toc-title">文章目录</strong>
-		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#导读"><span class="toc-number">1.</span> <span class="toc-text">导读</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#核心要点"><span class="toc-number">2.</span> <span class="toc-text">核心要点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#这次事件泄漏出来的，不只是代码"><span class="toc-number">3.</span> <span class="toc-text">这次事件泄漏出来的，不只是代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么-Prompt-不是核心壁垒，Harness-才是"><span class="toc-number">4.</span> <span class="toc-text">为什么 Prompt 不是核心壁垒，Harness 才是</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Harness-Engineering-标准设计，应该包含什么"><span class="toc-number">5.</span> <span class="toc-text">Harness Engineering 标准设计，应该包含什么</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-控制平面：Prompt-是控制，不是人格"><span class="toc-number">5.1.</span> <span class="toc-text">1. 控制平面：Prompt 是控制，不是人格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Query-Loop：代理系统的心跳"><span class="toc-number">5.2.</span> <span class="toc-text">2. Query Loop：代理系统的心跳</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-权限与中断：为什么-Agent-不能直接碰世界"><span class="toc-number">5.3.</span> <span class="toc-text">3. 权限与中断：为什么 Agent 不能直接碰世界</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-上下文治理：Memory-不是越多越好"><span class="toc-number">5.4.</span> <span class="toc-text">4. 上下文治理：Memory 不是越多越好</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-错误恢复：把失败当成常态来设计"><span class="toc-number">5.5.</span> <span class="toc-text">5. 错误恢复：把失败当成常态来设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-多代理与验证：用结构来对冲模型不稳定性"><span class="toc-number">5.6.</span> <span class="toc-text">6. 多代理与验证：用结构来对冲模型不稳定性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对-AI-编程工具行业来说，这意味着什么"><span class="toc-number">6.</span> <span class="toc-text">对 AI 编程工具行业来说，这意味着什么</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#短期看：认知差被迅速抹平"><span class="toc-number">6.1.</span> <span class="toc-text">短期看：认知差被迅速抹平</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#中期看：产品竞争会转向系统设计竞争"><span class="toc-number">6.2.</span> <span class="toc-text">中期看：产品竞争会转向系统设计竞争</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#长期看：前沿-AI-工具会越来越像操作系统层产品"><span class="toc-number">6.3.</span> <span class="toc-text">长期看：前沿 AI 工具会越来越像操作系统层产品</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#我对前沿-AI-工具行业的看法"><span class="toc-number">7.</span> <span class="toc-text">我对前沿 AI 工具行业的看法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-模型会继续进步，但模型差距不再解释全部竞争格局"><span class="toc-number">7.1.</span> <span class="toc-text">1. 模型会继续进步，但模型差距不再解释全部竞争格局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Harness-会成为-AI-产品经理和工程负责人的核心能力"><span class="toc-number">7.2.</span> <span class="toc-text">2. Harness 会成为 AI 产品经理和工程负责人的核心能力</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-安全与可控性会从“成本项”变成“销售项”"><span class="toc-number">7.3.</span> <span class="toc-text">3. 安全与可控性会从“成本项”变成“销售项”</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-开发者工具会率先完成这轮架构升级"><span class="toc-number">7.4.</span> <span class="toc-text">4. 开发者工具会率先完成这轮架构升级</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-下一批头部产品，竞争的是“稳定自治”而不是“惊艳演示”"><span class="toc-number">7.5.</span> <span class="toc-text">5. 下一批头部产品，竞争的是“稳定自治”而不是“惊艳演示”</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结语"><span class="toc-number">8.</span> <span class="toc-text">结语</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考信息"><span class="toc-number">9.</span> <span class="toc-text">参考信息</span></a></li></ol>
-		
-		</div>
-		
-		<p><img src="/images/2026/04/claude-code-leak-cover.svg" alt=""></p>
+      <span>技术架构</span>
+    
+      <span>行业观察</span>
+    
+    
+      <span>6 tags</span>
+    
+  </div>
+  <div class="article-content" itemprop="articleBody">
+    <p><img src="/images/2026/04/claude-code-leak-cover.svg" alt=""></p>
 <p>最近 Claude Code 泄漏事件在开发者圈里迅速发酵。表面上看，这像是一场典型的软件发布事故：源代码或相关调试映射文件意外暴露，外界开始围观、拆解、转述、放大。但如果只把它理解成一次“代码被看见了”的新闻，其实低估了这件事的价值。</p>
 <p>真正值得行业认真看的，不只是泄漏本身，而是它让外界第一次较完整地看到：<strong>一个高能力 AI coding agent 产品，到底是如何被工程化地组织起来的。</strong></p>
 <p>对于过去一年一直在做 AI Agent、AI 编程、终端助手、开发者工作流产品的人来说，这件事的重要性甚至不在八卦层面，而在方法论层面。因为它把一个事实彻底摆到了台面上：</p>
@@ -281,63 +270,18 @@
 <li>VentureBeat 对 Claude Code 泄漏事件的公开报道</li>
 <li>开发者对 Claude Code 泄漏结构与工程实现的公开技术拆解</li>
 </ul>
-  
-	</div>
-		<footer class="article-footer clearfix">
-<div class="article-catetags">
 
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/AI资讯/">AI资讯</a>►<a class="article-category-link" href="/categories/AI资讯/技术架构/">技术架构</a>►<a class="article-category-link" href="/categories/AI资讯/技术架构/行业观察/">行业观察</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/Anthropic/">Anthropic</a><a href="/tags/Agent/">Agent</a><a href="/tags/AI编程/">AI编程</a><a href="/tags/Claude-Code/">Claude Code</a><a href="/tags/Harness-Engineering/">Harness Engineering</a><a href="/tags/架构设计/">架构设计</a>
   </div>
+  <div class="article-footer-nav">
+    
+      <a href="/">← 今天的 AI 生态，正在把行业推向哪一个新阶段？</a>
+    
+    
+      <a href="/">从 Polymarket 看 AI 行业预期：预测市场正在如何给模型与产品竞争定价 →</a>
+    
+  </div>
+</article>
 
-</div>
-
-
-
-	<div class="article-share" id="share">
-	
-	  <div data-url="https://keyed.cn/2026/04/02/claude-code-leak-harness-engineering/" data-title="Claude Code 泄漏事件，真正泄漏给行业的是什么？ | Keyed AI" data-tsina="null" class="share clearfix">
-	  </div>
-	
-	</div>
-
-
-</footer>
-
-   	       
-	</article>
-	
-<nav class="article-nav clearfix">
- 
- <div class="prev" >
- <a href="/2026/04/02/ai-ecosystem-frontier-2026-04-02/" title="今天的 AI 生态，正在把行业推向哪一个新阶段？">
-  <strong>上一篇：</strong><br/>
-  <span>
-  今天的 AI 生态，正在把行业推向哪一个新阶段？</span>
-</a>
-</div>
-
-
-<div class="next">
-<a href="/2026/04/02/polymarket-ai-pricing/"  title="从 Polymarket 看 AI 行业预期：预测市场正在如何给模型与产品竞争定价">
- <strong>下一篇：</strong><br/> 
- <span>从 Polymarket 看 AI 行业预期：预测市场正在如何给模型与产品竞争定价
-</span>
-</a>
-</div>
-
-</nav>
-
-	
-
-</div>  
       <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
   <div id="toc" class="toc-aside">
@@ -527,43 +471,14 @@
 </aside>
 </div>
     </div>
-    <footer><div id="footer" >
-	
-	<div class="line">
-		<span></span>
-		<div class="author"></div>
-	</div>
-	
-	
-	<section class="info">
-		<p> Hello ,I&#39;m Larry Page in Google. <br/>
-			This is my blog,believe it or not.</p>
-	</section>
-	 
-	<div class="social-font" class="clearfix">
-		
-		<a href="http://weibo.com/2176287895" target="_blank" class="icon-weibo" title="微博"></a>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	</div>
-			
-		
-
-		<p class="copyright">
-		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2026 
-		
-		<a href="/about" target="_blank" title="keyed">keyed</a>
-		
-		
-		</p>
+    <footer><div id="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <strong>Keyed AI</strong>
+      <span>聚焦 AI 生态、Agent、AI 编程、模型平台与运行时系统。不是老派博客，而是偏 editorial 的前沿科技观察站。</span>
+    </div>
+    <p class="copyright">© 2026 Keyed AI · Built with Hexo · Reimagined for a modern AI editorial aesthetic</p>
+  </div>
 </div>
 </footer>
     <script src="/js/jquery-2.0.3.min.js"></script>
