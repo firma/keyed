@@ -839,10 +839,10 @@ html, body { overflow-x: hidden; }
   .hero-title { font-size: 1.6rem; letter-spacing: -0.02em; }
   .hero-subtitle { font-size: 0.9rem; line-height: 1.55; }
   .hero-badge { font-size: 0.72rem; padding: 4px 10px 4px 8px; margin-bottom: 14px; }
-  .hero-metrics { flex-wrap: wrap; gap: 8px; margin-top: 20px; }
-  .metric-card { min-width: 0; flex: 1 1 calc(50% - 4px); padding: 10px 12px; }
-  .metric-val { font-size: 1.25rem; }
-  .metric-label { font-size: 0.68rem; }
+  .hero-metrics { gap: 6px; margin-top: 20px; }
+  .metric-card { min-width: 0; flex: 1; padding: 8px 6px; }
+  .metric-val { font-size: 1.15rem; }
+  .metric-label { font-size: 0.62rem; letter-spacing: 0.03em; }
 
   /* Main layout */
   .main-container { padding: 0 14px 36px; }
