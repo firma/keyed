@@ -1,0 +1,37 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F7F3"/>
+  <text x="800" y="85" text-anchor="middle" font-size="42" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">AI Economy Map 2026</text>
+  <text x="800" y="125" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#666666">Productivity · Labor · Capital · Agent</text>
+  <line x1="800" y1="170" x2="800" y2="760" stroke="#D9D9D1" stroke-width="2"/>
+  <line x1="120" y1="465" x2="1480" y2="465" stroke="#D9D9D1" stroke-width="2"/>
+  <g transform="translate(140,200)">
+    <text x="0" y="0" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Productivity</text>
+    <text x="0" y="50" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• AI lifts task output</text>
+    <text x="0" y="92" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Strongest gains in routine knowledge work</text>
+    <text x="0" y="134" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Biggest uplift for junior workers</text>
+    <text x="0" y="176" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Human + AI becomes the new production unit</text>
+  </g>
+  <g transform="translate(870,200)">
+    <text x="0" y="0" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Labor</text>
+    <text x="0" y="50" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Tasks change before jobs disappear</text>
+    <text x="0" y="92" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Workflows are reorganized first</text>
+    <text x="0" y="134" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• New roles emerge: AI oversight, integration</text>
+    <text x="0" y="176" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Wage effects lag task effects</text>
+  </g>
+  <g transform="translate(140,540)">
+    <text x="0" y="0" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Capital</text>
+    <text x="0" y="50" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Value shifts from apps to infrastructure</text>
+    <text x="0" y="92" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• GPUs, data centers, electricity, cloud inference</text>
+    <text x="0" y="134" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Proprietary data becomes strategic capital</text>
+    <text x="0" y="176" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• AI stack spending becomes core budget</text>
+  </g>
+  <g transform="translate(870,540)">
+    <text x="0" y="0" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Agent</text>
+    <text x="0" y="50" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• AI moves from copilot to actor</text>
+    <text x="0" y="92" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Agents call tools, APIs, payments, services</text>
+    <text x="0" y="134" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Software becomes an economic participant</text>
+    <text x="0" y="176" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Identity and authorization become critical</text>
+  </g>
+  <rect x="120" y="800" width="1360" height="58" rx="12" fill="#111111"/>
+  <text x="800" y="837" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3">AI is no longer just software. It is becoming infrastructure, workflow, and economic actor.</text>
+</svg>
