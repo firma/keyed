@@ -1,0 +1,24 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F7F3"/>
+  <text x="800" y="88" text-anchor="middle" font-size="40" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Polymarket as AI’s External Pricing Layer</text>
+  <text x="800" y="128" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#666666">From predicting AI, to pricing the future of AI in real time</text>
+  <rect x="360" y="190" width="880" height="120" rx="18" fill="#EEF5FF" stroke="#D9D9D1"/>
+  <text x="800" y="238" text-anchor="middle" font-size="34" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">AI World</text>
+  <text x="800" y="278" text-anchor="middle" font-size="21" font-family="Arial, Helvetica, sans-serif" fill="#111111">Models · Agents · Protocols · Startups · Product launches</text>
+  <rect x="320" y="390" width="960" height="140" rx="18" fill="#FAFAFA" stroke="#D9D9D1"/>
+  <text x="800" y="444" text-anchor="middle" font-size="34" font-family="Arial, Helvetica, sans-serif" fill="#2F2F2F" font-weight="700">Polymarket</text>
+  <text x="800" y="486" text-anchor="middle" font-size="21" font-family="Arial, Helvetica, sans-serif" fill="#111111">Probabilities · Price discovery · Real-time consensus · Tradable expectations</text>
+  <rect x="410" y="610" width="780" height="120" rx="18" fill="#FFF8E8" stroke="#D9D9D1"/>
+  <text x="800" y="658" text-anchor="middle" font-size="34" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Crypto Layer</text>
+  <text x="800" y="698" text-anchor="middle" font-size="21" font-family="Arial, Helvetica, sans-serif" fill="#111111">Wallets · Open access · Settlement · Programmable markets</text>
+  <line x1="800" y1="310" x2="800" y2="390" stroke="#111111" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="800" y1="530" x2="800" y2="610" stroke="#111111" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="800" y="565" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Polymarket is no longer just a place to bet on AI. It may become the market where AI’s future gets priced.</text>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#111111"/>
+    </marker>
+  </defs>
+  <rect x="180" y="800" width="1240" height="56" rx="12" fill="#111111"/>
+  <text x="800" y="836" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3">AI produces uncertainty. Prediction markets compress it into real-time probabilities.</text>
+</svg>

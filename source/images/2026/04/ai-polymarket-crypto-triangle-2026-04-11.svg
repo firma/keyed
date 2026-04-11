@@ -1,0 +1,23 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F7F3"/>
+  <text x="800" y="88" text-anchor="middle" font-size="40" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">The AI × Polymarket × Crypto Triangle</text>
+  <text x="800" y="128" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#666666">How intelligence, markets, and value exchange are beginning to converge</text>
+  <polygon points="800,220 420,690 1180,690" fill="none" stroke="#D9D9D1" stroke-width="4"/>
+  <circle cx="800" cy="220" r="62" fill="#EEF5FF" stroke="#D9D9D1"/>
+  <circle cx="420" cy="690" r="72" fill="#FAFAFA" stroke="#D9D9D1"/>
+  <circle cx="1180" cy="690" r="72" fill="#FFF8E8" stroke="#D9D9D1"/>
+  <text x="800" y="214" text-anchor="middle" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">AI</text>
+  <text x="800" y="244" text-anchor="middle" font-size="16" font-family="Arial, Helvetica, sans-serif" fill="#111111">Signals · Strategy · Execution</text>
+  <text x="420" y="684" text-anchor="middle" font-size="26" font-family="Arial, Helvetica, sans-serif" fill="#2F2F2F" font-weight="700">Polymarket</text>
+  <text x="420" y="714" text-anchor="middle" font-size="15" font-family="Arial, Helvetica, sans-serif" fill="#111111">Pricing · Consensus · Probabilities</text>
+  <text x="1180" y="684" text-anchor="middle" font-size="26" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Crypto</text>
+  <text x="1180" y="714" text-anchor="middle" font-size="15" font-family="Arial, Helvetica, sans-serif" fill="#111111">Wallets · Settlement · Access</text>
+  <text x="570" y="430" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">AI ↔ Polymarket</text>
+  <text x="570" y="455" text-anchor="middle" font-size="15" font-family="Arial, Helvetica, sans-serif" fill="#666666">Agents can read, interpret, and potentially trade markets</text>
+  <text x="1030" y="430" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">AI ↔ Crypto</text>
+  <text x="1030" y="455" text-anchor="middle" font-size="15" font-family="Arial, Helvetica, sans-serif" fill="#666666">AI needs machine-readable identity, payment, and asset rails</text>
+  <text x="800" y="760" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Polymarket ↔ Crypto</text>
+  <text x="800" y="785" text-anchor="middle" font-size="15" font-family="Arial, Helvetica, sans-serif" fill="#666666">Prediction markets need open, programmable settlement</text>
+  <rect x="360" y="525" width="880" height="70" rx="14" fill="#111111"/>
+  <text x="800" y="568" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3">A new probabilistic interface for the internet may be emerging.</text>
+</svg>
