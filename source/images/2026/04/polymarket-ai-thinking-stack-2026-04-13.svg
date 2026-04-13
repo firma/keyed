@@ -1,0 +1,21 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F7F3"/>
+  <text x="800" y="88" text-anchor="middle" font-size="40" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">AI-Native Thinking for Prediction Markets</text>
+  <text x="800" y="128" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#666666">Not a betting bot, but a system for processing uncertainty</text>
+  <rect x="380" y="180" width="840" height="90" rx="16" fill="#EEF5FF" stroke="#D9D9D1"/>
+  <text x="800" y="235" text-anchor="middle" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">1. Information Layer</text>
+  <rect x="340" y="300" width="920" height="90" rx="16" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <text x="800" y="355" text-anchor="middle" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">2. Event Structuring Layer</text>
+  <rect x="300" y="420" width="1000" height="90" rx="16" fill="#EEF5FF" stroke="#D9D9D1"/>
+  <text x="800" y="475" text-anchor="middle" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">3. Probability Reasoning Layer</text>
+  <rect x="340" y="540" width="920" height="90" rx="16" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <text x="800" y="595" text-anchor="middle" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">4. Decision Support Layer</text>
+  <rect x="380" y="660" width="840" height="90" rx="16" fill="#FFF8E8" stroke="#D9D9D1"/>
+  <text x="800" y="715" text-anchor="middle" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">5. Execution + Guardrail Layer</text>
+  <line x1="800" y1="270" x2="800" y2="300" stroke="#111111" stroke-width="3"/>
+  <line x1="800" y1="390" x2="800" y2="420" stroke="#111111" stroke-width="3"/>
+  <line x1="800" y1="510" x2="800" y2="540" stroke="#111111" stroke-width="3"/>
+  <line x1="800" y1="630" x2="800" y2="660" stroke="#111111" stroke-width="3"/>
+  <rect x="210" y="800" width="1180" height="56" rx="12" fill="#111111"/>
+  <text x="800" y="836" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3">The edge is not faster clicking. It is better probability structure.</text>
+</svg>
