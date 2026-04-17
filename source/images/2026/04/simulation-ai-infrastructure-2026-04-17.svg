@@ -1,0 +1,24 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F7F3"/>
+  <text x="800" y="86" text-anchor="middle" font-size="40" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Simulation Is Becoming AI’s New Infrastructure</text>
+  <text x="800" y="126" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#666666">The next competitive frontier is not just the model, but the environment</text>
+  <rect x="420" y="180" width="760" height="120" rx="18" fill="#EEF5FF" stroke="#D9D9D1"/>
+  <text x="800" y="228" text-anchor="middle" font-size="34" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Model Layer</text>
+  <text x="800" y="268" text-anchor="middle" font-size="21" font-family="Arial, Helvetica, sans-serif" fill="#111111">Reasoning · Context · Multimodality · Code</text>
+  <rect x="320" y="390" width="960" height="150" rx="18" fill="#FFF8E8" stroke="#D9D9D1"/>
+  <text x="800" y="446" text-anchor="middle" font-size="34" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Environment Layer</text>
+  <text x="800" y="490" text-anchor="middle" font-size="21" font-family="Arial, Helvetica, sans-serif" fill="#111111">Simulation · Runtime · Evaluation · Sandbox · Task Worlds</text>
+  <rect x="390" y="630" width="820" height="120" rx="18" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <text x="800" y="678" text-anchor="middle" font-size="34" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Application Layer</text>
+  <text x="800" y="718" text-anchor="middle" font-size="21" font-family="Arial, Helvetica, sans-serif" fill="#111111">Agents · Robotics · Web Automation · Scientific AI</text>
+  <line x1="800" y1="300" x2="800" y2="390" stroke="#111111" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="800" y1="540" x2="800" y2="630" stroke="#111111" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="800" y="585" text-anchor="middle" font-size="23" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Model defines intelligence. Environment defines execution.</text>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#111111"/>
+    </marker>
+  </defs>
+  <rect x="180" y="804" width="1240" height="54" rx="12" fill="#111111"/>
+  <text x="800" y="839" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3">Better models matter. Better worlds may matter just as much.</text>
+</svg>
