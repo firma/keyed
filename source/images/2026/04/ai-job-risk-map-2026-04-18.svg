@@ -1,0 +1,29 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F7F3"/>
+  <text x="800" y="86" text-anchor="middle" font-size="40" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">AI Job Risk Map</text>
+  <text x="800" y="126" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#666666">The more a role depends on repeatable information handling, the greater the pressure</text>
+  <line x1="260" y1="720" x2="1370" y2="720" stroke="#111111" stroke-width="4"/>
+  <line x1="260" y1="720" x2="260" y2="180" stroke="#111111" stroke-width="4"/>
+  <text x="815" y="775" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">System Ability →</text>
+  <text x="120" y="450" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111" transform="rotate(-90 120 450)">AI Risk ↑</text>
+  <circle cx="420" cy="300" r="78" fill="#FDE68A" stroke="#D9D9D1"/>
+  <text x="420" y="292" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Project</text>
+  <text x="420" y="320" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Coordinator</text>
+  <circle cx="560" cy="340" r="72" fill="#FCA5A5" stroke="#D9D9D1"/>
+  <text x="560" y="332" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Basic</text>
+  <text x="560" y="360" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Analyst</text>
+  <circle cx="650" cy="520" r="76" fill="#FDE68A" stroke="#D9D9D1"/>
+  <text x="650" y="512" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Content</text>
+  <text x="650" y="540" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Operator</text>
+  <circle cx="920" cy="520" r="80" fill="#93C5FD" stroke="#D9D9D1"/>
+  <text x="920" y="512" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Software</text>
+  <text x="920" y="540" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Engineer</text>
+  <circle cx="1120" cy="600" r="80" fill="#86EFAC" stroke="#D9D9D1"/>
+  <text x="1120" y="592" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Workflow</text>
+  <text x="1120" y="620" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Designer</text>
+  <circle cx="1260" cy="640" r="82" fill="#86EFAC" stroke="#D9D9D1"/>
+  <text x="1260" y="632" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Operator /</text>
+  <text x="1260" y="660" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Decision Maker</text>
+  <rect x="150" y="804" width="1300" height="54" rx="12" fill="#111111"/>
+  <text x="800" y="839" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3">The greatest pressure falls on roles that move information, not on roles that design systems.</text>
+</svg>
