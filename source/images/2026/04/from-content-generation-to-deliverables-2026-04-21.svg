@@ -1,0 +1,26 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F7F3"/>
+  <text x="800" y="86" text-anchor="middle" font-size="40" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">AI Is Moving from Content Generation to Deliverable Production</text>
+  <text x="800" y="126" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#666666">The next product battle is not about drafts, but about outputs people can actually use</text>
+  <rect x="180" y="220" width="500" height="380" rx="22" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <rect x="920" y="220" width="500" height="380" rx="22" fill="#EEF5FF" stroke="#D9D9D1"/>
+  <text x="430" y="290" text-anchor="middle" font-size="32" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Content Generation</text>
+  <text x="430" y="350" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">drafts</text>
+  <text x="430" y="385" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">notes</text>
+  <text x="430" y="420" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">rough copy</text>
+  <text x="430" y="455" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">raw visuals</text>
+  <text x="1170" y="290" text-anchor="middle" font-size="32" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Deliverable Production</text>
+  <text x="1170" y="350" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">slides</text>
+  <text x="1170" y="385" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">one-pagers</text>
+  <text x="1170" y="420" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">prototypes</text>
+  <text x="1170" y="455" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">client-ready outputs</text>
+  <line x1="700" y1="410" x2="900" y2="410" stroke="#111111" stroke-width="5" marker-end="url(#arrow)"/>
+  <text x="800" y="382" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Workflow value moves here</text>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#111111"/>
+    </marker>
+  </defs>
+  <rect x="170" y="760" width="1260" height="56" rx="12" fill="#111111"/>
+  <text x="800" y="796" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3">The most valuable AI is no longer the one that generates ideas first, but the one that delivers work last.</text>
+</svg>
