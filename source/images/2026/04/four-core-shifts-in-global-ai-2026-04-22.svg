@@ -1,0 +1,23 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F7F3"/>
+  <text x="800" y="86" text-anchor="middle" font-size="38" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Four Core Shifts Taking Shape in Global AI</text>
+  <text x="800" y="126" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#666666">The real story is no longer isolated launches, but the directions the whole system is moving</text>
+  <rect x="120" y="200" width="300" height="220" rx="20" fill="#EEF5FF" stroke="#D9D9D1"/>
+  <rect x="470" y="200" width="300" height="220" rx="20" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <rect x="820" y="200" width="300" height="220" rx="20" fill="#FFF8E8" stroke="#D9D9D1"/>
+  <rect x="1170" y="200" width="300" height="220" rx="20" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <text x="270" y="270" text-anchor="middle" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Interpretation</text>
+  <text x="270" y="320" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">AI products move closer</text>
+  <text x="270" y="350" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">to real-world information flow</text>
+  <text x="620" y="270" text-anchor="middle" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Outcomes</text>
+  <text x="620" y="320" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">AI moves from draft help</text>
+  <text x="620" y="350" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">to usable deliverables</text>
+  <text x="970" y="270" text-anchor="middle" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Verification</text>
+  <text x="970" y="320" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">Agents leave the demo era</text>
+  <text x="970" y="350" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">and enter testing reality</text>
+  <text x="1320" y="270" text-anchor="middle" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Upgrade Speed</text>
+  <text x="1320" y="320" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">Models evolve like systems,</text>
+  <text x="1320" y="350" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">not only giant brains</text>
+  <rect x="170" y="760" width="1260" height="56" rx="12" fill="#111111"/>
+  <text x="800" y="796" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3">AI is becoming less magical and more real: closer to information, work, risk, and systems.</text>
+</svg>
