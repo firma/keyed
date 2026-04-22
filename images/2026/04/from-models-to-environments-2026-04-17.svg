@@ -1,0 +1,40 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F7F3"/>
+  <text x="800" y="86" text-anchor="middle" font-size="40" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">From Model Competition to Environment Competition</text>
+  <text x="800" y="126" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#666666">How AI competition is shifting from pure capability to capability-in-context</text>
+  <line x1="140" y1="470" x2="1460" y2="470" stroke="#D9D9D1" stroke-width="6"/>
+  <circle cx="240" cy="470" r="18" fill="#111111"/>
+  <circle cx="560" cy="470" r="18" fill="#111111"/>
+  <circle cx="880" cy="470" r="18" fill="#3B82F6"/>
+  <circle cx="1200" cy="470" r="18" fill="#B68B2D"/>
+  <g transform="translate(120,220)">
+    <text x="0" y="0" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Stage 1</text>
+    <text x="0" y="36" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Model Era</text>
+    <text x="0" y="82" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Better answers</text>
+    <text x="0" y="112" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Benchmark scores</text>
+    <text x="0" y="142" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Token prediction</text>
+  </g>
+  <g transform="translate(440,220)">
+    <text x="0" y="0" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Stage 2</text>
+    <text x="0" y="36" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Tool Era</text>
+    <text x="0" y="82" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Tool use</text>
+    <text x="0" y="112" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Action loops</text>
+    <text x="0" y="142" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">• State changes</text>
+  </g>
+  <g transform="translate(760,220)">
+    <text x="0" y="0" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Stage 3</text>
+    <text x="0" y="36" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Agent Era</text>
+    <text x="0" y="82" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Long-horizon tasks</text>
+    <text x="0" y="112" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Dynamic worlds</text>
+    <text x="0" y="142" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Runtime complexity</text>
+  </g>
+  <g transform="translate(1080,220)">
+    <text x="0" y="0" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Stage 4</text>
+    <text x="0" y="36" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Environment Era</text>
+    <text x="0" y="82" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Simulation</text>
+    <text x="0" y="112" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Evaluation worlds</text>
+    <text x="0" y="142" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Sandbox + reliability</text>
+  </g>
+  <rect x="170" y="804" width="1260" height="54" rx="12" fill="#111111"/>
+  <text x="800" y="839" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3">The next wave of AI advantage comes from designing better worlds, not just better models.</text>
+</svg>

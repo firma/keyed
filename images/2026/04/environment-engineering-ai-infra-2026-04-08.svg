@@ -1,0 +1,24 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F7F3"/>
+  <text x="800" y="86" text-anchor="middle" font-size="40" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Environment Engineering Is Emerging as AI’s New Infrastructure</text>
+  <text x="800" y="126" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#666666">Why reliable agents need more than stronger models</text>
+  <text x="800" y="168" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Model defines intelligence. Environment defines execution.</text>
+  <rect x="320" y="560" width="960" height="170" rx="18" fill="#FFF8E8" stroke="#D9D9D1"/>
+  <text x="800" y="610" text-anchor="middle" font-size="34" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Environment Layer</text>
+  <text x="800" y="655" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">Runtime · Sandbox · Simulation · Evaluation</text>
+  <rect x="390" y="350" width="820" height="140" rx="18" fill="#EEF5FF" stroke="#D9D9D1"/>
+  <text x="800" y="398" text-anchor="middle" font-size="34" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Agent Layer</text>
+  <text x="800" y="442" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">Planning · Memory · Tool Use · Orchestration</text>
+  <rect x="450" y="200" width="700" height="100" rx="18" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <text x="800" y="245" text-anchor="middle" font-size="34" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Application Layer</text>
+  <text x="800" y="282" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">Coding Agents · Research Agents · Enterprise Agents · Browser Agents</text>
+  <line x1="800" y1="300" x2="800" y2="350" stroke="#111111" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="800" y1="490" x2="800" y2="560" stroke="#111111" stroke-width="4" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#111111"/>
+    </marker>
+  </defs>
+  <rect x="180" y="790" width="1240" height="56" rx="12" fill="#111111"/>
+  <text x="800" y="826" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3">In the agent era, environment design is becoming infrastructure design.</text>
+</svg>

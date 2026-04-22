@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>从 Polymarket 看 AI 行业预期：预测市场正在如何给模型与产品竞争定价 | 小触AI</title>
+<meta name="description" content="聚焦模型、Agent、AI 编程、运行时系统与产业变化的前沿观察站">
+<meta name="author" content="keyed">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="从 Polymarket 看 AI 行业预期：预测市场正在如何给模型与产品竞争定价">
+<meta property="og:description" content="聚焦模型、Agent、AI 编程、运行时系统与产业变化的前沿观察站">
+<meta property="og:site_name" content="小触AI">
+<meta property="og:url" content="https://keyed.cn/2026/04/02/polymarket-ai-pricing/index.html">
+
+<!-- Preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<!-- Theme CSS -->
+<link rel="stylesheet" href="/css/style.css">
+
+<!-- Color mode -->
+<script>
+(function() {
+  var mode = 'auto';
+  if (mode === 'auto') {
+    var dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+  } else {
+    document.documentElement.setAttribute('data-theme', mode);
+  }
+})();
+</script>
+
+
+<link rel="icon" href="/images/favicon.ico">
+
+
+<meta name="description" content="过去一年，AI 行业的讨论越来越像一场持续不断的舆论竞赛：新模型发布、排行榜波动、产品更新节奏、融资预期、监管风向，几乎每天都有新的叙事冒出来。问题在于，新闻和社交媒体能放大情绪，却不一定能沉淀有效判断。 这也是为什么 Polymarket 这样的预测市场，开始值得认真看一眼。 在预测市场里，参与者不是单纯表达观点，而是用真金白银对未来事件下注。价格变化本质上是在持续更新一件事：市场认为某个结果发">
+<meta property="og:type" content="article">
+<meta property="og:title" content="从 Polymarket 看 AI 行业预期：预测市场正在如何给模型与产品竞争定价">
+<meta property="og:url" content="https://keyed.cn/2026/04/02/polymarket-ai-pricing/index.html">
+<meta property="og:site_name" content="小触AI">
+<meta property="og:description" content="过去一年，AI 行业的讨论越来越像一场持续不断的舆论竞赛：新模型发布、排行榜波动、产品更新节奏、融资预期、监管风向，几乎每天都有新的叙事冒出来。问题在于，新闻和社交媒体能放大情绪，却不一定能沉淀有效判断。 这也是为什么 Polymarket 这样的预测市场，开始值得认真看一眼。 在预测市场里，参与者不是单纯表达观点，而是用真金白银对未来事件下注。价格变化本质上是在持续更新一件事：市场认为某个结果发">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-04-02T01:17:00.000Z">
+<meta property="article:modified_time" content="2026-04-22T14:17:06.576Z">
+<meta property="article:author" content="keyed">
+<meta property="article:tag" content="AI">
+<meta property="article:tag" content="OpenAI">
+<meta property="article:tag" content="Anthropic">
+<meta property="article:tag" content="Polymarket">
+<meta property="article:tag" content="预测市场">
+<meta property="article:tag" content="概率">
+<meta property="article:tag" content="Gemini">
+<meta property="article:tag" content="AI产品">
+<meta name="twitter:card" content="summary">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body>
+  <div id="pretext-bg" class="pretext-bg"></div>
+  <header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="site-brand">
+      <canvas id="brand-canvas" class="brand-canvas" width="200" height="40"></canvas>
+      <span class="brand-fallback">小触AI</span>
+    </a>
+    <nav class="site-nav">
+      
+      
+        <a href="/" class="nav-link">
+          Home
+        </a>
+      
+        <a href="/archives" class="nav-link">
+          Archives
+        </a>
+      
+        <a href="/categories" class="nav-link">
+          Categories
+        </a>
+      
+        <a href="/tags" class="nav-link">
+          Tags
+        </a>
+      
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+  <main class="main-container">
+  <div class="content-wrapper">
+    <div class="content-area">
+      <article class="post-full">
+        <header class="post-header">
+          <div class="post-header-meta">
+            <time datetime="2026-04-02" class="post-date-full">
+              2026-04-02
+            </time>
+            
+              <span class="meta-sep">/</span>
+              
+                <a href="/categories/AI%E8%B5%84%E8%AE%AF/" class="category-link">AI资讯</a>, 
+              
+                <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/" class="category-link">行业观察</a>
+              
+            
+          </div>
+          <h1 class="post-full-title" data-pretext-title>从 Polymarket 看 AI 行业预期：预测市场正在如何给模型与产品竞争定价</h1>
+          
+          <div class="post-header-tags">
+            
+              <a href="/tags/AI/" class="tag-pill">#AI</a>
+            
+              <a href="/tags/OpenAI/" class="tag-pill">#OpenAI</a>
+            
+              <a href="/tags/Anthropic/" class="tag-pill">#Anthropic</a>
+            
+              <a href="/tags/Polymarket/" class="tag-pill">#Polymarket</a>
+            
+              <a href="/tags/%E9%A2%84%E6%B5%8B%E5%B8%82%E5%9C%BA/" class="tag-pill">#预测市场</a>
+            
+              <a href="/tags/%E6%A6%82%E7%8E%87/" class="tag-pill">#概率</a>
+            
+              <a href="/tags/Gemini/" class="tag-pill">#Gemini</a>
+            
+              <a href="/tags/AI%E4%BA%A7%E5%93%81/" class="tag-pill">#AI产品</a>
+            
+          </div>
+          
+          <div class="reading-info" id="readingInfo">
+            <span class="reading-metric" id="wordCount"></span>
+            <span class="reading-metric" id="readTime"></span>
+          </div>
+        </header>
+
+        <div class="post-body" id="postBody">
+          <p>过去一年，AI 行业的讨论越来越像一场持续不断的舆论竞赛：新模型发布、排行榜波动、产品更新节奏、融资预期、监管风向，几乎每天都有新的叙事冒出来。问题在于，新闻和社交媒体能放大情绪，却不一定能沉淀有效判断。</p>
+<p>这也是为什么 Polymarket 这样的预测市场，开始值得认真看一眼。</p>
+<p>在预测市场里，参与者不是单纯表达观点，而是用真金白银对未来事件下注。价格变化本质上是在持续更新一件事：<strong>市场认为某个结果发生的概率有多高</strong>。当这个机制被放到 AI 行业里，它提供的就不只是热点排序，而是一种对模型竞争、产品能力和产业趋势的“实时定价”。</p>
+<h2 id="导读"><a href="#导读" class="headerlink" title="导读"></a>导读</h2><p>如果把新闻网站、社交媒体和分析报告放在一起比较，预测市场有一个非常独特的地方：<strong>它把“看法”变成了“价格”</strong>。</p>
+<p>在 Polymarket 这样的市场中，一个事件价格如果是 0.68，通常可以近似理解为市场认为这个结果有 68% 的发生概率。这个价格并不是某个分析师拍脑袋定出来的，也不是一份问卷调查的结果，而是不同参与者在不断交易中形成的平衡点。</p>
+<p>这意味着，预测市场天然具备两个特征：</p>
+<ol>
+<li><p><strong>信息压缩能力更强</strong><br>零散新闻、市场情绪、技术更新、产品发布和行业传闻，都会通过交易行为被压缩成一个更简单的数字。</p>
+</li>
+<li><p><strong>错误会被资金惩罚</strong><br>在社交媒体上，判断错了通常没有代价；在预测市场里，判断错了是会亏钱的。正因为如此，市场价格通常比空泛的观点更值得认真对待。</p>
+</li>
+</ol>
+<p>当然，这不代表预测市场永远正确。但至少在 AI 这种高波动、高噪音、强叙事驱动的行业里，它确实提供了一种更可操作的观察框架。</p>
+<h2 id="核心要点"><a href="#核心要点" class="headerlink" title="核心要点"></a>核心要点</h2><ul>
+<li>Polymarket 上的 AI 相关事件，已经不只是“谁家模型更强”，而是在覆盖模型排名、编程能力、基准测试、监管政策和长期技术里程碑。</li>
+<li>在近期 AI 相关盘面中，Anthropic 在“最强模型”这类市场中占据明显优势，说明市场对其模型能力延续性的预期正在走强。</li>
+<li>类似“谁会拥有最强 coding model”这样的市场，意味着 AI 产品能力已经开始被直接映射到可交易的概率上。</li>
+<li>预测市场并不是真相机器，但它比泛泛的社交讨论更接近一种“带资金约束的行业共识”。</li>
+<li>对 AI 产品经理、投资者和行业观察者来说，Polymarket 的价值不在于替代研究，而在于提供一个高频、可量化、持续变化的预期面板。</li>
+</ul>
+<h2 id="Polymarket-上的-AI-事件已经在关注什么"><a href="#Polymarket-上的-AI-事件已经在关注什么" class="headerlink" title="Polymarket 上的 AI 事件已经在关注什么"></a>Polymarket 上的 AI 事件已经在关注什么</h2><p>很多人以为预测市场只适合政治、体育或者宏观经济，但 Polymarket 的 AI 板块已经比想象中丰富得多。</p>
+<p>从目前可见的市场结构来看，AI 相关事件大致分成四类。</p>
+<h3 id="1-模型排名竞争"><a href="#1-模型排名竞争" class="headerlink" title="1. 模型排名竞争"></a>1. 模型排名竞争</h3><p>这是最直观的一类，也是关注度最高的一类。</p>
+<p>例如近期关于“哪家公司会在某个时间点拥有最强 AI 模型”的市场，交易量和流动性都不低，说明市场参与者非常愿意对头部模型公司的竞争做出持续判断。当前盘面里，Anthropic 在若干“最强模型”相关事件中处于明显领先位置，这本身就是一个值得注意的信号。</p>
+<p>因为它说明市场并不只是认可 Anthropic 某次发布的短期表现，而是在押注其<strong>模型优势的持续性</strong>。</p>
+<p>对于 OpenAI、Google、Anthropic 这类公司来说，预测市场已经不只是“围观榜单”，而是在把它们的技术竞争转化为实时价格。</p>
+<h3 id="2-Coding-model-与开发者能力"><a href="#2-Coding-model-与开发者能力" class="headerlink" title="2. Coding model 与开发者能力"></a>2. Coding model 与开发者能力</h3><p>这是我认为最值得产品和投资圈认真看的一个方向。</p>
+<p>例如“哪家公司会在 2025 年底拥有最强 coding model”这类市场，背后不是抽象的 AI 概念，而是明确绑定了像 LiveBench coding average 这样的 benchmark 维度。这意味着，市场已经开始把“AI 编程能力”这种产品能力，转化成了一个可以被交易的结果。</p>
+<p>这件事很重要，因为过去很多 AI 讨论停留在“能力很强”“体验很好”这种模糊描述上。但一旦进入预测市场，讨论就会被迫具体化：</p>
+<ul>
+<li>到底看哪个 benchmark</li>
+<li>在什么时间点判定</li>
+<li>哪家公司会赢</li>
+<li>当前概率是多少</li>
+</ul>
+<p>这相当于把“产品竞争”压缩成了一张不断更新的赔率表。</p>
+<h3 id="3-技术里程碑与-benchmark-事件"><a href="#3-技术里程碑与-benchmark-事件" class="headerlink" title="3. 技术里程碑与 benchmark 事件"></a>3. 技术里程碑与 benchmark 事件</h3><p>另一类市场关注的是更长期的技术能力，例如：</p>
+<ul>
+<li>某个模型是否会在 FrontierMath 上达到某个分数</li>
+<li>Chatbot Arena 的分数会不会达到更高区间</li>
+<li>AI 是否会在数学竞赛层面接近更强的人类水位</li>
+</ul>
+<p>这些盘的意义在于，它们不再只是比较公司，而是在给<strong>技术进步速度</strong>定价。</p>
+<p>换句话说，市场不仅在赌“谁更强”，也在赌“AI 技术到底会以多快的速度跨过关键门槛”。</p>
+<h3 id="4-政策与产业层面的事件"><a href="#4-政策与产业层面的事件" class="headerlink" title="4. 政策与产业层面的事件"></a>4. 政策与产业层面的事件</h3><p>AI 相关市场并不只盯模型榜单，还包括：</p>
+<ul>
+<li>AI safety bill 是否会通过</li>
+<li>数据中心政策是否会变化</li>
+<li>某些监管事件是否会落地</li>
+</ul>
+<p>这说明预测市场已经开始把 AI 当成一个完整产业，而不只是一个技术赛道。模型能力、产品竞争、基础设施和政策环境，正在被一起纳入“未来概率”的框架里。</p>
+<h2 id="市场为什么会更偏向-Anthropic"><a href="#市场为什么会更偏向-Anthropic" class="headerlink" title="市场为什么会更偏向 Anthropic"></a>市场为什么会更偏向 Anthropic</h2><p>从近期盘面看，Anthropic 在“最强模型”相关市场中的概率显著占优，这背后并不神秘。</p>
+<p>第一，市场通常会把最近的基准测试表现和用户评价快速计入价格。如果某家公司在一段时间内持续占据榜单高位，市场会把这种领先解释为更高的延续概率。</p>
+<p>第二，市场对 AI 竞争的理解，已经不只是“谁这周发了个新模型”，而是“谁更可能持续把性能、产品化和开发者口碑结合起来”。在这一点上，Anthropic 最近一段时间确实更容易获得“稳定领先”的叙事优势。</p>
+<p>第三，赔率本身还受到交易量和流动性的影响。一个有足够流动性的市场，往往能更快吸收新信息，也更容易形成相对稳定的共识。AI 板块里一些高关注事件的交易量已经不低，这让“市场偏向 Anthropic”不只是噪音，而更像是一个可观察的预期信号。</p>
+<p>当然，这并不意味着 OpenAI 或 Google 被市场彻底否定。恰恰相反，预测市场的价值就在于，它不是把竞争写死，而是在持续显示：<strong>在当前时点，谁被高估，谁被低估，谁还有反转空间。</strong></p>
+<h2 id="预测市场对-AI-产品有什么实际价值"><a href="#预测市场对-AI-产品有什么实际价值" class="headerlink" title="预测市场对 AI 产品有什么实际价值"></a>预测市场对 AI 产品有什么实际价值</h2><p>如果你是 AI 产品经理、创业者、研究员或者投资人，Polymarket 的价值不在于告诉你“答案”，而在于它能帮助你更快理解预期结构。</p>
+<h3 id="对产品经理来说"><a href="#对产品经理来说" class="headerlink" title="对产品经理来说"></a>对产品经理来说</h3><p>你可以把它当作一个“外部预期面板”。<br>市场会告诉你，外界更看重哪些能力：</p>
+<ul>
+<li>通用模型能力</li>
+<li>编程能力</li>
+<li>benchmark 表现</li>
+<li>产品化能力</li>
+<li>长期技术突破</li>
+</ul>
+<p>这会帮助你判断，哪些能力是市场真正愿意持续下注的，哪些只是舆论热点。</p>
+<h3 id="对投资人和行业观察者来说"><a href="#对投资人和行业观察者来说" class="headerlink" title="对投资人和行业观察者来说"></a>对投资人和行业观察者来说</h3><p>预测市场提供了一个比媒体标题更接近资金共识的参考系。<br>它无法替代尽调，但它能帮助你观察：</p>
+<ul>
+<li>哪些方向正在形成强一致预期</li>
+<li>哪些事件仍然存在明显分歧</li>
+<li>哪些公司正在被市场持续重估</li>
+</ul>
+<h3 id="对研究者和开发者来说"><a href="#对研究者和开发者来说" class="headerlink" title="对研究者和开发者来说"></a>对研究者和开发者来说</h3><p>像 coding model、benchmark、FrontierMath 这类市场，其实是在提示一个事实：</p>
+<p><strong>AI 能力的竞争，正在从“抽象讨论”走向“可量化、可交易、可验证”的阶段。</strong></p>
+<p>这对整个行业是一个很重要的信号。</p>
+<h2 id="预测市场不是神谕，但它比噪音更有价值"><a href="#预测市场不是神谕，但它比噪音更有价值" class="headerlink" title="预测市场不是神谕，但它比噪音更有价值"></a>预测市场不是神谕，但它比噪音更有价值</h2><p>这里也必须泼一盆冷水：预测市场不是神谕。</p>
+<p>它有几个天然局限：</p>
+<ul>
+<li>会受短期情绪影响</li>
+<li>会被流动性约束</li>
+<li>会被热门叙事放大</li>
+<li>在信息极度不对称时也可能失真</li>
+</ul>
+<p>所以正确的用法不是“赔率是多少，我就信多少”，而是：</p>
+<p><strong>把它当成一个动态、带资金约束的行业情绪与预期指标。</strong></p>
+<p>它比社交媒体更严肃，比单一分析师观点更分散，比普通热点排行更接近真实博弈，但它仍然只是研究框架的一部分。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>AI 行业正在进入一个更复杂的阶段。模型能力、开发者工具、产品化节奏、监管信号和资本预期，已经交织在一起。单靠新闻标题和社交平台热度，越来越难判断真正重要的变化。</p>
+<p>Polymarket 提供了一种很有意思的视角：<strong>当 AI 进入预测市场，它就不再只是一个叙事对象，而开始变成一个被持续定价的现实竞争场。</strong></p>
+<p>如果要用一句话总结这篇文章的核心判断，那就是：</p>
+<blockquote>
+<p>预测市场不一定比所有人都聪明，但在 AI 这种高噪音、高变化的赛道里，它正在变成少数值得持续追踪的“概率仪表盘”。</p>
+</blockquote>
+<h2 id="参考信息"><a href="#参考信息" class="headerlink" title="参考信息"></a>参考信息</h2><ul>
+<li>Polymarket AI 板块公开市场页面</li>
+<li>与 AI 模型排名、Coding Model、Chatbot Arena、FrontierMath 相关公开事件页面</li>
+<li>Polymarket 公开说明中对概率与市场机制的描述</li>
+</ul>
+
+        </div>
+
+        <footer class="post-nav">
+          
+          <a href="/2026/04/02/harness-engineering-standard-design/" class="post-nav-link prev">
+            <span class="post-nav-label">&larr; Previous</span>
+            <span class="post-nav-title">Harness Engineering 标准设计：AI Agent 产品为什么必须长成一套运行时系统</span>
+          </a>
+          
+          
+        </footer>
+      </article>
+    </div>
+    
+    <aside class="sidebar">
+      
+
+
+<div class="widget widget-search">
+  <h3 class="widget-title">Search</h3>
+  <form class="search-form" action="//google.com/search" method="get" target="_blank" rel="noopener">
+    <input type="hidden" name="sitesearch" value="https://keyed.cn">
+    <input type="text" name="q" class="search-input" placeholder="Search articles...">
+  </form>
+</div>
+
+
+
+<div class="widget widget-recent">
+  <h3 class="widget-title">Recent Posts</h3>
+  <ul class="widget-list">
+    
+    
+    <li>
+      <a href="/2026/04/22/sovereign-industrial-ai-stack-2026-04-22/" class="widget-link">
+        <span class="widget-post-title">AI 竞争正在从模型发布，转向主权化与工业化建栈</span>
+        <time class="widget-post-date">04-22</time>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/2026/04/22/ai-work-surface-enterprise-2026-04-22/" class="widget-link">
+        <span class="widget-post-title">为什么我更在意这波 AI 新品背后的同一个动作：它们正在变成企业级工作操作面</span>
+        <time class="widget-post-date">04-22</time>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/2026/04/22/four-core-shifts-in-global-ai-2026-04-22/" class="widget-link">
+        <span class="widget-post-title">最近全球 AI 世界，正在形成的 4 个核心变化区</span>
+        <time class="widget-post-date">04-22</time>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/2026/04/21/agent-tool-testing-bottleneck-2026-04-21/" class="widget-link">
+        <span class="widget-post-title">为什么 AI agent 的真正瓶颈，已经从“会不会调用工具”变成“怎么测试工具调用”</span>
+        <time class="widget-post-date">04-21</time>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/2026/04/21/from-content-generation-to-deliverables-2026-04-21/" class="widget-link">
+        <span class="widget-post-title">为什么 AI 正在从生成内容，走向直接交付工作成品</span>
+        <time class="widget-post-date">04-21</time>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/2026/04/18/most-dangerous-job-is-not-programmer-2026-04-18/" class="widget-link">
+        <span class="widget-post-title">未来最危险的职业，不是程序员，而是没有系统能力的白领</span>
+        <time class="widget-post-date">04-18</time>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/2026/04/17/opportunity-map-next-3-5-years-2026-04-17/" class="widget-link">
+        <span class="widget-post-title">普通人未来 3 到 5 年的机会地图：全球金融重构下，钱会流向哪里，人该站到哪边？</span>
+        <time class="widget-post-date">04-17</time>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/2026/04/17/simulation-ai-infrastructure-2026-04-17/" class="widget-link">
+        <span class="widget-post-title">Simulation 正成为 AI 新基础设施：下一轮竞争不只在模型，而在环境</span>
+        <time class="widget-post-date">04-17</time>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+
+
+<div class="widget widget-categories">
+  <h3 class="widget-title">Categories</h3>
+  <ul class="widget-list">
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/" class="widget-link">
+        <span>AI资讯</span>
+        <span class="widget-count">19</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/Agent/" class="widget-link">
+        <span>Agent</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/Crypto/" class="widget-link">
+        <span>Crypto</span>
+        <span class="widget-count">2</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E4%BA%92%E8%81%94%E7%BD%91/" class="widget-link">
+        <span>互联网</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E4%BA%A7%E5%93%81%E8%B6%8B%E5%8A%BF/" class="widget-link">
+        <span>产品趋势</span>
+        <span class="widget-count">2</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E4%BB%8A%E6%97%A5%E5%BF%AB%E8%AF%84/" class="widget-link">
+        <span>今日快评</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E5%85%A8%E7%90%83%E8%B6%8B%E5%8A%BF/" class="widget-link">
+        <span>全球趋势</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/" class="widget-link">
+        <span>基础设施</span>
+        <span class="widget-count">3</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E5%AE%8F%E8%A7%82%E7%A0%94%E7%A9%B6/" class="widget-link">
+        <span>宏观研究</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84/" class="widget-link">
+        <span>技术架构</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84/" class="widget-link">
+        <span>技术架构</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E6%94%AF%E4%BB%98%E7%A7%91%E6%8A%80/" class="widget-link">
+        <span>支付科技</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E8%81%8C%E4%B8%9A%E8%B6%8B%E5%8A%BF/" class="widget-link">
+        <span>职业趋势</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/" class="widget-link">
+        <span>行业观察</span>
+        <span class="widget-count">18</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/" class="widget-link">
+        <span>行业观察</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E9%87%91%E8%9E%8D%E5%88%86%E6%9E%90/" class="widget-link">
+        <span>金融分析</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E9%87%91%E8%9E%8D%E8%B6%8B%E5%8A%BF/" class="widget-link">
+        <span>金融趋势</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+
+
+<div class="widget widget-tags">
+  <h3 class="widget-title">Tags</h3>
+  <div class="tag-cloud">
+    
+      <a href="/tags/A2A/" class="tag-cloud-item" data-count="1">
+        #A2A
+      </a>
+    
+      <a href="/tags/AI/" class="tag-cloud-item" data-count="18">
+        #AI
+      </a>
+    
+      <a href="/tags/AI-Agent/" class="tag-cloud-item" data-count="1">
+        #AI Agent
+      </a>
+    
+      <a href="/tags/AI%E4%BA%A7%E5%93%81/" class="tag-cloud-item" data-count="1">
+        #AI产品
+      </a>
+    
+      <a href="/tags/AI%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/" class="tag-cloud-item" data-count="2">
+        #AI基础设施
+      </a>
+    
+      <a href="/tags/AI%E5%B7%A5%E5%85%B7/" class="tag-cloud-item" data-count="1">
+        #AI工具
+      </a>
+    
+      <a href="/tags/AI%E7%94%9F%E6%80%81/" class="tag-cloud-item" data-count="2">
+        #AI生态
+      </a>
+    
+      <a href="/tags/AI%E7%BB%8F%E6%B5%8E/" class="tag-cloud-item" data-count="2">
+        #AI经济
+      </a>
+    
+      <a href="/tags/AI%E7%BC%96%E7%A8%8B/" class="tag-cloud-item" data-count="2">
+        #AI编程
+      </a>
+    
+      <a href="/tags/AP2/" class="tag-cloud-item" data-count="1">
+        #AP2
+      </a>
+    
+      <a href="/tags/AWS/" class="tag-cloud-item" data-count="2">
+        #AWS
+      </a>
+    
+      <a href="/tags/Agent/" class="tag-cloud-item" data-count="11">
+        #Agent
+      </a>
+    
+      <a href="/tags/Ai2/" class="tag-cloud-item" data-count="2">
+        #Ai2
+      </a>
+    
+      <a href="/tags/Anthropic/" class="tag-cloud-item" data-count="4">
+        #Anthropic
+      </a>
+    
+      <a href="/tags/Apple/" class="tag-cloud-item" data-count="1">
+        #Apple
+      </a>
+    
+      <a href="/tags/Bedrock/" class="tag-cloud-item" data-count="1">
+        #Bedrock
+      </a>
+    
+      <a href="/tags/Claude-Code/" class="tag-cloud-item" data-count="1">
+        #Claude Code
+      </a>
+    
+      <a href="/tags/Claude-Design/" class="tag-cloud-item" data-count="3">
+        #Claude Design
+      </a>
+    
+      <a href="/tags/Codex/" class="tag-cloud-item" data-count="1">
+        #Codex
+      </a>
+    
+      <a href="/tags/Crypto/" class="tag-cloud-item" data-count="3">
+        #Crypto
+      </a>
+    
+      <a href="/tags/Deep-Research/" class="tag-cloud-item" data-count="1">
+        #Deep Research
+      </a>
+    
+      <a href="/tags/Deliverables/" class="tag-cloud-item" data-count="1">
+        #Deliverables
+      </a>
+    
+      <a href="/tags/Design/" class="tag-cloud-item" data-count="1">
+        #Design
+      </a>
+    
+      <a href="/tags/Enterprise/" class="tag-cloud-item" data-count="1">
+        #Enterprise
+      </a>
+    
+      <a href="/tags/Environment/" class="tag-cloud-item" data-count="1">
+        #Environment
+      </a>
+    
+      <a href="/tags/Environment-Engineering/" class="tag-cloud-item" data-count="1">
+        #Environment Engineering
+      </a>
+    
+      <a href="/tags/Evaluation/" class="tag-cloud-item" data-count="3">
+        #Evaluation
+      </a>
+    
+      <a href="/tags/Gemini/" class="tag-cloud-item" data-count="1">
+        #Gemini
+      </a>
+    
+      <a href="/tags/GitHub-Copilot/" class="tag-cloud-item" data-count="1">
+        #GitHub Copilot
+      </a>
+    
+      <a href="/tags/Google-DeepMind/" class="tag-cloud-item" data-count="1">
+        #Google DeepMind
+      </a>
+    
+      <a href="/tags/Grok/" class="tag-cloud-item" data-count="1">
+        #Grok
+      </a>
+    
+      <a href="/tags/Harness-Engineering/" class="tag-cloud-item" data-count="1">
+        #Harness Engineering
+      </a>
+    
+      <a href="/tags/Industrial-AI/" class="tag-cloud-item" data-count="1">
+        #Industrial AI
+      </a>
+    
+      <a href="/tags/Infrastructure/" class="tag-cloud-item" data-count="1">
+        #Infrastructure
+      </a>
+    
+      <a href="/tags/MCP/" class="tag-cloud-item" data-count="1">
+        #MCP
+      </a>
+    
+      <a href="/tags/Meta/" class="tag-cloud-item" data-count="1">
+        #Meta
+      </a>
+    
+      <a href="/tags/NVIDIA/" class="tag-cloud-item" data-count="1">
+        #NVIDIA
+      </a>
+    
+      <a href="/tags/OpenAI/" class="tag-cloud-item" data-count="2">
+        #OpenAI
+      </a>
+    
+      <a href="/tags/Payment/" class="tag-cloud-item" data-count="1">
+        #Payment
+      </a>
+    
+      <a href="/tags/Polymarket/" class="tag-cloud-item" data-count="3">
+        #Polymarket
+      </a>
+    
+      <a href="/tags/Prediction-Market/" class="tag-cloud-item" data-count="2">
+        #Prediction Market
+      </a>
+    
+      <a href="/tags/Productivity/" class="tag-cloud-item" data-count="1">
+        #Productivity
+      </a>
+    
+      <a href="/tags/Reliability/" class="tag-cloud-item" data-count="1">
+        #Reliability
+      </a>
+    
+      <a href="/tags/Robotics/" class="tag-cloud-item" data-count="1">
+        #Robotics
+      </a>
+    
+      <a href="/tags/Runtime/" class="tag-cloud-item" data-count="2">
+        #Runtime
+      </a>
+    
+      <a href="/tags/Sandbox/" class="tag-cloud-item" data-count="1">
+        #Sandbox
+      </a>
+    
+      <a href="/tags/Simulation/" class="tag-cloud-item" data-count="3">
+        #Simulation
+      </a>
+    
+      <a href="/tags/Singapore/" class="tag-cloud-item" data-count="1">
+        #Singapore
+      </a>
+    
+      <a href="/tags/Sovereign-AI/" class="tag-cloud-item" data-count="1">
+        #Sovereign AI
+      </a>
+    
+      <a href="/tags/Stablecoin/" class="tag-cloud-item" data-count="2">
+        #Stablecoin
+      </a>
+    
+      <a href="/tags/Testing/" class="tag-cloud-item" data-count="1">
+        #Testing
+      </a>
+    
+      <a href="/tags/Tool-Use/" class="tag-cloud-item" data-count="1">
+        #Tool Use
+      </a>
+    
+      <a href="/tags/ToolSimulator/" class="tag-cloud-item" data-count="1">
+        #ToolSimulator
+      </a>
+    
+      <a href="/tags/UK/" class="tag-cloud-item" data-count="1">
+        #UK
+      </a>
+    
+      <a href="/tags/Web/" class="tag-cloud-item" data-count="1">
+        #Web
+      </a>
+    
+      <a href="/tags/Web3/" class="tag-cloud-item" data-count="4">
+        #Web3
+      </a>
+    
+      <a href="/tags/White-Collar/" class="tag-cloud-item" data-count="1">
+        #White Collar
+      </a>
+    
+      <a href="/tags/Workflow/" class="tag-cloud-item" data-count="1">
+        #Workflow
+      </a>
+    
+      <a href="/tags/Xcode/" class="tag-cloud-item" data-count="1">
+        #Xcode
+      </a>
+    
+      <a href="/tags/x402/" class="tag-cloud-item" data-count="1">
+        #x402
+      </a>
+    
+      <a href="/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/" class="tag-cloud-item" data-count="1">
+        #个人成长
+      </a>
+    
+      <a href="/tags/%E4%BA%92%E8%81%94%E7%BD%91%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/" class="tag-cloud-item" data-count="1">
+        #互联网基础设施
+      </a>
+    
+      <a href="/tags/%E4%BC%81%E4%B8%9A%E8%BD%AF%E4%BB%B6/" class="tag-cloud-item" data-count="2">
+        #企业软件
+      </a>
+    
+      <a href="/tags/%E4%BC%B0%E5%80%BC/" class="tag-cloud-item" data-count="1">
+        #估值
+      </a>
+    
+      <a href="/tags/%E5%85%A8%E7%90%83AI/" class="tag-cloud-item" data-count="1">
+        #全球AI
+      </a>
+    
+      <a href="/tags/%E5%85%A8%E7%90%83%E7%AB%9E%E4%BA%89/" class="tag-cloud-item" data-count="1">
+        #全球竞争
+      </a>
+    
+      <a href="/tags/%E5%85%A8%E7%90%83%E8%B5%84%E6%9C%AC/" class="tag-cloud-item" data-count="1">
+        #全球资本
+      </a>
+    
+      <a href="/tags/%E5%8A%B3%E5%8A%A8%E5%B8%82%E5%9C%BA/" class="tag-cloud-item" data-count="1">
+        #劳动市场
+      </a>
+    
+      <a href="/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/" class="tag-cloud-item" data-count="1">
+        #大模型
+      </a>
+    
+      <a href="/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/" class="tag-cloud-item" data-count="2">
+        #工作流
+      </a>
+    
+      <a href="/tags/%E5%B8%82%E5%9C%BA%E5%AE%9A%E4%BB%B7/" class="tag-cloud-item" data-count="1">
+        #市场定价
+      </a>
+    
+      <a href="/tags/%E5%B9%B3%E5%8F%B0%E5%85%AC%E5%8F%B8/" class="tag-cloud-item" data-count="1">
+        #平台公司
+      </a>
+    
+      <a href="/tags/%E6%94%AF%E4%BB%98/" class="tag-cloud-item" data-count="1">
+        #支付
+      </a>
+    
+      <a href="/tags/%E6%95%B0%E5%AD%97%E7%BB%8F%E6%B5%8E/" class="tag-cloud-item" data-count="4">
+        #数字经济
+      </a>
+    
+      <a href="/tags/%E6%99%BA%E8%83%BD%E4%BD%93/" class="tag-cloud-item" data-count="1">
+        #智能体
+      </a>
+    
+      <a href="/tags/%E6%9C%AA%E6%9D%A5%E5%B7%A5%E4%BD%9C/" class="tag-cloud-item" data-count="1">
+        #未来工作
+      </a>
+    
+      <a href="/tags/%E6%9C%BA%E4%BC%9A%E5%9C%B0%E5%9B%BE/" class="tag-cloud-item" data-count="1">
+        #机会地图
+      </a>
+    
+      <a href="/tags/%E6%A6%82%E7%8E%87/" class="tag-cloud-item" data-count="1">
+        #概率
+      </a>
+    
+      <a href="/tags/%E6%A6%82%E7%8E%87%E6%80%9D%E8%80%83/" class="tag-cloud-item" data-count="1">
+        #概率思考
+      </a>
+    
+      <a href="/tags/%E6%A8%A1%E5%9E%8B%E5%85%AC%E5%8F%B8/" class="tag-cloud-item" data-count="1">
+        #模型公司
+      </a>
+    
+      <a href="/tags/%E6%A8%A1%E5%9E%8B%E5%8D%87%E7%BA%A7/" class="tag-cloud-item" data-count="1">
+        #模型升级
+      </a>
+    
+      <a href="/tags/%E7%94%9F%E4%BA%A7%E7%8E%87/" class="tag-cloud-item" data-count="2">
+        #生产率
+      </a>
+    
+      <a href="/tags/%E7%94%9F%E6%88%90%E5%BC%8FAI/" class="tag-cloud-item" data-count="1">
+        #生成式AI
+      </a>
+    
+      <a href="/tags/%E7%99%BD%E9%A2%86/" class="tag-cloud-item" data-count="1">
+        #白领
+      </a>
+    
+      <a href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/" class="tag-cloud-item" data-count="1">
+        #程序员
+      </a>
+    
+      <a href="/tags/%E7%B3%BB%E7%BB%9F%E8%83%BD%E5%8A%9B/" class="tag-cloud-item" data-count="1">
+        #系统能力
+      </a>
+    
+      <a href="/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/" class="tag-cloud-item" data-count="1">
+        #系统设计
+      </a>
+    
+      <a href="/tags/%E8%81%8C%E4%B8%9A/" class="tag-cloud-item" data-count="1">
+        #职业
+      </a>
+    
+      <a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/" class="tag-cloud-item" data-count="1">
+        #自动化
+      </a>
+    
+      <a href="/tags/%E8%B4%A2%E5%AF%8C%E8%B7%AF%E5%BE%84/" class="tag-cloud-item" data-count="1">
+        #财富路径
+      </a>
+    
+      <a href="/tags/%E8%B5%84%E6%9C%AC%E9%87%8D%E6%9E%84/" class="tag-cloud-item" data-count="1">
+        #资本重构
+      </a>
+    
+      <a href="/tags/%E9%87%91%E8%9E%8D/" class="tag-cloud-item" data-count="1">
+        #金融
+      </a>
+    
+      <a href="/tags/%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA/" class="tag-cloud-item" data-count="1">
+        #金融市场
+      </a>
+    
+      <a href="/tags/%E9%A2%84%E6%B5%8B%E5%B8%82%E5%9C%BA/" class="tag-cloud-item" data-count="1">
+        #预测市场
+      </a>
+    
+      <a href="/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86/" class="tag-cloud-item" data-count="1">
+        #风险管理
+      </a>
+    
+  </div>
+</div>
+
+
+
+<div class="widget widget-archive">
+  <h3 class="widget-title">Archive</h3>
+  <ul class="widget-list">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      <a href="/archives" class="widget-link">
+        <span>2026 / 04</span>
+        <span class="widget-count">19</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+
+    </aside>
+    
+  </div>
+</main>
+
+  <footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-info">
+      <p>&copy; 2024 - 2026 <a href="/">小触AI</a></p>
+      <p class="footer-powered">
+        Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a>
+        &middot; Theme <strong>Pretext AI</strong>
+        &middot; Text engine by <a href="https://github.com/chenglou/pretext" target="_blank" rel="noopener">Pretext</a>
+      </p>
+    </div>
+    
+    <div class="footer-social">
+      
+      
+    </div>
+    
+  </div>
+</footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

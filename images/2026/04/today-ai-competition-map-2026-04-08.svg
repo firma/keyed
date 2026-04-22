@@ -1,0 +1,37 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F7F3"/>
+  <text x="800" y="90" text-anchor="middle" font-size="42" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">AI Competition Map 2026</text>
+  <text x="800" y="130" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#666666">Where the industry is really competing now</text>
+  <line x1="800" y1="180" x2="800" y2="760" stroke="#D9D9D1" stroke-width="2"/>
+  <line x1="120" y1="470" x2="1480" y2="470" stroke="#D9D9D1" stroke-width="2"/>
+  <g transform="translate(150,220)">
+    <text x="0" y="0" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Models</text>
+    <text x="0" y="55" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Reasoning</text>
+    <text x="0" y="95" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Multimodality</text>
+    <text x="0" y="135" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Context</text>
+    <text x="0" y="175" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Code generation</text>
+  </g>
+  <g transform="translate(900,220)">
+    <text x="0" y="0" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Agents</text>
+    <text x="0" y="55" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Planning</text>
+    <text x="0" y="95" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Tool use</text>
+    <text x="0" y="135" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Long-horizon tasks</text>
+    <text x="0" y="175" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Autonomous execution</text>
+  </g>
+  <g transform="translate(150,540)">
+    <text x="0" y="0" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Enterprise</text>
+    <text x="0" y="55" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Workflow integration</text>
+    <text x="0" y="95" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Permissions</text>
+    <text x="0" y="135" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Observability</text>
+    <text x="0" y="175" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Reliability</text>
+  </g>
+  <g transform="translate(900,540)">
+    <text x="0" y="0" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Infrastructure</text>
+    <text x="0" y="55" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Compute</text>
+    <text x="0" y="95" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Data centers</text>
+    <text x="0" y="135" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Inference cost</text>
+    <text x="0" y="175" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Deployment stack</text>
+  </g>
+  <rect x="120" y="790" width="1360" height="58" rx="12" fill="#111111"/>
+  <text x="800" y="827" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3">The center of gravity is shifting from model quality to system capability.</text>
+</svg>

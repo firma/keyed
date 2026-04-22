@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#08111d"/><stop offset="100%" stop-color="#122642"/></linearGradient>
+  <linearGradient id="left" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0f1f35"/><stop offset="100%" stop-color="#12304d"/></linearGradient>
+  <linearGradient id="right" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#151b33"/><stop offset="100%" stop-color="#2b2352"/></linearGradient>
+</defs>
+<rect width="1600" height="1050" fill="url(#bg)"/>
+<text x="100" y="120" fill="#eef6ff" font-size="56" font-family="Arial, Helvetica, sans-serif" font-weight="700">模型公司 vs 平台公司：估值逻辑差异</text>
+<text x="100" y="170" fill="#a9bfd5" font-size="28" font-family="Arial, Helvetica, sans-serif">金融市场对 AI 公司，正在从模型叙事切换到平台结构与现金流逻辑</text>
+<rect x="110" y="250" width="610" height="650" rx="34" fill="url(#left)" stroke="#67e8f9" stroke-opacity="0.35"/>
+<rect x="880" y="250" width="610" height="650" rx="34" fill="url(#right)" stroke="#8b5cf6" stroke-opacity="0.35"/>
+<text x="160" y="340" fill="#67e8f9" font-size="40" font-family="Arial, Helvetica, sans-serif" font-weight="700">模型公司</text>
+<text x="930" y="340" fill="#a78bfa" font-size="40" font-family="Arial, Helvetica, sans-serif" font-weight="700">平台公司</text>
+<text x="160" y="420" fill="#f4f8ff" font-size="30" font-family="Arial, Helvetica, sans-serif">市场主要关注：</text>
+<text x="160" y="480" fill="#dbe8f4" font-size="26" font-family="Arial, Helvetica, sans-serif">• 模型性能与技术领先性</text>
+<text x="160" y="530" fill="#dbe8f4" font-size="26" font-family="Arial, Helvetica, sans-serif">• Benchmark / 评测排名</text>
+<text x="160" y="580" fill="#dbe8f4" font-size="26" font-family="Arial, Helvetica, sans-serif">• 训练资源与算力稀缺性</text>
+<text x="160" y="630" fill="#dbe8f4" font-size="26" font-family="Arial, Helvetica, sans-serif">• 技术想象力与未来上限</text>
+<text x="160" y="725" fill="#f4f8ff" font-size="30" font-family="Arial, Helvetica, sans-serif">主要风险：</text>
+<text x="160" y="785" fill="#dbe8f4" font-size="26" font-family="Arial, Helvetica, sans-serif">• 商业化路径不清晰</text>
+<text x="160" y="835" fill="#dbe8f4" font-size="26" font-family="Arial, Helvetica, sans-serif">• 收入与用户关系可替代</text>
+<text x="930" y="420" fill="#f4f8ff" font-size="30" font-family="Arial, Helvetica, sans-serif">市场主要关注：</text>
+<text x="930" y="480" fill="#dbe8f4" font-size="26" font-family="Arial, Helvetica, sans-serif">• 工作流入口与分发控制权</text>
+<text x="930" y="530" fill="#dbe8f4" font-size="26" font-family="Arial, Helvetica, sans-serif">• 付费转化、留存与 ARPU</text>
+<text x="930" y="580" fill="#dbe8f4" font-size="26" font-family="Arial, Helvetica, sans-serif">• 成本结构与现金流质量</text>
+<text x="930" y="630" fill="#dbe8f4" font-size="26" font-family="Arial, Helvetica, sans-serif">• 系统控制力与组织部署能力</text>
+<text x="930" y="725" fill="#f4f8ff" font-size="30" font-family="Arial, Helvetica, sans-serif">溢价来源：</text>
+<text x="930" y="785" fill="#dbe8f4" font-size="26" font-family="Arial, Helvetica, sans-serif">• 稳定收入与用户锁定</text>
+<text x="930" y="835" fill="#dbe8f4" font-size="26" font-family="Arial, Helvetica, sans-serif">• 更强的长期定价权</text>
+<line x1="760" y1="300" x2="840" y2="860" stroke="#7dd3fc" stroke-opacity="0.4" stroke-width="4" stroke-dasharray="10 10"/>
+<text x="620" y="965" fill="#d7e6f2" font-size="30" font-family="Arial, Helvetica, sans-serif">资本判断正在迁移：技术领先 ≠ 最终估值领先；控制入口与现金流，才更容易拿到长期溢价</text>
+</svg>

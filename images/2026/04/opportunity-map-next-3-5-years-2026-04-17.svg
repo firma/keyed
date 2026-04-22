@@ -1,0 +1,30 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F7F3"/>
+  <text x="800" y="86" text-anchor="middle" font-size="38" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">The Opportunity Map for Ordinary People in the Next 3–5 Years</text>
+  <text x="800" y="126" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#666666">Where people can still build leverage in a structurally unequal world</text>
+  <rect x="110" y="200" width="260" height="180" rx="18" fill="#EEF5FF" stroke="#D9D9D1"/>
+  <rect x="410" y="200" width="260" height="180" rx="18" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <rect x="710" y="200" width="260" height="180" rx="18" fill="#FFF8E8" stroke="#D9D9D1"/>
+  <rect x="1010" y="200" width="260" height="180" rx="18" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <rect x="1310" y="200" width="180" height="180" rx="18" fill="#EEF5FF" stroke="#D9D9D1"/>
+  <text x="140" y="250" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">AI Leverage</text>
+  <text x="140" y="294" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">Turn one person</text>
+  <text x="140" y="324" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">into a small system</text>
+  <text x="440" y="250" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Asset Mindset</text>
+  <text x="440" y="294" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">Move beyond</text>
+  <text x="440" y="324" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">salary-only logic</text>
+  <text x="740" y="250" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Global Digital</text>
+  <text x="740" y="284" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Systems</text>
+  <text x="740" y="324" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">Build cashflow</text>
+  <text x="740" y="354" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">beyond local markets</text>
+  <text x="1040" y="250" font-size="26" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Finance × AI</text>
+  <text x="1040" y="284" font-size="26" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">× Web3</text>
+  <text x="1040" y="324" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">Cross-domain</text>
+  <text x="1040" y="354" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">advantage zone</text>
+  <text x="1335" y="250" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Structural</text>
+  <text x="1335" y="284" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Judgment</text>
+  <text x="1335" y="324" font-size="16" font-family="Arial, Helvetica, sans-serif" fill="#111111">Know where</text>
+  <text x="1335" y="350" font-size="16" font-family="Arial, Helvetica, sans-serif" fill="#111111">capital flows</text>
+  <rect x="180" y="804" width="1240" height="54" rx="12" fill="#111111"/>
+  <text x="800" y="839" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3">The future rewards not just effort, but systems, assets, and leverage.</text>
+</svg>

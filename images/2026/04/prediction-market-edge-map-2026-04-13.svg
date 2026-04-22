@@ -1,0 +1,27 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F7F3"/>
+  <text x="800" y="88" text-anchor="middle" font-size="40" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Where the Edge Really Comes From in Prediction Markets</text>
+  <text x="800" y="128" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#666666">Five sources of advantage that AI can augment</text>
+  <rect x="120" y="190" width="420" height="200" rx="18" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <rect x="590" y="190" width="420" height="200" rx="18" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <rect x="1060" y="190" width="420" height="200" rx="18" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <rect x="355" y="450" width="420" height="200" rx="18" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <rect x="825" y="450" width="420" height="200" rx="18" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <text x="160" y="245" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Information Edge</text>
+  <text x="160" y="290" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">finding new signal before</text>
+  <text x="160" y="320" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">the market absorbs it</text>
+  <text x="630" y="245" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Structural Edge</text>
+  <text x="630" y="290" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">understanding the event</text>
+  <text x="630" y="320" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">better than the market</text>
+  <text x="1100" y="245" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Timing Edge</text>
+  <text x="1100" y="290" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">repricing faster than</text>
+  <text x="1100" y="320" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">consensus updates</text>
+  <text x="395" y="505" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Microstructure Edge</text>
+  <text x="395" y="550" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">spotting market distortions</text>
+  <text x="395" y="580" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">in liquidity and pricing</text>
+  <text x="865" y="505" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Discipline Edge</text>
+  <text x="865" y="550" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">acting only when real</text>
+  <text x="865" y="580" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">edge actually exists</text>
+  <rect x="220" y="780" width="1160" height="56" rx="12" fill="#111111"/>
+  <text x="800" y="816" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3">The best AI system does not just trade better. It filters, structures, updates, and restrains.</text>
+</svg>

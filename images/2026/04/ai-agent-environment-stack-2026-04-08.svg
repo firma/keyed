@@ -1,0 +1,43 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F7F3"/>
+  <text x="800" y="88" text-anchor="middle" font-size="40" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">The Environment Stack for AI Agents</text>
+  <text x="800" y="128" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#666666">The four layers behind reliable agent execution</text>
+  <rect x="120" y="190" width="620" height="250" rx="18" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <rect x="860" y="190" width="620" height="250" rx="18" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <rect x="120" y="490" width="620" height="250" rx="18" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <rect x="860" y="490" width="620" height="250" rx="18" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <text x="160" y="240" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Runtime Environment</text>
+  <text x="160" y="275" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#666666">Where agents act</text>
+  <text x="160" y="325" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Code execution</text>
+  <text x="160" y="360" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Browser runtime</text>
+  <text x="160" y="395" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">• API connectors</text>
+  <text x="430" y="325" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Filesystem access</text>
+  <text x="430" y="360" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">• State management</text>
+  <text x="160" y="425" font-size="17" font-family="Arial, Helvetica, sans-serif" fill="#666666">Turns model decisions into executable actions</text>
+  <text x="900" y="240" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Evaluation Environment</text>
+  <text x="900" y="275" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#666666">Where agents are measured</text>
+  <text x="900" y="325" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Task world</text>
+  <text x="900" y="360" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">• State tracking</text>
+  <text x="900" y="395" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Trace logging</text>
+  <text x="1170" y="325" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Ground-truth checking</text>
+  <text x="1170" y="360" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Step-level scoring</text>
+  <text x="900" y="425" font-size="17" font-family="Arial, Helvetica, sans-serif" fill="#666666">Measures behavior in dynamic environments, not static answers</text>
+  <text x="160" y="540" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Simulation Environment</text>
+  <text x="160" y="575" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#666666">Where agents practice</text>
+  <text x="160" y="625" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Simulated users</text>
+  <text x="160" y="660" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Simulated tools</text>
+  <text x="160" y="695" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Dynamic workflows</text>
+  <text x="430" y="625" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Branching tasks</text>
+  <text x="430" y="660" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Scenario replay</text>
+  <text x="160" y="725" font-size="17" font-family="Arial, Helvetica, sans-serif" fill="#666666">Creates realistic but controllable worlds for iteration</text>
+  <text x="900" y="540" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Safety Sandbox</text>
+  <text x="900" y="575" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#666666">Where agents are constrained</text>
+  <text x="900" y="625" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Isolation</text>
+  <text x="900" y="660" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Permissions</text>
+  <text x="900" y="695" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Network control</text>
+  <text x="1170" y="625" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Audit logs</text>
+  <text x="1170" y="660" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Kill switch</text>
+  <text x="900" y="725" font-size="17" font-family="Arial, Helvetica, sans-serif" fill="#666666">Prevents capable agents from becoming unsafe agents</text>
+  <rect x="160" y="800" width="1280" height="56" rx="12" fill="#111111"/>
+  <text x="800" y="836" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3">Reliable agents require not just models, but engineered environments.</text>
+</svg>

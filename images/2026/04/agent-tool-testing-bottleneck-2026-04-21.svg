@@ -1,0 +1,25 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F7F3"/>
+  <text x="800" y="86" text-anchor="middle" font-size="38" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">The Real Agent Bottleneck Is No Longer Tool Use, but Tool Testing</text>
+  <text x="800" y="126" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#666666">Production agents fail not when they cannot call tools, but when no one tested how they call them</text>
+  <rect x="150" y="220" width="360" height="250" rx="20" fill="#EEF5FF" stroke="#D9D9D1"/>
+  <rect x="620" y="220" width="360" height="250" rx="20" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <rect x="1090" y="220" width="360" height="250" rx="20" fill="#FFF8E8" stroke="#D9D9D1"/>
+  <text x="330" y="285" text-anchor="middle" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Demo Stage</text>
+  <text x="330" y="335" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">Can it call the tool?</text>
+  <text x="800" y="285" text-anchor="middle" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Workflow Stage</text>
+  <text x="800" y="335" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">Can it chain tools together?</text>
+  <text x="1270" y="285" text-anchor="middle" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Production Stage</text>
+  <text x="1270" y="335" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">What breaks before launch?</text>
+  <line x1="510" y1="345" x2="620" y2="345" stroke="#111111" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="980" y1="345" x2="1090" y2="345" stroke="#111111" stroke-width="4" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#111111"/>
+    </marker>
+  </defs>
+  <rect x="260" y="560" width="1080" height="180" rx="20" fill="#111111"/>
+  <text x="800" y="620" text-anchor="middle" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3" font-weight="700">The new stack</text>
+  <text x="800" y="665" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3">Tool simulator · Scenario replay · Edge-case generation · Failure analysis</text>
+  <text x="800" y="710" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3">The winning agent is not the one that uses tools most. It is the one that breaks least.</text>
+</svg>

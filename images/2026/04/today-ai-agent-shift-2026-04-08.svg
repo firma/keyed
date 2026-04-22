@@ -1,0 +1,27 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F7F3"/>
+  <text x="800" y="90" text-anchor="middle" font-size="42" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Today’s AI Shift</text>
+  <text x="800" y="130" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#666666">From Model Competition to Agent Competition</text>
+  <rect x="120" y="200" width="580" height="500" rx="20" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <rect x="900" y="200" width="580" height="500" rx="20" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <text x="410" y="260" text-anchor="middle" font-size="32" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Model Competition</text>
+  <text x="980" y="260" text-anchor="middle" font-size="32" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Agent Competition</text>
+  <text x="180" y="340" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Benchmarks</text>
+  <text x="180" y="390" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Context window</text>
+  <text x="180" y="440" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Coding ability</text>
+  <text x="180" y="490" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Reasoning quality</text>
+  <text x="180" y="540" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Multimodal performance</text>
+  <text x="960" y="340" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Tool use</text>
+  <text x="960" y="390" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Workflow execution</text>
+  <text x="960" y="440" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#111111">• System integration</text>
+  <text x="960" y="490" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Permissioned actions</text>
+  <text x="960" y="540" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#111111">• Enterprise deployment</text>
+  <line x1="700" y1="450" x2="900" y2="450" stroke="#111111" stroke-width="4" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#111111"/>
+    </marker>
+  </defs>
+  <rect x="120" y="780" width="1360" height="60" rx="12" fill="#111111"/>
+  <text x="800" y="818" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3">AI is no longer just competing on answers. It is competing on execution.</text>
+</svg>
