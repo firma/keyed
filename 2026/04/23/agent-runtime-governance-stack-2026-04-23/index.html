@@ -4,16 +4,16 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>小触AI</title>
-<meta name="description" content="聚焦模型、Agent、AI 编程、运行时系统与产业变化的前沿观察站">
+<title>AI 正在进入“可托管 Agent”时代，竞争点开始从模型能力转向运行时与治理 | 小触AI</title>
+<meta name="description" content="最近一轮更值得写的变化，不是哪家模型又更强了，而是头部公司开始把 Agent 包装成可长期运行、可治理、可审计、可进生产系统的正式能力。">
 <meta name="author" content="keyed">
 
 <!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="小触AI">
-<meta property="og:description" content="聚焦模型、Agent、AI 编程、运行时系统与产业变化的前沿观察站">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI 正在进入“可托管 Agent”时代，竞争点开始从模型能力转向运行时与治理">
+<meta property="og:description" content="最近一轮更值得写的变化，不是哪家模型又更强了，而是头部公司开始把 Agent 包装成可长期运行、可治理、可审计、可进生产系统的正式能力。">
 <meta property="og:site_name" content="小触AI">
-<meta property="og:url" content="https://keyed.cn/tags/AI%E7%BB%8F%E6%B5%8E/index.html">
+<meta property="og:url" content="https://keyed.cn/2026/04/23/agent-runtime-governance-stack-2026-04-23/index.html">
 
 <!-- Preconnect -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,14 +40,25 @@
 <link rel="icon" href="/images/favicon.ico">
 
 
-<meta name="description" content="聚焦模型、Agent、AI 编程、运行时系统与产业变化的前沿观察站">
-<meta property="og:type" content="website">
-<meta property="og:title" content="小触AI">
-<meta property="og:url" content="https://keyed.cn/tags/AI%E7%BB%8F%E6%B5%8E/index.html">
+<meta name="description" content="最近一轮更值得写的变化，不是哪家模型又更强了，而是头部公司开始把 Agent 包装成可长期运行、可治理、可审计、可进生产系统的正式能力。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI 正在进入“可托管 Agent”时代，竞争点开始从模型能力转向运行时与治理">
+<meta property="og:url" content="https://keyed.cn/2026/04/23/agent-runtime-governance-stack-2026-04-23/index.html">
 <meta property="og:site_name" content="小触AI">
-<meta property="og:description" content="聚焦模型、Agent、AI 编程、运行时系统与产业变化的前沿观察站">
+<meta property="og:description" content="最近一轮更值得写的变化，不是哪家模型又更强了，而是头部公司开始把 Agent 包装成可长期运行、可治理、可审计、可进生产系统的正式能力。">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-04-23T08:25:00.000Z">
+<meta property="article:modified_time" content="2026-04-23T16:08:52.990Z">
 <meta property="article:author" content="keyed">
+<meta property="article:tag" content="AI">
+<meta property="article:tag" content="Agent">
+<meta property="article:tag" content="Runtime">
+<meta property="article:tag" content="Governance">
+<meta property="article:tag" content="Anthropic">
+<meta property="article:tag" content="AWS">
+<meta property="article:tag" content="Google Cloud">
+<meta property="article:tag" content="NVIDIA">
+<meta property="article:tag" content="Ai2">
 <meta name="twitter:card" content="summary">
 
 <meta name="generator" content="Hexo 7.3.0"></head>
@@ -74,7 +85,7 @@
           Categories
         </a>
       
-        <a href="/tags" class="nav-link active">
+        <a href="/tags" class="nav-link">
           Tags
         </a>
       
@@ -96,134 +107,179 @@
   <main class="main-container">
   <div class="content-wrapper">
     <div class="content-area">
-      <div class="taxonomy-page">
-        <div class="taxonomy-header">
-          <h1 class="page-title">#AI经济</h1>
-          
-        </div>
-
-        
-          <div class="posts-grid">
+      <article class="post-full">
+        <header class="post-header">
+          <div class="post-header-meta">
+            <time datetime="2026-04-23" class="post-date-full">
+              2026-04-23
+            </time>
             
-              <article class="post-card" data-pretext-title>
-  <div class="post-card-inner">
-    <div class="post-meta">
-      <time datetime="2026-04-08" class="post-date">
-        <span class="date-day">08</span>
-        <span class="date-rest">4月 2026</span>
-      </time>
-      
-      <div class="post-categories">
-        
-          <a href="/categories/AI%E8%B5%84%E8%AE%AF/" class="category-badge">AI资讯</a>
-        
-          <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/" class="category-badge">行业观察</a>
-        
-          <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E4%BB%8A%E6%97%A5%E5%BF%AB%E8%AF%84/" class="category-badge">今日快评</a>
-        
-      </div>
-      
-    </div>
-    <div class="post-content-preview">
-      <h2 class="post-title">
-        <a href="/2026/04/08/today-ai-agent-competition-2026-04-08/">今天 AI 世界真正发生了什么：从模型竞争转向 Agent 竞争，行业正在进入兑现期</a>
-      </h2>
-      
-      <div class="post-footer">
-        
-        <div class="post-tags">
-          
-            <a href="/tags/AI/" class="tag-pill">#AI</a>
-          
-            <a href="/tags/Agent/" class="tag-pill">#Agent</a>
-          
-            <a href="/tags/AI%E7%BB%8F%E6%B5%8E/" class="tag-pill">#AI经济</a>
-          
-            <a href="/tags/%E7%94%9F%E4%BA%A7%E7%8E%87/" class="tag-pill">#生产率</a>
-          
-            <a href="/tags/%E4%BC%81%E4%B8%9A%E8%BD%AF%E4%BB%B6/" class="tag-pill">#企业软件</a>
-          
-            <a href="/tags/%E6%95%B0%E5%AD%97%E7%BB%8F%E6%B5%8E/" class="tag-pill">#数字经济</a>
-          
-            <a href="/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/" class="tag-pill">#工作流</a>
-          
-            <a href="/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/" class="tag-pill">#大模型</a>
-          
-        </div>
-        
-        <a href="/2026/04/08/today-ai-agent-competition-2026-04-08/" class="read-more">
-          Read more <span class="arrow">&rarr;</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</article>
-
+              <span class="meta-sep">/</span>
+              
+                <a href="/categories/AI%E8%B5%84%E8%AE%AF/" class="category-link">AI资讯</a>, 
+              
+                <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/" class="category-link">行业观察</a>, 
+              
+                <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/Agent/" class="category-link">Agent</a>, 
+              
+                <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/Agent/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/" class="category-link">基础设施</a>
+              
             
-              <article class="post-card" data-pretext-title>
-  <div class="post-card-inner">
-    <div class="post-meta">
-      <time datetime="2026-04-08" class="post-date">
-        <span class="date-day">08</span>
-        <span class="date-rest">4月 2026</span>
-      </time>
-      
-      <div class="post-categories">
-        
-          <a href="/categories/AI%E8%B5%84%E8%AE%AF/" class="category-badge">AI资讯</a>
-        
-          <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/" class="category-badge">行业观察</a>
-        
-          <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E5%AE%8F%E8%A7%82%E7%A0%94%E7%A9%B6/" class="category-badge">宏观研究</a>
-        
-      </div>
-      
-    </div>
-    <div class="post-content-preview">
-      <h2 class="post-title">
-        <a href="/2026/04/08/ai-economy-rewriting-the-world-2026-04-08/">AI 经济正在重写世界：生产率、劳动、资本与 Agent 时代的真实拐点</a>
-      </h2>
-      
-      <div class="post-footer">
-        
-        <div class="post-tags">
+          </div>
+          <h1 class="post-full-title" data-pretext-title>AI 正在进入“可托管 Agent”时代，竞争点开始从模型能力转向运行时与治理</h1>
           
-            <a href="/tags/AI/" class="tag-pill">#AI</a>
-          
-            <a href="/tags/AI%E7%BB%8F%E6%B5%8E/" class="tag-pill">#AI经济</a>
-          
-            <a href="/tags/%E6%99%BA%E8%83%BD%E4%BD%93/" class="tag-pill">#智能体</a>
-          
-            <a href="/tags/%E7%94%9F%E4%BA%A7%E7%8E%87/" class="tag-pill">#生产率</a>
-          
-            <a href="/tags/%E5%8A%B3%E5%8A%A8%E5%B8%82%E5%9C%BA/" class="tag-pill">#劳动市场</a>
-          
-            <a href="/tags/%E8%B5%84%E6%9C%AC%E9%87%8D%E6%9E%84/" class="tag-pill">#资本重构</a>
-          
-            <a href="/tags/%E4%BC%81%E4%B8%9A%E8%BD%AF%E4%BB%B6/" class="tag-pill">#企业软件</a>
-          
-            <a href="/tags/%E6%95%B0%E5%AD%97%E7%BB%8F%E6%B5%8E/" class="tag-pill">#数字经济</a>
-          
-            <a href="/tags/%E7%94%9F%E6%88%90%E5%BC%8FAI/" class="tag-pill">#生成式AI</a>
-          
-            <a href="/tags/%E5%85%A8%E7%90%83%E7%AB%9E%E4%BA%89/" class="tag-pill">#全球竞争</a>
-          
-        </div>
-        
-        <a href="/2026/04/08/ai-economy-rewriting-the-world-2026-04-08/" class="read-more">
-          Read more <span class="arrow">&rarr;</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</article>
-
+          <div class="post-header-tags">
+            
+              <a href="/tags/AI/" class="tag-pill">#AI</a>
+            
+              <a href="/tags/Agent/" class="tag-pill">#Agent</a>
+            
+              <a href="/tags/Runtime/" class="tag-pill">#Runtime</a>
+            
+              <a href="/tags/Governance/" class="tag-pill">#Governance</a>
+            
+              <a href="/tags/Anthropic/" class="tag-pill">#Anthropic</a>
+            
+              <a href="/tags/AWS/" class="tag-pill">#AWS</a>
+            
+              <a href="/tags/Google-Cloud/" class="tag-pill">#Google Cloud</a>
+            
+              <a href="/tags/NVIDIA/" class="tag-pill">#NVIDIA</a>
+            
+              <a href="/tags/Ai2/" class="tag-pill">#Ai2</a>
             
           </div>
           
+          <div class="reading-info" id="readingInfo">
+            <span class="reading-metric" id="wordCount"></span>
+            <span class="reading-metric" id="readTime"></span>
+          </div>
+        </header>
 
-        
-      </div>
+        <div class="post-body" id="postBody">
+          <p>这两天如果把几家官方信号放在一起看，会发现一个很明确的新变化。</p>
+<blockquote>
+<p><strong>AI 行业的重点，正在从“做出更强的 Agent”，转向“把 Agent 变成企业可以正式托管的生产系统”。</strong></p>
+</blockquote>
+<p>这不是措辞变化，而是产业重心变化。</p>
+<p>过去大家谈 Agent，更多是在讲它会不会规划、会不会调用工具、能不能做更长任务。</p>
+<p>但现在头部公司开始补的是另一层东西：</p>
+<ul>
+<li>运行时</li>
+<li>调度与伸缩</li>
+<li>安全隔离</li>
+<li>权限边界</li>
+<li>审计与治理</li>
+<li>可长期运行的企业接入方式</li>
+</ul>
+<p>换句话说，Agent 正在从“一个很厉害的能力演示”，变成“一个可以被企业接进正式流程的系统单元”。</p>
+<h2 id="一、Anthropic-和-AWS-给出的信号最直接，重点已经不是聊天，而是长期运行工作"><a href="#一、Anthropic-和-AWS-给出的信号最直接，重点已经不是聊天，而是长期运行工作" class="headerlink" title="一、Anthropic 和 AWS 给出的信号最直接，重点已经不是聊天，而是长期运行工作"></a>一、Anthropic 和 AWS 给出的信号最直接，重点已经不是聊天，而是长期运行工作</h2><p>最明显的一条官方信号，来自 AWS 对 <strong>Claude Opus 4.7 in Amazon Bedrock</strong> 的发布。</p>
+<p>AWS 的表述里，重点并不是单纯强调模型更聪明，而是反复强调几件事：</p>
+<ul>
+<li>更适合 <strong>agentic coding</strong></li>
+<li>更适合 <strong>long-running agents</strong></li>
+<li>更适合 <strong>professional work</strong></li>
+<li>配套的是 Bedrock 的 <strong>next generation inference engine</strong></li>
+<li>明确强调 <strong>zero operator access</strong>，也就是运营人员看不到客户 prompt 和 response</li>
+</ul>
+<p>这很关键。</p>
+<p>因为这说明云平台现在卖的已经不只是“模型接入资格”，而是 <strong>Agent 进入生产环境所需要的托管条件</strong>。</p>
+<p>也就是说，企业真正关心的问题已经变成：</p>
+<ul>
+<li>这个 Agent 能不能连续跑很久</li>
+<li>负载上来时能不能稳定扩容</li>
+<li>敏感数据能不能留在信任边界内</li>
+<li>出问题时能不能知道它做了什么</li>
+</ul>
+<p>Anthropic 自己新闻页的两条信号也很一致。</p>
+<p>一条是 <strong>Claude Design</strong>，它让 Claude 不再只输出文字，而是直接进入设计、原型、slides、one-pager 这些实际工作物里。另一条是 <strong>Project Glasswing</strong>，它把 AWS、Google、Microsoft、NVIDIA、Apple 等公司拉进来，目标是保护关键软件。</p>
+<p>这两条放在一起的意思很清楚：</p>
+<blockquote>
+<p><strong>Agent 一边在进入真实工作界面，一边在进入更高要求的安全协同层。</strong></p>
+</blockquote>
+<p>也就是说，Agent 的问题已经不再只是“会不会做事”，而是“进入关键流程之后，怎么安全地做事”。</p>
+<h2 id="二、Google-和-NVIDIA-在推进的，是-Agent-的企业化与基础设施化"><a href="#二、Google-和-NVIDIA-在推进的，是-Agent-的企业化与基础设施化" class="headerlink" title="二、Google 和 NVIDIA 在推进的，是 Agent 的企业化与基础设施化"></a>二、Google 和 NVIDIA 在推进的，是 Agent 的企业化与基础设施化</h2><p>Google Cloud 4 月 22 日的官方文章标题很直白：<strong>10 leading enterprises show why agents mean business</strong>。</p>
+<p>这里最值得注意的不是某个单点案例，而是 Google 明确把 Agent 讲成一种企业重构工具。Capcom、Citi Wealth、Home Depot、Mars 这些案例都在说明一件事：</p>
+<blockquote>
+<p><strong>Agent 不再只是创新部门试验品，而是在被当作企业运营体系的一部分。</strong></p>
+</blockquote>
+<p>NVIDIA 的两条官方信息又把这个趋势往下压了一层。</p>
+<p>一条是和 Google Cloud 合作推进 <strong>agentic and physical AI</strong>。官方强调的是一整套 AI-optimized infrastructure，包括更强的 GPU 集群、保密计算能力、Gemini Enterprise Agent Platform 配合 Nemotron open models，以及面向 AI factories 的部署底座。</p>
+<p>另一条是 NVIDIA 与 Adobe、WPP 的合作。这里尤其重要的一句是：当 Agent 开始编排多步工作流、访问敏感数据、触发营销与内容系统动作时，企业需要的不只是模型能力，而是 <strong>clear rules of engagement</strong>，也就是清晰的权限和治理边界。NVIDIA 给出的答案是 <strong>OpenShell secure runtime</strong>。</p>
+<p>这说明什么？</p>
+<p>说明行业已经默认接受一个现实：</p>
+<blockquote>
+<p><strong>真正能进企业生产流程的 Agent，一定不是裸跑的。它必须运行在受控运行时里。</strong></p>
+</blockquote>
+<p>这和前两年的 AI 叙事差别很大。</p>
+<p>前两年大家最爱讲的是“能力突破”。现在开始讲的是“能力如何被托管”。</p>
+<h2 id="三、Ai2-的研究信号说明，行业也在为-Agent-的模块化和评测补底座"><a href="#三、Ai2-的研究信号说明，行业也在为-Agent-的模块化和评测补底座" class="headerlink" title="三、Ai2 的研究信号说明，行业也在为 Agent 的模块化和评测补底座"></a>三、Ai2 的研究信号说明，行业也在为 Agent 的模块化和评测补底座</h2><p>Ai2 最近两条官方研究更新也很值得看。</p>
+<p>第一条是 <strong>Train separately, merge together</strong>。它讨论的是模块化后训练，让不同能力专家分别训练，再并进一个 mixture-of-experts 体系里。这背后不是单纯追求模型新奇，而是在解决一个很实际的问题：</p>
+<ul>
+<li>如果 Agent 将来会被长期维护</li>
+<li>如果企业会持续替换某些能力模块</li>
+<li>如果模型系统会越来越像一个组合式软件栈</li>
+</ul>
+<p>那么模型本身也要朝着 <strong>可升级、可替换、可组合</strong> 的方向演化。</p>
+<p>第二条是 Ai2 更早发布的科学发现 agent 与开放 web agent 研究线。它们一直在提醒行业一件事：</p>
+<blockquote>
+<p><strong>Agent 能不能进生产，不只看 demo 成不成功，还要看评测、环境和模块升级能力。</strong></p>
+</blockquote>
+<p>所以你会发现，现在连研究社区都不只是卷一个 benchmark 分数，而是在补 Agent 走向真实系统之前缺失的那些东西。</p>
+<h2 id="四、真正的新中心，不是“谁先有-Agent”，而是谁先把-Agent-变成正式生产要素"><a href="#四、真正的新中心，不是“谁先有-Agent”，而是谁先把-Agent-变成正式生产要素" class="headerlink" title="四、真正的新中心，不是“谁先有 Agent”，而是谁先把 Agent 变成正式生产要素"></a>四、真正的新中心，不是“谁先有 Agent”，而是谁先把 Agent 变成正式生产要素</h2><p>把这些官方信号并起来看，我觉得这轮最值得下的判断是：</p>
+<blockquote>
+<p><strong>Agent 时代的竞争，正在从“模型能力竞争”切到“运行时、治理和正式生产接入能力竞争”。</strong></p>
+</blockquote>
+<p>这背后至少有四个层次的变化。</p>
+<h3 id="1-Agent-从回答工具变成长期运行单元"><a href="#1-Agent-从回答工具变成长期运行单元" class="headerlink" title="1. Agent 从回答工具变成长期运行单元"></a>1. Agent 从回答工具变成长期运行单元</h3><p>不再只是单轮问答，而是几小时、几天、跨系统、多步骤的持续执行。</p>
+<h3 id="2-Agent-从前台体验变成后台基础设施问题"><a href="#2-Agent-从前台体验变成后台基础设施问题" class="headerlink" title="2. Agent 从前台体验变成后台基础设施问题"></a>2. Agent 从前台体验变成后台基础设施问题</h3><p>重点从“界面好不好用”变成“调度、伸缩、稳定性、隔离做得怎么样”。</p>
+<h3 id="3-Agent-从创新功能变成组织治理问题"><a href="#3-Agent-从创新功能变成组织治理问题" class="headerlink" title="3. Agent 从创新功能变成组织治理问题"></a>3. Agent 从创新功能变成组织治理问题</h3><p>当它能访问数据、调用工具、触发动作，权限管理、审计记录、风险边界就会成为默认配置，而不是额外插件。</p>
+<h3 id="4-Agent-从模型附属品变成企业正式生产要素"><a href="#4-Agent-从模型附属品变成企业正式生产要素" class="headerlink" title="4. Agent 从模型附属品变成企业正式生产要素"></a>4. Agent 从模型附属品变成企业正式生产要素</h3><p>一旦进入设计、营销、研发、运维、知识工作这些场景，它就不再只是一个 AI feature，而更像新的数字劳动力单元。</p>
+<h2 id="五、为什么这件事值得重视"><a href="#五、为什么这件事值得重视" class="headerlink" title="五、为什么这件事值得重视"></a>五、为什么这件事值得重视</h2><p>因为这意味着，下一阶段 AI 市场里最难替代的部分，未必只是模型本身。</p>
+<p>真正更难替代的，可能是这套围绕 Agent 建起来的生产系统：</p>
+<ul>
+<li>云上的托管能力</li>
+<li>企业里的接入能力</li>
+<li>权限与合规框架</li>
+<li>长任务调度能力</li>
+<li>模块化升级能力</li>
+<li>安全运行时</li>
+<li>审计与可观测性</li>
+</ul>
+<p>谁先把这套东西做扎实，谁就更有机会成为企业默认入口。</p>
+<p>这也是为什么我觉得，这轮最重要的信号不是“谁又发了一个更强模型”，而是：</p>
+<blockquote>
+<p><strong>头部公司已经开始把 Agent 当成正式基础设施来建，而不是当成展示聪明程度的新玩具。</strong></p>
+</blockquote>
+<p>这件事一旦成立，AI 行业的壁垒就会继续往深处沉。</p>
+<p>沉到云，沉到运行时，沉到组织流程，沉到治理结构里。</p>
+<p>而那时候，真正决定胜负的，就不只是模型有多强，而是谁能让 Agent 被放心地长期使用。</p>
+<h2 id="参考来源"><a href="#参考来源" class="headerlink" title="参考来源"></a>参考来源</h2><ul>
+<li>Anthropic News: <a href="https://www.anthropic.com/news">https://www.anthropic.com/news</a></li>
+<li>AWS News Blog, Introducing Anthropic’s Claude Opus 4.7 model in Amazon Bedrock: <a href="https://aws.amazon.com/blogs/aws/introducing-anthropics-claude-opus-4-7-model-in-amazon-bedrock/">https://aws.amazon.com/blogs/aws/introducing-anthropics-claude-opus-4-7-model-in-amazon-bedrock/</a></li>
+<li>Google Blog, 10 leading enterprises show why agents mean business: <a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cloud-next-2026-customer-round-up/">https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cloud-next-2026-customer-round-up/</a></li>
+<li>NVIDIA Blog, NVIDIA and Google Cloud Collaborate to Advance Agentic and Physical AI: <a href="https://blogs.nvidia.com/blog/google-cloud-agentic-physical-ai-factories/">https://blogs.nvidia.com/blog/google-cloud-agentic-physical-ai-factories/</a></li>
+<li>NVIDIA Blog, Autonomous AI at Scale: Adobe Agents Unlock Breakthrough Creative Intelligence With NVIDIA and WPP: <a href="https://blogs.nvidia.com/blog/adobe-ai-agents-nvidia-wpp/">https://blogs.nvidia.com/blog/adobe-ai-agents-nvidia-wpp/</a></li>
+<li>Ai2 Research, Train separately, merge together: Modular post-training with mixture-of-experts: <a href="https://allenai.org/research/train-separately-merge-together-modular-post-training-with-mixture-of-experts">https://allenai.org/research/train-separately-merge-together-modular-post-training-with-mixture-of-experts</a></li>
+</ul>
+
+        </div>
+
+        <footer class="post-nav">
+          
+          <a href="/2026/04/23/ai-enters-enterprise-control-plane-2026-04-23/" class="post-nav-link prev">
+            <span class="post-nav-label">&larr; Previous</span>
+            <span class="post-nav-title">全球 AI 信息处理：AI 正在进入企业经营控制层</span>
+          </a>
+          
+          
+          <a href="/2026/04/23/ai-agent-packaging-race-2026-04-23/" class="post-nav-link next">
+            <span class="post-nav-label">Next &rarr;</span>
+            <span class="post-nav-title">AI 竞争正在从“更强模型”，转向“更完整的 agent 封装”</span>
+          </a>
+          
+        </footer>
+      </article>
     </div>
     
     <aside class="sidebar">
