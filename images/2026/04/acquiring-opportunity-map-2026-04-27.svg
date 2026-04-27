@@ -1,0 +1,23 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F7F3"/>
+  <text x="800" y="86" text-anchor="middle" font-size="40" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Where Opportunity Still Exists in Acquiring</text>
+  <text x="800" y="126" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#666666">Not in generic processing, but in narrower, deeper, more complex parts of the stack</text>
+  <rect x="170" y="230" width="280" height="220" rx="20" fill="#EEF5FF" stroke="#D9D9D1"/>
+  <rect x="500" y="230" width="280" height="220" rx="20" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <rect x="830" y="230" width="280" height="220" rx="20" fill="#FFF8E8" stroke="#D9D9D1"/>
+  <rect x="1160" y="230" width="280" height="220" rx="20" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <text x="310" y="295" text-anchor="middle" font-size="26" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Vertical Focus</text>
+  <text x="310" y="345" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">SaaS, gaming, travel,</text>
+  <text x="310" y="375" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">high-risk, subscriptions</text>
+  <text x="640" y="295" text-anchor="middle" font-size="26" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Cross-Border Complexity</text>
+  <text x="640" y="345" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">Local success rate,</text>
+  <text x="640" y="375" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">local methods, compliance</text>
+  <text x="970" y="295" text-anchor="middle" font-size="26" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Software Layer</text>
+  <text x="970" y="345" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">Routing, retries, fraud,</text>
+  <text x="970" y="375" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">recovery, analytics</text>
+  <text x="1300" y="295" text-anchor="middle" font-size="26" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">New Rails</text>
+  <text x="1300" y="345" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">A2A, open banking,</text>
+  <text x="1300" y="375" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">real-time, stablecoin</text>
+  <rect x="170" y="760" width="1260" height="56" rx="12" fill="#111111"/>
+  <text x="800" y="796" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3">The opportunity is moving away from generic acquiring and toward complexity management.</text>
+</svg>
