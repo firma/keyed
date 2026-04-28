@@ -1,0 +1,22 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F7F3"/>
+  <text x="800" y="86" text-anchor="middle" font-size="38" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">AI’s Control Relationships Are Being Rewritten</text>
+  <text x="800" y="126" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#666666">Cloud, IP, revenue share, compute, and distribution are becoming the real terrain of competition</text>
+  <rect x="170" y="220" width="380" height="330" rx="22" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <rect x="610" y="220" width="380" height="330" rx="22" fill="#EEF5FF" stroke="#D9D9D1"/>
+  <rect x="1050" y="220" width="380" height="330" rx="22" fill="#FFF8E8" stroke="#D9D9D1"/>
+  <text x="360" y="285" text-anchor="middle" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Microsoft × OpenAI</text>
+  <text x="360" y="340" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">Primary cloud partner</text>
+  <text x="360" y="375" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">Non-exclusive IP license</text>
+  <text x="360" y="410" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">Revenue share reset</text>
+  <text x="800" y="285" text-anchor="middle" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Anthropic</text>
+  <text x="800" y="340" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">$30B Series G</text>
+  <text x="800" y="375" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">$380B post-money</text>
+  <text x="800" y="410" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">5GW-scale compute lock-in</text>
+  <text x="1240" y="285" text-anchor="middle" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">What Changes</text>
+  <text x="1240" y="340" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">Distribution rights</text>
+  <text x="1240" y="375" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">Cloud dependency</text>
+  <text x="1240" y="410" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#111111">Compute bargaining power</text>
+  <rect x="200" y="760" width="1200" height="56" rx="12" fill="#111111"/>
+  <text x="800" y="796" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3">The next AI race is not just over models, but over the relationships that control how models live in the world.</text>
+</svg>
