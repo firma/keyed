@@ -1,0 +1,26 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F7F3"/>
+  <text x="800" y="86" text-anchor="middle" font-size="40" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">The New Power Nodes in AI</text>
+  <text x="800" y="126" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#666666">The industry is being reorganized around a few control relationships, not just around technical capability</text>
+  <circle cx="800" cy="430" r="105" fill="#111111"/>
+  <text x="800" y="420" text-anchor="middle" font-size="26" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3" font-weight="700">AI Power</text>
+  <text x="800" y="455" text-anchor="middle" font-size="26" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3" font-weight="700">Structure</text>
+  <circle cx="420" cy="270" r="85" fill="#EEF5FF" stroke="#D9D9D1"/>
+  <text x="420" y="262" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Cloud</text>
+  <text x="420" y="292" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Control</text>
+  <circle cx="1180" cy="270" r="85" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <text x="1180" y="262" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">IP</text>
+  <text x="1180" y="292" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Rights</text>
+  <circle cx="420" cy="620" r="85" fill="#FFF8E8" stroke="#D9D9D1"/>
+  <text x="420" y="612" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Revenue</text>
+  <text x="420" y="642" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Share</text>
+  <circle cx="1180" cy="620" r="85" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <text x="1180" y="612" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Compute</text>
+  <text x="1180" y="642" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Lock-in</text>
+  <line x1="500" y1="310" x2="715" y2="395" stroke="#111111" stroke-width="4"/>
+  <line x1="1100" y1="310" x2="885" y2="395" stroke="#111111" stroke-width="4"/>
+  <line x1="500" y1="580" x2="715" y2="465" stroke="#111111" stroke-width="4"/>
+  <line x1="1100" y1="580" x2="885" y2="465" stroke="#111111" stroke-width="4"/>
+  <rect x="170" y="790" width="1260" height="50" rx="12" fill="#111111"/>
+  <text x="800" y="823" text-anchor="middle" font-size="23" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3">The strongest companies are no longer just building better models. They are negotiating stronger positions.</text>
+</svg>
