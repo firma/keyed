@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Polymarket 的“账户理论”：真正有优势的，不只是观点，而是账户行为识别 | 小触AI</title>
+<meta name="description" content="在 Polymarket 里，真正的优势不只是判断事件会不会发生，而是识别不同账户如何进场、试盘、追价、止损和制造局部波动。市场不是抽象概率，而是账户行为的聚合。">
+<meta name="author" content="keyed">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Polymarket 的“账户理论”：真正有优势的，不只是观点，而是账户行为识别">
+<meta property="og:description" content="在 Polymarket 里，真正的优势不只是判断事件会不会发生，而是识别不同账户如何进场、试盘、追价、止损和制造局部波动。市场不是抽象概率，而是账户行为的聚合。">
+<meta property="og:site_name" content="小触AI">
+<meta property="og:url" content="https://keyed.cn/2026/05/07/polymarket-account-theory-and-microstructure-2026-05-07/index.html">
+
+<!-- Preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<!-- Theme CSS -->
+<link rel="stylesheet" href="/css/style.css">
+
+<!-- Color mode -->
+<script>
+(function() {
+  var mode = 'auto';
+  if (mode === 'auto') {
+    var dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+  } else {
+    document.documentElement.setAttribute('data-theme', mode);
+  }
+})();
+</script>
+
+
+<link rel="icon" href="/images/favicon.ico">
+
+
+<meta name="description" content="在 Polymarket 里，真正的优势不只是判断事件会不会发生，而是识别不同账户如何进场、试盘、追价、止损和制造局部波动。市场不是抽象概率，而是账户行为的聚合。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Polymarket 的“账户理论”：真正有优势的，不只是观点，而是账户行为识别">
+<meta property="og:url" content="https://keyed.cn/2026/05/07/polymarket-account-theory-and-microstructure-2026-05-07/index.html">
+<meta property="og:site_name" content="小触AI">
+<meta property="og:description" content="在 Polymarket 里，真正的优势不只是判断事件会不会发生，而是识别不同账户如何进场、试盘、追价、止损和制造局部波动。市场不是抽象概率，而是账户行为的聚合。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://keyed.cn/images/2026/05/polymarket-account-theory-2026-05-07.svg">
+<meta property="article:published_time" content="2026-05-07T00:47:00.000Z">
+<meta property="article:modified_time" content="2026-05-07T00:49:54.873Z">
+<meta property="article:author" content="keyed">
+<meta property="article:tag" content="Polymarket">
+<meta property="article:tag" content="Prediction Market">
+<meta property="article:tag" content="账户理论">
+<meta property="article:tag" content="市场微观结构">
+<meta property="article:tag" content="交易策略">
+<meta property="article:tag" content="行为分析">
+<meta property="article:tag" content="K线">
+<meta property="article:tag" content="概率交易">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://keyed.cn/images/2026/05/polymarket-account-theory-2026-05-07.svg">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body>
+  <div id="pretext-bg" class="pretext-bg"></div>
+  <header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="site-brand">
+      <canvas id="brand-canvas" class="brand-canvas" width="200" height="40"></canvas>
+      <span class="brand-fallback">小触AI</span>
+    </a>
+    <nav class="site-nav">
+      
+      
+        <a href="/" class="nav-link">
+          Home
+        </a>
+      
+        <a href="/archives" class="nav-link">
+          Archives
+        </a>
+      
+        <a href="/categories" class="nav-link">
+          Categories
+        </a>
+      
+        <a href="/tags" class="nav-link">
+          Tags
+        </a>
+      
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+  <main class="main-container">
+  <div class="content-wrapper">
+    <div class="content-area">
+      <article class="post-full">
+        <header class="post-header">
+          <div class="post-header-meta">
+            <time datetime="2026-05-07" class="post-date-full">
+              2026-05-07
+            </time>
+            
+              <span class="meta-sep">/</span>
+              
+                <a href="/categories/%E9%87%91%E8%9E%8D%E8%A7%82%E5%AF%9F/" class="category-link">金融观察</a>, 
+              
+                <a href="/categories/%E9%87%91%E8%9E%8D%E8%A7%82%E5%AF%9F/Polymarket/" class="category-link">Polymarket</a>, 
+              
+                <a href="/categories/%E9%87%91%E8%9E%8D%E8%A7%82%E5%AF%9F/Polymarket/%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/" class="category-link">交易策略</a>
+              
+            
+          </div>
+          <h1 class="post-full-title" data-pretext-title>Polymarket 的“账户理论”：真正有优势的，不只是观点，而是账户行为识别</h1>
+          
+          <div class="post-header-tags">
+            
+              <a href="/tags/Polymarket/" class="tag-pill">#Polymarket</a>
+            
+              <a href="/tags/Prediction-Market/" class="tag-pill">#Prediction Market</a>
+            
+              <a href="/tags/%E8%B4%A6%E6%88%B7%E7%90%86%E8%AE%BA/" class="tag-pill">#账户理论</a>
+            
+              <a href="/tags/%E5%B8%82%E5%9C%BA%E5%BE%AE%E8%A7%82%E7%BB%93%E6%9E%84/" class="tag-pill">#市场微观结构</a>
+            
+              <a href="/tags/%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/" class="tag-pill">#交易策略</a>
+            
+              <a href="/tags/%E8%A1%8C%E4%B8%BA%E5%88%86%E6%9E%90/" class="tag-pill">#行为分析</a>
+            
+              <a href="/tags/K%E7%BA%BF/" class="tag-pill">#K线</a>
+            
+              <a href="/tags/%E6%A6%82%E7%8E%87%E4%BA%A4%E6%98%93/" class="tag-pill">#概率交易</a>
+            
+          </div>
+          
+          <div class="reading-info" id="readingInfo">
+            <span class="reading-metric" id="wordCount"></span>
+            <span class="reading-metric" id="readTime"></span>
+          </div>
+        </header>
+
+        <div class="post-body" id="postBody">
+          <p><img src="/images/2026/05/polymarket-account-theory-2026-05-07.svg"></p>
+<p>很多人理解 Polymarket，还是停留在一个很直观的层面：</p>
+<ul>
+<li>先判断一件事会不会发生</li>
+<li>再找一个价格下注</li>
+<li>然后等市场向正确答案收敛</li>
+</ul>
+<p>这当然没错，但如果交易真的只是这么简单，Polymarket 就不会出现那么多短时间的大波动、假突破、情绪脉冲和相关市场之间的错价。</p>
+<p>也就是说，Polymarket 并不只是一个“观点正确就会赚钱”的地方。<br>它同时还是一个非常鲜明的 <strong>账户行为市场</strong>。</p>
+<blockquote>
+<p><strong>价格不是抽象概率自己在移动，而是不同类型账户在不同时间、不同信息条件下，把自己的判断和情绪压进盘面之后形成的结果。</strong></p>
+</blockquote>
+<p>这就是我想讲的“账户理论”。</p>
+<p>它不是学院派术语，<br>而是一个更实战的看法：</p>
+<blockquote>
+<p><strong>在 Polymarket 里，真正有优势的，不只是观点本身，而是你能不能识别此刻正在主导价格的是哪一种账户行为。</strong></p>
+</blockquote>
+<p>因为很多时候，短线价格并不直接反映“真相”，<br>而是先反映：</p>
+<ul>
+<li>谁先看到了 headline</li>
+<li>谁先冲进去扫盘</li>
+<li>谁在试盘</li>
+<li>谁在追价</li>
+<li>谁在恐慌平仓</li>
+<li>谁在做跨市场联动</li>
+<li>谁只是在用情绪放大局部波动</li>
+</ul>
+<p>所以如果只看表面的价格变化，<br>你容易把很多账户行为误读成方向本身。</p>
+<h2 id="一，Polymarket-最该看的，不只是事件概率，而是“是谁在动”"><a href="#一，Polymarket-最该看的，不只是事件概率，而是“是谁在动”" class="headerlink" title="一，Polymarket 最该看的，不只是事件概率，而是“是谁在动”"></a>一，Polymarket 最该看的，不只是事件概率，而是“是谁在动”</h2><p>很多传统市场分析会先问：</p>
+<ul>
+<li>基本面是什么</li>
+<li>结论是什么</li>
+<li>当前价格贵不贵</li>
+</ul>
+<p>但在 Polymarket 这种事件驱动、信息密集、流动性分布不均的市场里，还有一个常常更重要的问题：</p>
+<blockquote>
+<p><strong>这段价格，究竟是谁打出来的？</strong></p>
+</blockquote>
+<p>因为不同账户打出来的价格，含义完全不同。</p>
+<p>举个简单例子。</p>
+<p>如果一个盘突然在 3 分钟里快速冲高，可能有很多完全不同的解释：</p>
+<ul>
+<li>有人先看到高质量 headline</li>
+<li>有大账户抢先布局一个联动交易</li>
+<li>有情绪型账户被标题刺激后追价</li>
+<li>有账户故意扫薄盘制造方向幻觉</li>
+<li>有人只是因为另一个盘爆了，被迫平掉这里的仓位</li>
+</ul>
+<p>从 K 线表面看，它们都可能长得像“一根强阳”。<br>但从交易含义看，差别极大。</p>
+<p>所以在 Polymarket 里，K 线只是外壳。<br>真正该读的是：</p>
+<blockquote>
+<p><strong>K 线背后的账户行为。</strong></p>
+</blockquote>
+<h2 id="二，账户理论的第一层，是把市场参与者先分型"><a href="#二，账户理论的第一层，是把市场参与者先分型" class="headerlink" title="二，账户理论的第一层，是把市场参与者先分型"></a>二，账户理论的第一层，是把市场参与者先分型</h2><p>如果你想真正理解盘面，第一步不是看更多指标，<br>而是先把市场里的账户分成几种最常见的行为类型。</p>
+<h3 id="1-信息领先账户"><a href="#1-信息领先账户" class="headerlink" title="1. 信息领先账户"></a>1. 信息领先账户</h3><p>这类账户的特点是：</p>
+<ul>
+<li>动得早</li>
+<li>往往发生在 headline 刚出来的最前段</li>
+<li>常常先打到一个主盘，再传导到相关盘</li>
+<li>下手通常比较果断</li>
+</ul>
+<p>这类账户最有价值，因为它们代表的是信息优势或解读优势。<br>但它们也最难跟，因为你通常不是最早那批人。</p>
+<h3 id="2-情绪追价账户"><a href="#2-情绪追价账户" class="headerlink" title="2. 情绪追价账户"></a>2. 情绪追价账户</h3><p>这类账户往往不是先看到原始信息，<br>而是先看到价格在动，于是开始追。</p>
+<p>它们的特点是：</p>
+<ul>
+<li>喜欢在明显上涨或下跌后冲进去</li>
+<li>容易把短线脉冲放大</li>
+<li>常常贡献长影线和局部过冲</li>
+</ul>
+<p>这类账户很多时候不是在制造趋势，<br>而是在放大已经发生的波动。</p>
+<h3 id="3-试盘账户"><a href="#3-试盘账户" class="headerlink" title="3. 试盘账户"></a>3. 试盘账户</h3><p>这类账户不一定方向很重，<br>但会用一小段资金去测试：</p>
+<ul>
+<li>盘口深不深</li>
+<li>上方有没有卖压</li>
+<li>下方有没有承接</li>
+<li>相关盘会不会跟</li>
+</ul>
+<p>这类行为在薄盘里尤其明显。<br>它们可能不是要立刻表达最终观点，而是在探路。</p>
+<h3 id="4-联动交易账户"><a href="#4-联动交易账户" class="headerlink" title="4. 联动交易账户"></a>4. 联动交易账户</h3><p>这类账户不是只看单一 market，<br>而是在看一组相关 market 的定价关系。</p>
+<p>比如在地缘政治里，它们会同时看：</p>
+<ul>
+<li>开战概率</li>
+<li>空域关闭</li>
+<li>航运恢复</li>
+<li>油价</li>
+<li>和谈概率</li>
+</ul>
+<p>这类账户的特点是：</p>
+<ul>
+<li>更重关系而不是单点</li>
+<li>经常在某个盘落后时下手</li>
+<li>它们的交易更像“修正错价”，不是情绪下注</li>
+</ul>
+<h3 id="5-被动止损-被动平仓账户"><a href="#5-被动止损-被动平仓账户" class="headerlink" title="5. 被动止损 &#x2F; 被动平仓账户"></a>5. 被动止损 &#x2F; 被动平仓账户</h3><p>这类账户很容易被忽略，<br>但在短线里影响很大。</p>
+<p>很多时候你看到的快速下杀或快速拉升，<br>并不是新信息，而是某类仓位被动出清。</p>
+<p>所以价格短时间内剧烈移动，不一定代表市场突然更聪明了，<br>也可能只是：</p>
+<blockquote>
+<p><strong>某些账户扛不住了。</strong></p>
+</blockquote>
+<h2 id="三，真正的优势，不是“猜方向”，而是识别当前是哪一类账户在主导"><a href="#三，真正的优势，不是“猜方向”，而是识别当前是哪一类账户在主导" class="headerlink" title="三，真正的优势，不是“猜方向”，而是识别当前是哪一类账户在主导"></a>三，真正的优势，不是“猜方向”，而是识别当前是哪一类账户在主导</h2><p>为什么我说账户理论重要？</p>
+<p>因为很多人交易时，脑子里只有一个问题：</p>
+<ul>
+<li>接下来涨还是跌？</li>
+</ul>
+<p>但更有用的问题其实是：</p>
+<ul>
+<li>现在是谁在买？</li>
+<li>为什么买？</li>
+<li>这种买法会延续吗？</li>
+<li>是信息流、情绪流，还是被动流？</li>
+</ul>
+<p>这个区别会直接决定你该怎么做。</p>
+<h3 id="如果是信息领先账户主导"><a href="#如果是信息领先账户主导" class="headerlink" title="如果是信息领先账户主导"></a>如果是信息领先账户主导</h3><p>你更该想的是：</p>
+<ul>
+<li>哪些相关盘还没反应完</li>
+<li>有没有第二层传导机会</li>
+<li>这是不是一波更大重定价的开始</li>
+</ul>
+<h3 id="如果是情绪追价账户主导"><a href="#如果是情绪追价账户主导" class="headerlink" title="如果是情绪追价账户主导"></a>如果是情绪追价账户主导</h3><p>你更该警惕：</p>
+<ul>
+<li>过冲</li>
+<li>假突破</li>
+<li>高位反杀</li>
+</ul>
+<h3 id="如果是试盘账户主导"><a href="#如果是试盘账户主导" class="headerlink" title="如果是试盘账户主导"></a>如果是试盘账户主导</h3><p>你更该看：</p>
+<ul>
+<li>市场有没有回应</li>
+<li>跟单有没有出现</li>
+<li>探上去之后是被接住还是被打回</li>
+</ul>
+<h3 id="如果是联动交易账户主导"><a href="#如果是联动交易账户主导" class="headerlink" title="如果是联动交易账户主导"></a>如果是联动交易账户主导</h3><p>你更该看：</p>
+<ul>
+<li>其他相关盘的同步程度</li>
+<li>哪个盘反应过头，哪个盘还落后</li>
+</ul>
+<p>这就是为什么“识别账户行为”比“单独猜下一根 K 线”更重要。</p>
+<h2 id="四，K-线真正有用的时候，是它能帮你读到账户痕迹"><a href="#四，K-线真正有用的时候，是它能帮你读到账户痕迹" class="headerlink" title="四，K 线真正有用的时候，是它能帮你读到账户痕迹"></a>四，K 线真正有用的时候，是它能帮你读到账户痕迹</h2><p>很多人一说 K 线，就容易掉进纯形态学。<br>但在 Polymarket 里，K 线真正的价值不是神秘图形，<br>而是它会留下账户行为的痕迹。</p>
+<p>比如：</p>
+<h3 id="一根快速冲高的大阳线"><a href="#一根快速冲高的大阳线" class="headerlink" title="一根快速冲高的大阳线"></a>一根快速冲高的大阳线</h3><p>可能意味着：</p>
+<ul>
+<li>信息抢跑</li>
+<li>大单扫盘</li>
+<li>或情绪追价集中进入</li>
+</ul>
+<h3 id="冲高后连续几根-1m-吐回"><a href="#冲高后连续几根-1m-吐回" class="headerlink" title="冲高后连续几根 1m 吐回"></a>冲高后连续几根 1m 吐回</h3><p>更可能意味着：</p>
+<ul>
+<li>上冲缺乏后续承接</li>
+<li>情绪账户冲进去了，但更强资金没跟</li>
+<li>这不是强趋势，而是局部脉冲</li>
+</ul>
+<h3 id="缓慢抬高、低点不断抬升"><a href="#缓慢抬高、低点不断抬升" class="headerlink" title="缓慢抬高、低点不断抬升"></a>缓慢抬高、低点不断抬升</h3><p>更可能意味着：</p>
+<ul>
+<li>有更耐心的账户在吸</li>
+<li>不急着拉，但愿意持续拿货</li>
+<li>方向更有持续性</li>
+</ul>
+<h3 id="放量跌破后很快收回"><a href="#放量跌破后很快收回" class="headerlink" title="放量跌破后很快收回"></a>放量跌破后很快收回</h3><p>可能意味着：</p>
+<ul>
+<li>下方有承接</li>
+<li>有人利用恐慌单吸筹</li>
+<li>被动止损刚刚释放完</li>
+</ul>
+<p>所以 K 线不是预测机器，<br>而是：</p>
+<blockquote>
+<p><strong>账户行为在时间维度上的压缩记录。</strong></p>
+</blockquote>
+<h2 id="五，Polymarket-的真正难点，不是判断真相，而是判断“价格先反映谁”"><a href="#五，Polymarket-的真正难点，不是判断真相，而是判断“价格先反映谁”" class="headerlink" title="五，Polymarket 的真正难点，不是判断真相，而是判断“价格先反映谁”"></a>五，Polymarket 的真正难点，不是判断真相，而是判断“价格先反映谁”</h2><p>很多人会觉得，Prediction Market 最难的是预测事实。<br>但实际交易里，一个更难的问题往往是：</p>
+<blockquote>
+<p><strong>在事实最终落地之前，价格会先反映哪一类账户？</strong></p>
+</blockquote>
+<p>因为短线定价顺序通常不是：</p>
+<ul>
+<li>真相</li>
+<li>价格</li>
+</ul>
+<p>而更像是：</p>
+<ul>
+<li>headline</li>
+<li>领先账户</li>
+<li>情绪账户</li>
+<li>联动修正</li>
+<li>被动流清洗</li>
+<li>市场重新平衡</li>
+<li>最后才逐步靠近更稳的概率</li>
+</ul>
+<p>这就解释了为什么很多明明“判断没错”的人，依然可能亏钱。<br>因为他们判断对了结果，<br>但没判断对中间那段账户行为路径。</p>
+<p>而真正成熟的交易者，看的不是抽象正确，<br>而是：</p>
+<ul>
+<li>现在是谁在定价</li>
+<li>接下来谁会接棒定价</li>
+<li>哪些盘还没被正确传导</li>
+<li>哪些地方只是情绪残影</li>
+</ul>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>所以如果今天要给 Polymarket 的交易方法压一句最核心的话，我会这样写：</p>
+<blockquote>
+<p><strong>在 Polymarket 里，真正有优势的，不只是你比别人更会判断事件，而是你比别人更会识别账户行为。</strong></p>
+</blockquote>
+<p>因为价格不是概率自己在走，<br>而是不同账户在不同时间，把自己的信息、情绪、风险管理和联动逻辑压进市场后形成的结果。</p>
+<p>这意味着真正该练的，不只是：</p>
+<ul>
+<li>headline 敏感度</li>
+<li>事件理解力</li>
+<li>概率判断</li>
+</ul>
+<p>还包括：</p>
+<ul>
+<li>识别谁在先动</li>
+<li>识别谁在追价</li>
+<li>识别谁在试盘</li>
+<li>识别谁在被动出清</li>
+<li>识别哪些 K 线是在讲情绪，哪些 K 线是在讲结构</li>
+</ul>
+<p>Polymarket 的深层优势，从来不只是预测答案。<br>它更像是在做一件事：</p>
+<blockquote>
+<p><strong>通过价格去读账户，通过账户去读概率。</strong></p>
+</blockquote>
+<p>这，才是它真正有意思、也真正有壁垒的地方。</p>
+
+        </div>
+
+        <footer class="post-nav">
+          
+          <span></span>
+          
+          
+          <a href="/2026/05/07/ai-enters-an-institution-building-phase-2026-05-07/" class="post-nav-link next">
+            <span class="post-nav-label">Next &rarr;</span>
+            <span class="post-nav-title">AI 正在从产品层，进入制度建设期</span>
+          </a>
+          
+        </footer>
+      </article>
+    </div>
+    
+    <aside class="sidebar">
+      
+
+
+<div class="widget widget-search">
+  <h3 class="widget-title">Search</h3>
+  <form class="search-form" action="//google.com/search" method="get" target="_blank" rel="noopener">
+    <input type="hidden" name="sitesearch" value="https://keyed.cn">
+    <input type="text" name="q" class="search-input" placeholder="Search articles...">
+  </form>
+</div>
+
+
+
+<div class="widget widget-recent">
+  <h3 class="widget-title">Recent Posts</h3>
+  <ul class="widget-list">
+    
+    
+    <li>
+      <a href="/2026/05/07/polymarket-account-theory-and-microstructure-2026-05-07/" class="widget-link">
+        <span class="widget-post-title">Polymarket 的“账户理论”：真正有优势的，不只是观点，而是账户行为识别</span>
+        <time class="widget-post-date">05-07</time>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/2026/05/07/ai-enters-an-institution-building-phase-2026-05-07/" class="widget-link">
+        <span class="widget-post-title">AI 正在从产品层，进入制度建设期</span>
+        <time class="widget-post-date">05-07</time>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/2026/05/06/ai-enters-transaction-and-operational-execution-surfaces-2026-05-06/" class="widget-link">
+        <span class="widget-post-title">AI 正在从创意界面，进入交易与运营执行界面</span>
+        <time class="widget-post-date">05-06</time>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/2026/05/04/ai-enters-native-creative-production-surfaces-2026-05-04/" class="widget-link">
+        <span class="widget-post-title">AI 正在从聊天工具，进入原生创意生产界面</span>
+        <time class="widget-post-date">05-05</time>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/2026/05/01/ai-postmortems-become-a-trust-layer-2026-05-01/" class="widget-link">
+        <span class="widget-post-title">AI 正在长出新的信任层：顶级模型公司开始公开解释自己的“人格失败”</span>
+        <time class="widget-post-date">05-02</time>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/2026/05/01/ai-de-exclusifies-distribution-and-sovereign-control-2026-05-01/" class="widget-link">
+        <span class="widget-post-title">AI 正在从独占平台绑定，转向多云分发与主权部署控制</span>
+        <time class="widget-post-date">05-01</time>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/2026/04/28/ai-control-relationships-2026-04-28/" class="widget-link">
+        <span class="widget-post-title">OpenAI、Microsoft、Anthropic 正在一起重写 AI 产业的控制关系</span>
+        <time class="widget-post-date">04-28</time>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/2026/04/27/acquiring-is-a-low-margin-industrial-business-2026-04-27/" class="widget-link">
+        <span class="widget-post-title">收单不是暴利生意，而是一门正在封口的工业化生意</span>
+        <time class="widget-post-date">04-27</time>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+
+
+<div class="widget widget-categories">
+  <h3 class="widget-title">Categories</h3>
+  <ul class="widget-list">
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/" class="widget-link">
+        <span>AI资讯</span>
+        <span class="widget-count">56</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/Agent/" class="widget-link">
+        <span>Agent</span>
+        <span class="widget-count">12</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/Agent/" class="widget-link">
+        <span>Agent</span>
+        <span class="widget-count">4</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E4%BA%A7%E5%93%81/Agent/" class="widget-link">
+        <span>Agent</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/%E6%94%BF%E7%AD%96/Agent/" class="widget-link">
+        <span>Agent</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E4%BC%81%E4%B8%9AAI/Agents/" class="widget-link">
+        <span>Agents</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/Crypto/" class="widget-link">
+        <span>Crypto</span>
+        <span class="widget-count">2</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/%E9%87%91%E8%9E%8D%E8%A7%82%E5%AF%9F/Polymarket/" class="widget-link">
+        <span>Polymarket</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E4%BA%92%E8%81%94%E7%BD%91/" class="widget-link">
+        <span>互联网</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/%E9%87%91%E8%9E%8D%E8%A7%82%E5%AF%9F/Polymarket/%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/" class="widget-link">
+        <span>交易策略</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E4%BA%A7%E4%B8%9A%E8%B6%8B%E5%8A%BF/" class="widget-link">
+        <span>产业趋势</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/Agent/%E4%BA%A7%E5%93%81/" class="widget-link">
+        <span>产品</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E4%BA%A7%E5%93%81/" class="widget-link">
+        <span>产品</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E4%BA%A7%E5%93%81%E8%B6%8B%E5%8A%BF/" class="widget-link">
+        <span>产品趋势</span>
+        <span class="widget-count">3</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E4%BB%8A%E6%97%A5%E5%BF%AB%E8%AF%84/" class="widget-link">
+        <span>今日快评</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E4%BC%81%E4%B8%9AAI/" class="widget-link">
+        <span>企业AI</span>
+        <span class="widget-count">2</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/Agent/%E4%BC%81%E4%B8%9AAI/" class="widget-link">
+        <span>企业AI</span>
+        <span class="widget-count">5</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/%E4%BC%81%E4%B8%9AAI/" class="widget-link">
+        <span>企业AI</span>
+        <span class="widget-count">3</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E6%94%BF%E7%AD%96/%E4%BC%81%E4%B8%9AAI/" class="widget-link">
+        <span>企业AI</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E5%85%A8%E7%90%83%E8%B6%8B%E5%8A%BF/" class="widget-link">
+        <span>全球趋势</span>
+        <span class="widget-count">11</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/" class="widget-link">
+        <span>基础设施</span>
+        <span class="widget-count">13</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/Agent/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/" class="widget-link">
+        <span>基础设施</span>
+        <span class="widget-count">3</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/Agent/%E4%BC%81%E4%B8%9AAI/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/" class="widget-link">
+        <span>基础设施</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E5%AE%8F%E8%A7%82%E7%A0%94%E7%A9%B6/" class="widget-link">
+        <span>宏观研究</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/Agent/%E5%B7%A5%E4%BD%9C%E6%B5%81/" class="widget-link">
+        <span>工作流</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84/" class="widget-link">
+        <span>技术架构</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84/" class="widget-link">
+        <span>技术架构</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E6%94%AF%E4%BB%98%E7%A7%91%E6%8A%80/" class="widget-link">
+        <span>支付科技</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/%E9%87%91%E8%9E%8D%E5%88%86%E6%9E%90/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E6%94%AF%E4%BB%98%E7%A7%91%E6%8A%80/" class="widget-link">
+        <span>支付科技</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E6%94%BF%E7%AD%96/" class="widget-link">
+        <span>政策</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/%E6%94%BF%E7%AD%96/" class="widget-link">
+        <span>政策</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E8%81%8C%E4%B8%9A%E8%B6%8B%E5%8A%BF/" class="widget-link">
+        <span>职业趋势</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/" class="widget-link">
+        <span>行业观察</span>
+        <span class="widget-count">55</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/%E9%87%91%E8%9E%8D%E5%88%86%E6%9E%90/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/" class="widget-link">
+        <span>行业观察</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/" class="widget-link">
+        <span>行业观察</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/%E9%87%91%E8%9E%8D%E5%88%86%E6%9E%90/" class="widget-link">
+        <span>金融分析</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E9%87%91%E8%9E%8D%E5%88%86%E6%9E%90/" class="widget-link">
+        <span>金融分析</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/%E9%87%91%E8%9E%8D%E8%A7%82%E5%AF%9F/" class="widget-link">
+        <span>金融观察</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E9%87%91%E8%9E%8D%E8%B6%8B%E5%8A%BF/" class="widget-link">
+        <span>金融趋势</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+
+
+<div class="widget widget-tags">
+  <h3 class="widget-title">Tags</h3>
+  <div class="tag-cloud">
+    
+      <a href="/tags/A2A/" class="tag-cloud-item" data-count="1">
+        #A2A
+      </a>
+    
+      <a href="/tags/AI/" class="tag-cloud-item" data-count="55">
+        #AI
+      </a>
+    
+      <a href="/tags/AI-Agent/" class="tag-cloud-item" data-count="1">
+        #AI Agent
+      </a>
+    
+      <a href="/tags/AI%E4%BA%A7%E5%93%81/" class="tag-cloud-item" data-count="1">
+        #AI产品
+      </a>
+    
+      <a href="/tags/AI%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/" class="tag-cloud-item" data-count="2">
+        #AI基础设施
+      </a>
+    
+      <a href="/tags/AI%E5%B7%A5%E5%85%B7/" class="tag-cloud-item" data-count="1">
+        #AI工具
+      </a>
+    
+      <a href="/tags/AI%E7%94%9F%E6%80%81/" class="tag-cloud-item" data-count="2">
+        #AI生态
+      </a>
+    
+      <a href="/tags/AI%E7%BB%8F%E6%B5%8E/" class="tag-cloud-item" data-count="2">
+        #AI经济
+      </a>
+    
+      <a href="/tags/AI%E7%BC%96%E7%A8%8B/" class="tag-cloud-item" data-count="2">
+        #AI编程
+      </a>
+    
+      <a href="/tags/AP2/" class="tag-cloud-item" data-count="1">
+        #AP2
+      </a>
+    
+      <a href="/tags/AWS/" class="tag-cloud-item" data-count="35">
+        #AWS
+      </a>
+    
+      <a href="/tags/Agent/" class="tag-cloud-item" data-count="30">
+        #Agent
+      </a>
+    
+      <a href="/tags/Agentic-AI/" class="tag-cloud-item" data-count="2">
+        #Agentic AI
+      </a>
+    
+      <a href="/tags/Agents/" class="tag-cloud-item" data-count="2">
+        #Agents
+      </a>
+    
+      <a href="/tags/Ai2/" class="tag-cloud-item" data-count="25">
+        #Ai2
+      </a>
+    
+      <a href="/tags/Amazon/" class="tag-cloud-item" data-count="1">
+        #Amazon
+      </a>
+    
+      <a href="/tags/Anthropic/" class="tag-cloud-item" data-count="40">
+        #Anthropic
+      </a>
+    
+      <a href="/tags/Apple/" class="tag-cloud-item" data-count="1">
+        #Apple
+      </a>
+    
+      <a href="/tags/Bedrock/" class="tag-cloud-item" data-count="1">
+        #Bedrock
+      </a>
+    
+      <a href="/tags/CPU/" class="tag-cloud-item" data-count="1">
+        #CPU
+      </a>
+    
+      <a href="/tags/Canada/" class="tag-cloud-item" data-count="1">
+        #Canada
+      </a>
+    
+      <a href="/tags/China/" class="tag-cloud-item" data-count="1">
+        #China
+      </a>
+    
+      <a href="/tags/Claude/" class="tag-cloud-item" data-count="1">
+        #Claude
+      </a>
+    
+      <a href="/tags/Claude-Code/" class="tag-cloud-item" data-count="1">
+        #Claude Code
+      </a>
+    
+      <a href="/tags/Claude-Design/" class="tag-cloud-item" data-count="3">
+        #Claude Design
+      </a>
+    
+      <a href="/tags/Cloud/" class="tag-cloud-item" data-count="1">
+        #Cloud
+      </a>
+    
+      <a href="/tags/Codex/" class="tag-cloud-item" data-count="1">
+        #Codex
+      </a>
+    
+      <a href="/tags/Compute/" class="tag-cloud-item" data-count="4">
+        #Compute
+      </a>
+    
+      <a href="/tags/Control-Plane/" class="tag-cloud-item" data-count="1">
+        #Control Plane
+      </a>
+    
+      <a href="/tags/Cost-Attribution/" class="tag-cloud-item" data-count="1">
+        #Cost Attribution
+      </a>
+    
+      <a href="/tags/Crypto/" class="tag-cloud-item" data-count="3">
+        #Crypto
+      </a>
+    
+      <a href="/tags/Deep-Research/" class="tag-cloud-item" data-count="1">
+        #Deep Research
+      </a>
+    
+      <a href="/tags/Deliverables/" class="tag-cloud-item" data-count="1">
+        #Deliverables
+      </a>
+    
+      <a href="/tags/Deployment/" class="tag-cloud-item" data-count="1">
+        #Deployment
+      </a>
+    
+      <a href="/tags/Design/" class="tag-cloud-item" data-count="1">
+        #Design
+      </a>
+    
+      <a href="/tags/Distribution/" class="tag-cloud-item" data-count="1">
+        #Distribution
+      </a>
+    
+      <a href="/tags/Earth-Observation/" class="tag-cloud-item" data-count="1">
+        #Earth Observation
+      </a>
+    
+      <a href="/tags/Enterprise/" class="tag-cloud-item" data-count="1">
+        #Enterprise
+      </a>
+    
+      <a href="/tags/Enterprise-AI/" class="tag-cloud-item" data-count="9">
+        #Enterprise AI
+      </a>
+    
+      <a href="/tags/Environment/" class="tag-cloud-item" data-count="1">
+        #Environment
+      </a>
+    
+      <a href="/tags/Environment-Engineering/" class="tag-cloud-item" data-count="1">
+        #Environment Engineering
+      </a>
+    
+      <a href="/tags/Evaluation/" class="tag-cloud-item" data-count="3">
+        #Evaluation
+      </a>
+    
+      <a href="/tags/GPT-5/" class="tag-cloud-item" data-count="1">
+        #GPT-5
+      </a>
+    
+      <a href="/tags/Gemini/" class="tag-cloud-item" data-count="1">
+        #Gemini
+      </a>
+    
+      <a href="/tags/GitHub-Copilot/" class="tag-cloud-item" data-count="1">
+        #GitHub Copilot
+      </a>
+    
+      <a href="/tags/Google/" class="tag-cloud-item" data-count="9">
+        #Google
+      </a>
+    
+      <a href="/tags/Google-Cloud/" class="tag-cloud-item" data-count="4">
+        #Google Cloud
+      </a>
+    
+      <a href="/tags/Google-DeepMind/" class="tag-cloud-item" data-count="6">
+        #Google DeepMind
+      </a>
+    
+      <a href="/tags/Governance/" class="tag-cloud-item" data-count="7">
+        #Governance
+      </a>
+    
+      <a href="/tags/Grok/" class="tag-cloud-item" data-count="1">
+        #Grok
+      </a>
+    
+      <a href="/tags/Harness-Engineering/" class="tag-cloud-item" data-count="1">
+        #Harness Engineering
+      </a>
+    
+      <a href="/tags/Inbox/" class="tag-cloud-item" data-count="1">
+        #Inbox
+      </a>
+    
+      <a href="/tags/Industrial-AI/" class="tag-cloud-item" data-count="2">
+        #Industrial AI
+      </a>
+    
+      <a href="/tags/Inference/" class="tag-cloud-item" data-count="2">
+        #Inference
+      </a>
+    
+      <a href="/tags/Infrastructure/" class="tag-cloud-item" data-count="16">
+        #Infrastructure
+      </a>
+    
+      <a href="/tags/Japan/" class="tag-cloud-item" data-count="6">
+        #Japan
+      </a>
+    
+      <a href="/tags/K%E7%BA%BF/" class="tag-cloud-item" data-count="1">
+        #K线
+      </a>
+    
+      <a href="/tags/MCP/" class="tag-cloud-item" data-count="1">
+        #MCP
+      </a>
+    
+      <a href="/tags/Memory/" class="tag-cloud-item" data-count="2">
+        #Memory
+      </a>
+    
+      <a href="/tags/Meta/" class="tag-cloud-item" data-count="16">
+        #Meta
+      </a>
+    
+      <a href="/tags/Microsoft/" class="tag-cloud-item" data-count="19">
+        #Microsoft
+      </a>
+    
+      <a href="/tags/Multi-Cloud/" class="tag-cloud-item" data-count="1">
+        #Multi-Cloud
+      </a>
+    
+      <a href="/tags/NVIDIA/" class="tag-cloud-item" data-count="12">
+        #NVIDIA
+      </a>
+    
+      <a href="/tags/Nvidia/" class="tag-cloud-item" data-count="7">
+        #Nvidia
+      </a>
+    
+      <a href="/tags/OpenAI/" class="tag-cloud-item" data-count="17">
+        #OpenAI
+      </a>
+    
+      <a href="/tags/PSP/" class="tag-cloud-item" data-count="1">
+        #PSP
+      </a>
+    
+      <a href="/tags/Packaging/" class="tag-cloud-item" data-count="1">
+        #Packaging
+      </a>
+    
+      <a href="/tags/Payment/" class="tag-cloud-item" data-count="1">
+        #Payment
+      </a>
+    
+      <a href="/tags/Policy/" class="tag-cloud-item" data-count="1">
+        #Policy
+      </a>
+    
+      <a href="/tags/Polymarket/" class="tag-cloud-item" data-count="4">
+        #Polymarket
+      </a>
+    
+      <a href="/tags/Power/" class="tag-cloud-item" data-count="1">
+        #Power
+      </a>
+    
+      <a href="/tags/Prediction-Market/" class="tag-cloud-item" data-count="3">
+        #Prediction Market
+      </a>
+    
+      <a href="/tags/Production-AI/" class="tag-cloud-item" data-count="1">
+        #Production AI
+      </a>
+    
+      <a href="/tags/Productivity/" class="tag-cloud-item" data-count="1">
+        #Productivity
+      </a>
+    
+      <a href="/tags/Qwen/" class="tag-cloud-item" data-count="3">
+        #Qwen
+      </a>
+    
+      <a href="/tags/Registry/" class="tag-cloud-item" data-count="1">
+        #Registry
+      </a>
+    
+      <a href="/tags/Reliability/" class="tag-cloud-item" data-count="1">
+        #Reliability
+      </a>
+    
+      <a href="/tags/Robotics/" class="tag-cloud-item" data-count="2">
+        #Robotics
+      </a>
+    
+      <a href="/tags/Runtime/" class="tag-cloud-item" data-count="8">
+        #Runtime
+      </a>
+    
+      <a href="/tags/Sandbox/" class="tag-cloud-item" data-count="1">
+        #Sandbox
+      </a>
+    
+      <a href="/tags/Scientific-Discovery/" class="tag-cloud-item" data-count="1">
+        #Scientific Discovery
+      </a>
+    
+      <a href="/tags/Security/" class="tag-cloud-item" data-count="2">
+        #Security
+      </a>
+    
+      <a href="/tags/Simulation/" class="tag-cloud-item" data-count="3">
+        #Simulation
+      </a>
+    
+      <a href="/tags/Singapore/" class="tag-cloud-item" data-count="6">
+        #Singapore
+      </a>
+    
+      <a href="/tags/Sovereign-AI/" class="tag-cloud-item" data-count="3">
+        #Sovereign AI
+      </a>
+    
+      <a href="/tags/Stablecoin/" class="tag-cloud-item" data-count="2">
+        #Stablecoin
+      </a>
+    
+      <a href="/tags/TTS/" class="tag-cloud-item" data-count="1">
+        #TTS
+      </a>
+    
+      <a href="/tags/Testing/" class="tag-cloud-item" data-count="1">
+        #Testing
+      </a>
+    
+      <a href="/tags/Tool-Use/" class="tag-cloud-item" data-count="1">
+        #Tool Use
+      </a>
+    
+      <a href="/tags/ToolSimulator/" class="tag-cloud-item" data-count="1">
+        #ToolSimulator
+      </a>
+    
+      <a href="/tags/UK/" class="tag-cloud-item" data-count="4">
+        #UK
+      </a>
+    
+      <a href="/tags/UKRI/" class="tag-cloud-item" data-count="1">
+        #UKRI
+      </a>
+    
+      <a href="/tags/US/" class="tag-cloud-item" data-count="1">
+        #US
+      </a>
+    
+      <a href="/tags/Web/" class="tag-cloud-item" data-count="1">
+        #Web
+      </a>
+    
+      <a href="/tags/Web-Agent/" class="tag-cloud-item" data-count="1">
+        #Web Agent
+      </a>
+    
+      <a href="/tags/Web3/" class="tag-cloud-item" data-count="4">
+        #Web3
+      </a>
+    
+      <a href="/tags/White-Collar/" class="tag-cloud-item" data-count="1">
+        #White Collar
+      </a>
+    
+      <a href="/tags/Work-Interface/" class="tag-cloud-item" data-count="1">
+        #Work Interface
+      </a>
+    
+      <a href="/tags/Workflow/" class="tag-cloud-item" data-count="3">
+        #Workflow
+      </a>
+    
+      <a href="/tags/Workforce/" class="tag-cloud-item" data-count="3">
+        #Workforce
+      </a>
+    
+      <a href="/tags/Workspace/" class="tag-cloud-item" data-count="1">
+        #Workspace
+      </a>
+    
+      <a href="/tags/Xcode/" class="tag-cloud-item" data-count="1">
+        #Xcode
+      </a>
+    
+      <a href="/tags/x402/" class="tag-cloud-item" data-count="1">
+        #x402
+      </a>
+    
+      <a href="/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/" class="tag-cloud-item" data-count="1">
+        #个人成长
+      </a>
+    
+      <a href="/tags/%E4%BA%8B%E6%95%85%E5%A4%8D%E7%9B%98/" class="tag-cloud-item" data-count="1">
+        #事故复盘
+      </a>
+    
+      <a href="/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/" class="tag-cloud-item" data-count="2">
+        #云计算
+      </a>
+    
+      <a href="/tags/%E4%BA%92%E8%81%94%E7%BD%91%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/" class="tag-cloud-item" data-count="1">
+        #互联网基础设施
+      </a>
+    
+      <a href="/tags/%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/" class="tag-cloud-item" data-count="1">
+        #交易策略
+      </a>
+    
+      <a href="/tags/%E4%BA%A7%E5%93%81%E4%BF%A1%E4%BB%BB/" class="tag-cloud-item" data-count="1">
+        #产品信任
+      </a>
+    
+      <a href="/tags/%E4%BA%A7%E5%93%81%E8%B6%8B%E5%8A%BF/" class="tag-cloud-item" data-count="1">
+        #产品趋势
+      </a>
+    
+      <a href="/tags/%E4%BC%81%E4%B8%9A%E8%BD%AF%E4%BB%B6/" class="tag-cloud-item" data-count="2">
+        #企业软件
+      </a>
+    
+      <a href="/tags/%E4%BC%B0%E5%80%BC/" class="tag-cloud-item" data-count="1">
+        #估值
+      </a>
+    
+      <a href="/tags/%E5%85%A8%E7%90%83AI/" class="tag-cloud-item" data-count="2">
+        #全球AI
+      </a>
+    
+      <a href="/tags/%E5%85%A8%E7%90%83%E7%AB%9E%E4%BA%89/" class="tag-cloud-item" data-count="1">
+        #全球竞争
+      </a>
+    
+      <a href="/tags/%E5%85%A8%E7%90%83%E8%B5%84%E6%9C%AC/" class="tag-cloud-item" data-count="1">
+        #全球资本
+      </a>
+    
+      <a href="/tags/%E5%88%9B%E6%84%8F%E5%B7%A5%E5%85%B7/" class="tag-cloud-item" data-count="1">
+        #创意工具
+      </a>
+    
+      <a href="/tags/%E5%88%B6%E5%BA%A6%E5%BB%BA%E8%AE%BE/" class="tag-cloud-item" data-count="1">
+        #制度建设
+      </a>
+    
+      <a href="/tags/%E5%8A%B3%E5%8A%A8%E5%B8%82%E5%9C%BA/" class="tag-cloud-item" data-count="1">
+        #劳动市场
+      </a>
+    
+      <a href="/tags/%E5%90%88%E8%A7%84/" class="tag-cloud-item" data-count="1">
+        #合规
+      </a>
+    
+      <a href="/tags/%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F/" class="tag-cloud-item" data-count="1">
+        #商业模式
+      </a>
+    
+      <a href="/tags/%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/" class="tag-cloud-item" data-count="1">
+        #图像生成
+      </a>
+    
+      <a href="/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/" class="tag-cloud-item" data-count="1">
+        #大模型
+      </a>
+    
+      <a href="/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/" class="tag-cloud-item" data-count="3">
+        #工作流
+      </a>
+    
+      <a href="/tags/%E5%B8%82%E5%9C%BA%E5%AE%9A%E4%BB%B7/" class="tag-cloud-item" data-count="1">
+        #市场定价
+      </a>
+    
+      <a href="/tags/%E5%B8%82%E5%9C%BA%E5%BE%AE%E8%A7%82%E7%BB%93%E6%9E%84/" class="tag-cloud-item" data-count="1">
+        #市场微观结构
+      </a>
+    
+      <a href="/tags/%E5%B9%B3%E5%8F%B0%E5%85%AC%E5%8F%B8/" class="tag-cloud-item" data-count="1">
+        #平台公司
+      </a>
+    
+      <a href="/tags/%E6%94%AF%E4%BB%98/" class="tag-cloud-item" data-count="3">
+        #支付
+      </a>
+    
+      <a href="/tags/%E6%94%AF%E4%BB%98%E8%A1%8C%E4%B8%9A/" class="tag-cloud-item" data-count="1">
+        #支付行业
+      </a>
+    
+      <a href="/tags/%E6%94%B6%E5%8D%95/" class="tag-cloud-item" data-count="1">
+        #收单
+      </a>
+    
+      <a href="/tags/%E6%95%B0%E5%AD%97%E7%BB%8F%E6%B5%8E/" class="tag-cloud-item" data-count="4">
+        #数字经济
+      </a>
+    
+      <a href="/tags/%E6%99%BA%E8%83%BD%E4%BD%93/" class="tag-cloud-item" data-count="1">
+        #智能体
+      </a>
+    
+      <a href="/tags/%E6%9C%AA%E6%9D%A5%E5%B7%A5%E4%BD%9C/" class="tag-cloud-item" data-count="1">
+        #未来工作
+      </a>
+    
+      <a href="/tags/%E6%9C%BA%E4%BC%9A%E5%9C%B0%E5%9B%BE/" class="tag-cloud-item" data-count="1">
+        #机会地图
+      </a>
+    
+      <a href="/tags/%E6%A6%82%E7%8E%87/" class="tag-cloud-item" data-count="1">
+        #概率
+      </a>
+    
+      <a href="/tags/%E6%A6%82%E7%8E%87%E4%BA%A4%E6%98%93/" class="tag-cloud-item" data-count="1">
+        #概率交易
+      </a>
+    
+      <a href="/tags/%E6%A6%82%E7%8E%87%E6%80%9D%E8%80%83/" class="tag-cloud-item" data-count="1">
+        #概率思考
+      </a>
+    
+      <a href="/tags/%E6%A8%A1%E5%9E%8B%E4%BA%BA%E6%A0%BC/" class="tag-cloud-item" data-count="1">
+        #模型人格
+      </a>
+    
+      <a href="/tags/%E6%A8%A1%E5%9E%8B%E5%85%AC%E5%8F%B8/" class="tag-cloud-item" data-count="1">
+        #模型公司
+      </a>
+    
+      <a href="/tags/%E6%A8%A1%E5%9E%8B%E5%8D%87%E7%BA%A7/" class="tag-cloud-item" data-count="1">
+        #模型升级
+      </a>
+    
+      <a href="/tags/%E6%A8%A1%E5%9E%8B%E6%B2%BB%E7%90%86/" class="tag-cloud-item" data-count="1">
+        #模型治理
+      </a>
+    
+      <a href="/tags/%E7%94%9F%E4%BA%A7%E7%8E%87/" class="tag-cloud-item" data-count="2">
+        #生产率
+      </a>
+    
+      <a href="/tags/%E7%94%9F%E6%88%90%E5%BC%8FAI/" class="tag-cloud-item" data-count="1">
+        #生成式AI
+      </a>
+    
+      <a href="/tags/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C/" class="tag-cloud-item" data-count="1">
+        #用户体验
+      </a>
+    
+      <a href="/tags/%E7%99%BD%E9%A2%86/" class="tag-cloud-item" data-count="1">
+        #白领
+      </a>
+    
+      <a href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/" class="tag-cloud-item" data-count="1">
+        #程序员
+      </a>
+    
+      <a href="/tags/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/" class="tag-cloud-item" data-count="1">
+        #系统架构
+      </a>
+    
+      <a href="/tags/%E7%B3%BB%E7%BB%9F%E8%83%BD%E5%8A%9B/" class="tag-cloud-item" data-count="1">
+        #系统能力
+      </a>
+    
+      <a href="/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/" class="tag-cloud-item" data-count="1">
+        #系统设计
+      </a>
+    
+      <a href="/tags/%E8%81%8C%E4%B8%9A/" class="tag-cloud-item" data-count="1">
+        #职业
+      </a>
+    
+      <a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/" class="tag-cloud-item" data-count="1">
+        #自动化
+      </a>
+    
+      <a href="/tags/%E8%9E%8D%E8%B5%84/" class="tag-cloud-item" data-count="1">
+        #融资
+      </a>
+    
+      <a href="/tags/%E8%A1%8C%E4%B8%BA%E5%88%86%E6%9E%90/" class="tag-cloud-item" data-count="1">
+        #行为分析
+      </a>
+    
+      <a href="/tags/%E8%B4%A2%E5%AF%8C%E8%B7%AF%E5%BE%84/" class="tag-cloud-item" data-count="1">
+        #财富路径
+      </a>
+    
+      <a href="/tags/%E8%B4%A6%E6%88%B7%E7%90%86%E8%AE%BA/" class="tag-cloud-item" data-count="1">
+        #账户理论
+      </a>
+    
+      <a href="/tags/%E8%B5%84%E6%9C%AC%E9%87%8D%E6%9E%84/" class="tag-cloud-item" data-count="1">
+        #资本重构
+      </a>
+    
+      <a href="/tags/%E8%B7%A8%E5%A2%83%E6%94%AF%E4%BB%98/" class="tag-cloud-item" data-count="1">
+        #跨境支付
+      </a>
+    
+      <a href="/tags/%E9%87%91%E8%9E%8D/" class="tag-cloud-item" data-count="1">
+        #金融
+      </a>
+    
+      <a href="/tags/%E9%87%91%E8%9E%8D%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/" class="tag-cloud-item" data-count="1">
+        #金融基础设施
+      </a>
+    
+      <a href="/tags/%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA/" class="tag-cloud-item" data-count="1">
+        #金融市场
+      </a>
+    
+      <a href="/tags/%E9%87%91%E8%9E%8D%E6%9C%8D%E5%8A%A1/" class="tag-cloud-item" data-count="1">
+        #金融服务
+      </a>
+    
+      <a href="/tags/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4/" class="tag-cloud-item" data-count="1">
+        #阿里巴巴
+      </a>
+    
+      <a href="/tags/%E9%A2%84%E6%B5%8B%E5%B8%82%E5%9C%BA/" class="tag-cloud-item" data-count="1">
+        #预测市场
+      </a>
+    
+      <a href="/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86/" class="tag-cloud-item" data-count="1">
+        #风险管理
+      </a>
+    
+  </div>
+</div>
+
+
+
+<div class="widget widget-archive">
+  <h3 class="widget-title">Archive</h3>
+  <ul class="widget-list">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      <a href="/archives" class="widget-link">
+        <span>2026 / 05</span>
+        <span class="widget-count">6</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/archives" class="widget-link">
+        <span>2026 / 04</span>
+        <span class="widget-count">52</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+
+    </aside>
+    
+  </div>
+</main>
+
+  <footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-info">
+      <p>&copy; 2024 - 2026 <a href="/">小触AI</a></p>
+      <p class="footer-powered">
+        Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a>
+        &middot; Theme <strong>Pretext AI</strong>
+        &middot; Text engine by <a href="https://github.com/chenglou/pretext" target="_blank" rel="noopener">Pretext</a>
+      </p>
+    </div>
+    
+    <div class="footer-social">
+      
+      
+    </div>
+    
+  </div>
+</footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

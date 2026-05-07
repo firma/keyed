@@ -1,0 +1,26 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F7F3"/>
+  <text x="800" y="86" text-anchor="middle" font-size="40" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Price Is Account Behavior in Motion</text>
+  <text x="800" y="126" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#666666">In prediction markets, short-term price often reflects who moved first, who chased, and who was forced out, before it reflects final truth.</text>
+  <circle cx="800" cy="430" r="105" fill="#111111"/>
+  <text x="800" y="420" text-anchor="middle" font-size="26" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3" font-weight="700">Account</text>
+  <text x="800" y="455" text-anchor="middle" font-size="26" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3" font-weight="700">Behavior</text>
+  <circle cx="400" cy="250" r="86" fill="#EEF5FF" stroke="#D9D9D1"/>
+  <text x="400" y="242" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Headline</text>
+  <text x="400" y="272" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Reaction</text>
+  <circle cx="1200" cy="250" r="86" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <text x="1200" y="242" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Liquidity</text>
+  <text x="1200" y="272" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Testing</text>
+  <circle cx="400" cy="650" r="86" fill="#FFF8E8" stroke="#D9D9D1"/>
+  <text x="400" y="642" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Panic</text>
+  <text x="400" y="672" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">and Chasing</text>
+  <circle cx="1200" cy="650" r="86" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <text x="1200" y="642" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Cross-Market</text>
+  <text x="1200" y="672" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Correction</text>
+  <line x1="470" y1="300" x2="720" y2="395" stroke="#111111" stroke-width="4"/>
+  <line x1="1130" y1="300" x2="880" y2="395" stroke="#111111" stroke-width="4"/>
+  <line x1="470" y1="600" x2="720" y2="465" stroke="#111111" stroke-width="4"/>
+  <line x1="1130" y1="600" x2="880" y2="465" stroke="#111111" stroke-width="4"/>
+  <rect x="145" y="790" width="1310" height="50" rx="12" fill="#111111"/>
+  <text x="800" y="823" text-anchor="middle" font-size="23" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3">The edge comes from reading which accounts are currently dominating price formation, not only from having a view on the final event.</text>
+</svg>
