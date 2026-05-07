@@ -1,0 +1,33 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F7F3"/>
+  <text x="800" y="86" text-anchor="middle" font-size="38" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Polymarket Account Theory</text>
+  <text x="800" y="126" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#666666">The edge is not only in having the right view, but in identifying which kind of account behavior is currently moving the market.</text>
+  <rect x="145" y="220" width="1310" height="380" rx="24" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <rect x="210" y="300" width="220" height="220" rx="20" fill="#EEF5FF" stroke="#D9D9D1"/>
+  <text x="320" y="350" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Information</text>
+  <text x="320" y="383" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Leaders</text>
+  <text x="320" y="435" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">move first</text>
+  <text x="320" y="468" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">set initial repricing</text>
+  <rect x="470" y="300" width="220" height="220" rx="20" fill="#FFF8E8" stroke="#D9D9D1"/>
+  <text x="580" y="350" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Emotion</text>
+  <text x="580" y="383" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Chasers</text>
+  <text x="580" y="435" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">amplify spikes</text>
+  <text x="580" y="468" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">create overshoots</text>
+  <rect x="730" y="300" width="220" height="220" rx="20" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <text x="840" y="350" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Probe</text>
+  <text x="840" y="383" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Accounts</text>
+  <text x="840" y="435" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">test liquidity</text>
+  <text x="840" y="468" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">check follow-through</text>
+  <rect x="990" y="300" width="220" height="220" rx="20" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <text x="1100" y="350" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Linked-Market</text>
+  <text x="1100" y="383" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Traders</text>
+  <text x="1100" y="435" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">trade relationships</text>
+  <text x="1100" y="468" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">correct mispricings</text>
+  <rect x="1250" y="300" width="140" height="220" rx="20" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <text x="1320" y="360" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Forced</text>
+  <text x="1320" y="392" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Flows</text>
+  <text x="1320" y="445" text-anchor="middle" font-size="17" font-family="Arial, Helvetica, sans-serif" fill="#111111">liquidation</text>
+  <text x="1320" y="476" text-anchor="middle" font-size="17" font-family="Arial, Helvetica, sans-serif" fill="#111111">panic exits</text>
+  <rect x="140" y="770" width="1320" height="56" rx="12" fill="#111111"/>
+  <text x="800" y="806" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3">Price is not pure probability in motion. It is account behavior compressed into market form.</text>
+</svg>
