@@ -1,0 +1,28 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F7F3"/>
+  <text x="800" y="86" text-anchor="middle" font-size="38" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">AI Is Entering an Institution-Building Phase</text>
+  <text x="800" y="126" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#666666">The deeper shift is not only stronger models, but permanent organizations, budgets, workforce programs, and control structures around AI.</text>
+  <rect x="150" y="220" width="1300" height="380" rx="24" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <rect x="220" y="300" width="240" height="220" rx="20" fill="#EEF5FF" stroke="#D9D9D1"/>
+  <text x="340" y="355" text-anchor="middle" font-size="26" font-family="Arial, Helvetica, sans-serif" fill="#3B82F6" font-weight="700">Institute</text>
+  <text x="340" y="405" text-anchor="middle" font-size="19" font-family="Arial, Helvetica, sans-serif" fill="#111111">red teaming</text>
+  <text x="340" y="440" text-anchor="middle" font-size="19" font-family="Arial, Helvetica, sans-serif" fill="#111111">economic research</text>
+  <text x="340" y="475" text-anchor="middle" font-size="19" font-family="Arial, Helvetica, sans-serif" fill="#111111">societal impact</text>
+  <rect x="520" y="300" width="240" height="220" rx="20" fill="#FFF8E8" stroke="#D9D9D1"/>
+  <text x="640" y="355" text-anchor="middle" font-size="26" font-family="Arial, Helvetica, sans-serif" fill="#B68B2D" font-weight="700">Budget</text>
+  <text x="640" y="405" text-anchor="middle" font-size="19" font-family="Arial, Helvetica, sans-serif" fill="#111111">research funding</text>
+  <text x="640" y="440" text-anchor="middle" font-size="19" font-family="Arial, Helvetica, sans-serif" fill="#111111">2030 horizon</text>
+  <text x="640" y="475" text-anchor="middle" font-size="19" font-family="Arial, Helvetica, sans-serif" fill="#111111">public investment</text>
+  <rect x="820" y="300" width="240" height="220" rx="20" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <text x="940" y="355" text-anchor="middle" font-size="26" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Workforce</text>
+  <text x="940" y="405" text-anchor="middle" font-size="19" font-family="Arial, Helvetica, sans-serif" fill="#111111">enterprise adoption</text>
+  <text x="940" y="440" text-anchor="middle" font-size="19" font-family="Arial, Helvetica, sans-serif" fill="#111111">worker conversion</text>
+  <text x="940" y="475" text-anchor="middle" font-size="19" font-family="Arial, Helvetica, sans-serif" fill="#111111">operational rollout</text>
+  <rect x="1120" y="300" width="240" height="220" rx="20" fill="#FFFFFF" stroke="#D9D9D1"/>
+  <text x="1240" y="355" text-anchor="middle" font-size="26" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Ecosystem</text>
+  <text x="1240" y="405" text-anchor="middle" font-size="19" font-family="Arial, Helvetica, sans-serif" fill="#111111">open access</text>
+  <text x="1240" y="440" text-anchor="middle" font-size="19" font-family="Arial, Helvetica, sans-serif" fill="#111111">developer entry</text>
+  <text x="1240" y="475" text-anchor="middle" font-size="19" font-family="Arial, Helvetica, sans-serif" fill="#111111">deployment reach</text>
+  <rect x="140" y="770" width="1320" height="56" rx="12" fill="#111111"/>
+  <text x="800" y="806" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#F7F7F3">AI is no longer only competing as software. It is being built into durable institutions, budgets, labor programs, and ecosystem control structures.</text>
+</svg>
