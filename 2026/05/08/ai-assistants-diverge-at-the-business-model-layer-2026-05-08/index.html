@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>AI 助手开始在商业模式层分叉，而不只是模型层分叉 | 小触AI</title>
+<meta name="description" content="最近更值得注意的变化，不是哪一家模型又更强了，而是 AI 助手开始在商业模式层分叉。一条路径在把助手做成注意力与分发界面，另一条路径在把助手做成受保护的思考空间。">
+<meta name="author" content="keyed">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI 助手开始在商业模式层分叉，而不只是模型层分叉">
+<meta property="og:description" content="最近更值得注意的变化，不是哪一家模型又更强了，而是 AI 助手开始在商业模式层分叉。一条路径在把助手做成注意力与分发界面，另一条路径在把助手做成受保护的思考空间。">
+<meta property="og:site_name" content="小触AI">
+<meta property="og:url" content="https://keyed.cn/2026/05/08/ai-assistants-diverge-at-the-business-model-layer-2026-05-08/index.html">
+
+<!-- Preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<!-- Theme CSS -->
+<link rel="stylesheet" href="/css/style.css">
+
+<!-- Color mode -->
+<script>
+(function() {
+  var mode = 'auto';
+  if (mode === 'auto') {
+    var dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+  } else {
+    document.documentElement.setAttribute('data-theme', mode);
+  }
+})();
+</script>
+
+
+<link rel="icon" href="/images/favicon.ico">
+
+
+<meta name="description" content="最近更值得注意的变化，不是哪一家模型又更强了，而是 AI 助手开始在商业模式层分叉。一条路径在把助手做成注意力与分发界面，另一条路径在把助手做成受保护的思考空间。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI 助手开始在商业模式层分叉，而不只是模型层分叉">
+<meta property="og:url" content="https://keyed.cn/2026/05/08/ai-assistants-diverge-at-the-business-model-layer-2026-05-08/index.html">
+<meta property="og:site_name" content="小触AI">
+<meta property="og:description" content="最近更值得注意的变化，不是哪一家模型又更强了，而是 AI 助手开始在商业模式层分叉。一条路径在把助手做成注意力与分发界面，另一条路径在把助手做成受保护的思考空间。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://keyed.cn/images/2026/05/ai-business-model-divergence-2026-05-08.svg">
+<meta property="article:published_time" content="2026-05-08T06:36:00.000Z">
+<meta property="article:modified_time" content="2026-05-08T06:39:01.130Z">
+<meta property="article:author" content="keyed">
+<meta property="article:tag" content="AI">
+<meta property="article:tag" content="Anthropic">
+<meta property="article:tag" content="商业模式">
+<meta property="article:tag" content="OpenAI">
+<meta property="article:tag" content="ChatGPT">
+<meta property="article:tag" content="Claude">
+<meta property="article:tag" content="广告">
+<meta property="article:tag" content="产品战略">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://keyed.cn/images/2026/05/ai-business-model-divergence-2026-05-08.svg">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body>
+  <div id="pretext-bg" class="pretext-bg"></div>
+  <header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="site-brand">
+      <canvas id="brand-canvas" class="brand-canvas" width="200" height="40"></canvas>
+      <span class="brand-fallback">小触AI</span>
+    </a>
+    <nav class="site-nav">
+      
+      
+        <a href="/" class="nav-link">
+          Home
+        </a>
+      
+        <a href="/archives" class="nav-link">
+          Archives
+        </a>
+      
+        <a href="/categories" class="nav-link">
+          Categories
+        </a>
+      
+        <a href="/tags" class="nav-link">
+          Tags
+        </a>
+      
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+  <main class="main-container">
+  <div class="content-wrapper">
+    <div class="content-area">
+      <article class="post-full">
+        <header class="post-header">
+          <div class="post-header-meta">
+            <time datetime="2026-05-08" class="post-date-full">
+              2026-05-08
+            </time>
+            
+              <span class="meta-sep">/</span>
+              
+                <a href="/categories/AI%E8%B5%84%E8%AE%AF/" class="category-link">AI资讯</a>, 
+              
+                <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/" class="category-link">行业观察</a>, 
+              
+                <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E5%85%A8%E7%90%83%E8%B6%8B%E5%8A%BF/" class="category-link">全球趋势</a>
+              
+            
+          </div>
+          <h1 class="post-full-title" data-pretext-title>AI 助手开始在商业模式层分叉，而不只是模型层分叉</h1>
+          
+          <div class="post-header-tags">
+            
+              <a href="/tags/AI/" class="tag-pill">#AI</a>
+            
+              <a href="/tags/Anthropic/" class="tag-pill">#Anthropic</a>
+            
+              <a href="/tags/%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F/" class="tag-pill">#商业模式</a>
+            
+              <a href="/tags/OpenAI/" class="tag-pill">#OpenAI</a>
+            
+              <a href="/tags/ChatGPT/" class="tag-pill">#ChatGPT</a>
+            
+              <a href="/tags/Claude/" class="tag-pill">#Claude</a>
+            
+              <a href="/tags/%E5%B9%BF%E5%91%8A/" class="tag-pill">#广告</a>
+            
+              <a href="/tags/%E4%BA%A7%E5%93%81%E6%88%98%E7%95%A5/" class="tag-pill">#产品战略</a>
+            
+          </div>
+          
+          <div class="reading-info" id="readingInfo">
+            <span class="reading-metric" id="wordCount"></span>
+            <span class="reading-metric" id="readTime"></span>
+          </div>
+        </header>
+
+        <div class="post-body" id="postBody">
+          <p><img src="/images/2026/05/ai-business-model-divergence-2026-05-08.svg"></p>
+<p>最近如果只看 AI 行业的表层竞争，很容易继续把一切理解成模型竞争。</p>
+<p>谁更聪明，谁更会推理，谁工具调用更强，谁能跑更长任务，谁更适合企业，谁更适合开发者。<br>这些当然都还重要，但把最近两条官方信号放在一起看，会发现一个更底层、而且对普通用户也更直接的新变化正在浮出来。</p>
+<blockquote>
+<p><strong>AI 助手开始在商业模式层分叉，而不只是模型层分叉。</strong></p>
+</blockquote>
+<p>这句话的意思是，未来 AI 助手之间真正的差异，可能不会只来自参数、推理能力和工具链，<br>还会越来越来自一个更现实的问题：</p>
+<ul>
+<li>它究竟靠什么赚钱？</li>
+<li>它最终服务的是用户的思考，还是平台的分发效率？</li>
+<li>它是一个认知工作台，还是一个新的注意力入口？</li>
+</ul>
+<p>最近这条线之所以值得写，不是因为“广告”本身新鲜，<br>而是因为它把 AI 助手的路径差异一下子拉到了台面上。</p>
+<h2 id="一，OpenAI-开始测试-ChatGPT-ads，说明助手正在被重新定义成分发界面"><a href="#一，OpenAI-开始测试-ChatGPT-ads，说明助手正在被重新定义成分发界面" class="headerlink" title="一，OpenAI 开始测试 ChatGPT ads，说明助手正在被重新定义成分发界面"></a>一，OpenAI 开始测试 ChatGPT ads，说明助手正在被重新定义成分发界面</h2><p>这轮变化最直接的触发点，来自 OpenAI 5 月 7 日的 <strong>Testing ads in ChatGPT</strong>，以及 5 月 5 日的 <strong>New ways to buy ChatGPT ads</strong>。</p>
+<p>这两条信号合起来的重要性，远大于“ChatGPT 里开始有广告”这句话本身。</p>
+<p>因为如果只是一次边缘实验，它不会很快就同时出现：</p>
+<ul>
+<li>ad testing</li>
+<li>ad buying infrastructure</li>
+<li>labeling and positioning discussion</li>
+<li>productized demand-side entry</li>
+</ul>
+<p>这说明广告不是一个随手试试的小补丁，<br>而是在进入更认真、更系统的产品化过程。</p>
+<p>这件事真正重要的地方是：</p>
+<blockquote>
+<p><strong>一旦广告进入 AI 助手，助手就不再只是回答问题的界面，它会慢慢变成一种新的分发界面。</strong></p>
+</blockquote>
+<p>而分发界面意味着什么？</p>
+<p>意味着它的产品目标可能会开始混入新的变量：</p>
+<ul>
+<li>让用户多停留一点</li>
+<li>在对话中插入商业信息</li>
+<li>把一部分答案空间变成商业触达空间</li>
+<li>在“帮你判断”和“帮广告主分发”之间维持一种新的平衡</li>
+</ul>
+<p>这不等于它立刻就失去价值，<br>但它确实改变了助手的底层身份。</p>
+<p>过去大家会把 ChatGPT 理解成：</p>
+<ul>
+<li>一个更聪明的搜索替代</li>
+<li>一个工作助手</li>
+<li>一个写作和思考工具</li>
+</ul>
+<p>而现在它开始多出另一种可能：</p>
+<blockquote>
+<p><strong>它也可能变成一个带有平台分发属性的认知入口。</strong></p>
+</blockquote>
+<h2 id="二，Anthropic-的反向表态，让这条分叉更清楚了"><a href="#二，Anthropic-的反向表态，让这条分叉更清楚了" class="headerlink" title="二，Anthropic 的反向表态，让这条分叉更清楚了"></a>二，Anthropic 的反向表态，让这条分叉更清楚了</h2><p>如果只有 OpenAI 这边的动作，这还可以被理解成单家公司试验新的变现方式。<br>但这件事之所以真正立得住，是因为另一边存在一个非常鲜明的对照：Anthropic。</p>
+<p>Anthropic 在 <strong>Claude is a space to think</strong> 里已经讲得很明确。<br>它公开把广告激励定义为和真正有帮助、值得信任的助手关系存在根本冲突。</p>
+<p>这背后其实不是一句品牌口号，<br>而是一套对产品身份的不同理解。</p>
+<p>Anthropic 要守住的是这样一种助手定义：</p>
+<ul>
+<li>它首先是一个思考空间</li>
+<li>用户在里面进行推理、写作、讨论、判断</li>
+<li>产品目标应该尽量和用户的认知质量站在一起</li>
+<li>不能轻易把广告激励塞进这种关系里</li>
+</ul>
+<p>换句话说，Anthropic 不是在说“广告不好看”，<br>而是在说：</p>
+<blockquote>
+<p><strong>一旦商业模式和用户思考空间发生结构性冲突，助手的可信度会被根本改变。</strong></p>
+</blockquote>
+<p>这就让两条路径一下子变得非常清楚：</p>
+<h3 id="路径一"><a href="#路径一" class="headerlink" title="路径一"></a>路径一</h3><p>把 AI 助手做成新的注意力与分发界面。</p>
+<h3 id="路径二"><a href="#路径二" class="headerlink" title="路径二"></a>路径二</h3><p>把 AI 助手做成一个受保护的、付费驱动的认知工作空间。</p>
+<p>这已经不是模型差异，<br>而是产品哲学和商业逻辑的分叉。</p>
+<h2 id="三，真正的新冲突，不是谁更强，而是谁替谁服务"><a href="#三，真正的新冲突，不是谁更强，而是谁替谁服务" class="headerlink" title="三，真正的新冲突，不是谁更强，而是谁替谁服务"></a>三，真正的新冲突，不是谁更强，而是谁替谁服务</h2><p>为什么我觉得这条题比继续写“模型更强”“agent 更多”更值得发？</p>
+<p>因为它问的是一个更深的问题：</p>
+<blockquote>
+<p><strong>AI 助手最终是替谁服务？</strong></p>
+</blockquote>
+<p>在普通软件里，这个问题大家其实早就很熟。<br>很多产品表面上在服务用户，底层却在服务：</p>
+<ul>
+<li>广告主</li>
+<li>分发效率</li>
+<li>平台停留时长</li>
+<li>数据回流和商业转化</li>
+</ul>
+<p>只是过去这种冲突更多发生在：</p>
+<ul>
+<li>搜索</li>
+<li>社交平台</li>
+<li>信息流</li>
+<li>内容平台</li>
+</ul>
+<p>而今天，这个问题第一次开始实质性地进入“助手”本身。</p>
+<p>这是很大的变化。<br>因为助手和搜索、社交、内容流不同。</p>
+<p>搜索更多是在找信息，<br>内容流更多是在消费信息，<br>但助手越来越多是在：</p>
+<ul>
+<li>帮你整理判断</li>
+<li>帮你做决策前的比较</li>
+<li>帮你生成工作结果</li>
+<li>帮你当成半个脑外工作台</li>
+</ul>
+<p>所以一旦广告逻辑进入这里，<br>大家担心的就不只是“会不会看到 sponsored content”，<br>而是：</p>
+<ul>
+<li>推荐是不是中立</li>
+<li>回答会不会受商业利益牵引</li>
+<li>某些建议会不会天然偏向更容易变现的方向</li>
+<li>产品是在帮我思考，还是在帮平台分发</li>
+</ul>
+<p>这就是为什么这条线的 human impact 很高。<br>它直接碰到的是用户和助手之间最核心的信任关系。</p>
+<h2 id="四，AI-商业模式的分叉，可能会重写整个产品分层"><a href="#四，AI-商业模式的分叉，可能会重写整个产品分层" class="headerlink" title="四，AI 商业模式的分叉，可能会重写整个产品分层"></a>四，AI 商业模式的分叉，可能会重写整个产品分层</h2><p>如果这条分叉继续往前走，我觉得 AI 产品市场很可能会出现更清晰的分层。</p>
+<h3 id="第一类，广告驱动型助手"><a href="#第一类，广告驱动型助手" class="headerlink" title="第一类，广告驱动型助手"></a>第一类，广告驱动型助手</h3><p>这类产品更可能变成：</p>
+<ul>
+<li>广义信息入口</li>
+<li>品牌分发和触达界面</li>
+<li>低门槛大规模用户产品</li>
+<li>更接近搜索 + 推荐 + 助手的混合体</li>
+</ul>
+<h3 id="第二类，付费驱动型认知工作台"><a href="#第二类，付费驱动型认知工作台" class="headerlink" title="第二类，付费驱动型认知工作台"></a>第二类，付费驱动型认知工作台</h3><p>这类产品更可能变成：</p>
+<ul>
+<li>高信任工作空间</li>
+<li>深度写作与推理环境</li>
+<li>专业用户与高频用户工具</li>
+<li>更接近“数字办公桌”而不是“分发平台”</li>
+</ul>
+<h3 id="第三类，企业与行业助手"><a href="#第三类，企业与行业助手" class="headerlink" title="第三类，企业与行业助手"></a>第三类，企业与行业助手</h3><p>这一类还会更看重：</p>
+<ul>
+<li>权限</li>
+<li>审计</li>
+<li>数据边界</li>
+<li>合规</li>
+<li>私有环境</li>
+</ul>
+<p>也就是说，未来 AI 助手之间的竞争可能不会只按“能力强弱”来分，<br>而会按：</p>
+<ul>
+<li>收费方式</li>
+<li>信任模式</li>
+<li>商业激励结构</li>
+<li>是否允许分发逻辑进入认知空间</li>
+</ul>
+<p>来重新分层。</p>
+<p>这就是为什么我说它是商业模式层的分叉，<br>不是小功能差异。</p>
+<h2 id="五，最值得记住的，不是“有广告了”，而是-AI-助手第一次公开暴露了价值观差异"><a href="#五，最值得记住的，不是“有广告了”，而是-AI-助手第一次公开暴露了价值观差异" class="headerlink" title="五，最值得记住的，不是“有广告了”，而是 AI 助手第一次公开暴露了价值观差异"></a>五，最值得记住的，不是“有广告了”，而是 AI 助手第一次公开暴露了价值观差异</h2><p>很多行业变化，一开始看起来都像功能变化，<br>但真正重要的时候，其实是价值观差异被产品化的时候。</p>
+<p>这次 OpenAI 和 Anthropic 的对照就是这样。</p>
+<p>表面上看，是：</p>
+<ul>
+<li>一家在测试广告</li>
+<li>一家反对广告</li>
+</ul>
+<p>但更深一层，其实是：</p>
+<ul>
+<li>一家愿意把助手推向分发界面</li>
+<li>一家坚持把助手定义成思考空间</li>
+</ul>
+<p>这已经不是“做法不同”，<br>而是：</p>
+<blockquote>
+<p><strong>它们对 AI 助手到底是什么，开始给出不同答案。</strong></p>
+</blockquote>
+<p>而这种答案一旦真的进入商业模式层，<br>就会慢慢反过来塑造：</p>
+<ul>
+<li>产品设计</li>
+<li>推荐逻辑</li>
+<li>使用体验</li>
+<li>用户信任</li>
+<li>长期品牌位置</li>
+</ul>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>如果今天要给这轮变化下一个最准确的判断，我会这样写：</p>
+<blockquote>
+<p><strong>AI 助手开始在商业模式层分叉，而不只是模型层分叉。</strong></p>
+</blockquote>
+<p>OpenAI 开始测试 ChatGPT ads，并把广告购买能力产品化，说明一部分 AI 助手正在向新的注意力与分发界面演化。<br>Anthropic 则继续坚持“Claude is a space to think”的路线，把广告激励视为和可信助手关系存在结构冲突。</p>
+<p>这意味着下一阶段真正值得盯的，不只是：</p>
+<ul>
+<li>谁模型更强</li>
+<li>谁 agent 更多</li>
+<li>谁工作流更完整</li>
+</ul>
+<p>而会越来越是：</p>
+<ul>
+<li>谁靠什么赚钱</li>
+<li>谁替谁服务</li>
+<li>谁在保护认知空间</li>
+<li>谁在把认知空间重新平台化</li>
+</ul>
+<p>真正的新竞争，可能不只是 intelligence competition。<br>它正在变成一场关于 <strong>信任、注意力和商业模式</strong> 的竞争。</p>
+
+        </div>
+
+        <footer class="post-nav">
+          
+          <span></span>
+          
+          
+          <a href="/2026/05/07/ai-labs-are-building-deployment-machinery-2026-05-07/" class="post-nav-link next">
+            <span class="post-nav-label">Next &rarr;</span>
+            <span class="post-nav-title">AI 公司正在建设的不只是模型，而是部署机器</span>
+          </a>
+          
+        </footer>
+      </article>
+    </div>
+    
+    <aside class="sidebar">
+      
+
+
+<div class="widget widget-search">
+  <h3 class="widget-title">Search</h3>
+  <form class="search-form" action="//google.com/search" method="get" target="_blank" rel="noopener">
+    <input type="hidden" name="sitesearch" value="https://keyed.cn">
+    <input type="text" name="q" class="search-input" placeholder="Search articles...">
+  </form>
+</div>
+
+
+
+<div class="widget widget-recent">
+  <h3 class="widget-title">Recent Posts</h3>
+  <ul class="widget-list">
+    
+    
+    <li>
+      <a href="/2026/05/08/ai-assistants-diverge-at-the-business-model-layer-2026-05-08/" class="widget-link">
+        <span class="widget-post-title">AI 助手开始在商业模式层分叉，而不只是模型层分叉</span>
+        <time class="widget-post-date">05-08</time>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/2026/05/07/ai-labs-are-building-deployment-machinery-2026-05-07/" class="widget-link">
+        <span class="widget-post-title">AI 公司正在建设的不只是模型，而是部署机器</span>
+        <time class="widget-post-date">05-07</time>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/2026/05/07/polymarket-account-theory-and-microstructure-2026-05-07/" class="widget-link">
+        <span class="widget-post-title">Polymarket 的“账户理论”：真正有优势的，不只是观点，而是账户行为识别</span>
+        <time class="widget-post-date">05-07</time>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/2026/05/07/ai-enters-an-institution-building-phase-2026-05-07/" class="widget-link">
+        <span class="widget-post-title">AI 正在从产品层，进入制度建设期</span>
+        <time class="widget-post-date">05-07</time>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/2026/05/06/ai-enters-transaction-and-operational-execution-surfaces-2026-05-06/" class="widget-link">
+        <span class="widget-post-title">AI 正在从创意界面，进入交易与运营执行界面</span>
+        <time class="widget-post-date">05-06</time>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/2026/05/04/ai-enters-native-creative-production-surfaces-2026-05-04/" class="widget-link">
+        <span class="widget-post-title">AI 正在从聊天工具，进入原生创意生产界面</span>
+        <time class="widget-post-date">05-05</time>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/2026/05/01/ai-postmortems-become-a-trust-layer-2026-05-01/" class="widget-link">
+        <span class="widget-post-title">AI 正在长出新的信任层：顶级模型公司开始公开解释自己的“人格失败”</span>
+        <time class="widget-post-date">05-02</time>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/2026/05/01/ai-de-exclusifies-distribution-and-sovereign-control-2026-05-01/" class="widget-link">
+        <span class="widget-post-title">AI 正在从独占平台绑定，转向多云分发与主权部署控制</span>
+        <time class="widget-post-date">05-01</time>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+
+
+<div class="widget widget-categories">
+  <h3 class="widget-title">Categories</h3>
+  <ul class="widget-list">
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/" class="widget-link">
+        <span>AI资讯</span>
+        <span class="widget-count">58</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/Agent/" class="widget-link">
+        <span>Agent</span>
+        <span class="widget-count">12</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/Agent/" class="widget-link">
+        <span>Agent</span>
+        <span class="widget-count">4</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E4%BA%A7%E5%93%81/Agent/" class="widget-link">
+        <span>Agent</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/%E6%94%BF%E7%AD%96/Agent/" class="widget-link">
+        <span>Agent</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E4%BC%81%E4%B8%9AAI/Agents/" class="widget-link">
+        <span>Agents</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/Crypto/" class="widget-link">
+        <span>Crypto</span>
+        <span class="widget-count">2</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/%E9%87%91%E8%9E%8D%E8%A7%82%E5%AF%9F/Polymarket/" class="widget-link">
+        <span>Polymarket</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E4%BA%92%E8%81%94%E7%BD%91/" class="widget-link">
+        <span>互联网</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/%E9%87%91%E8%9E%8D%E8%A7%82%E5%AF%9F/Polymarket/%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/" class="widget-link">
+        <span>交易策略</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E4%BA%A7%E4%B8%9A%E8%B6%8B%E5%8A%BF/" class="widget-link">
+        <span>产业趋势</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/Agent/%E4%BA%A7%E5%93%81/" class="widget-link">
+        <span>产品</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E4%BA%A7%E5%93%81/" class="widget-link">
+        <span>产品</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E4%BA%A7%E5%93%81%E8%B6%8B%E5%8A%BF/" class="widget-link">
+        <span>产品趋势</span>
+        <span class="widget-count">3</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E4%BB%8A%E6%97%A5%E5%BF%AB%E8%AF%84/" class="widget-link">
+        <span>今日快评</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E4%BC%81%E4%B8%9AAI/" class="widget-link">
+        <span>企业AI</span>
+        <span class="widget-count">2</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/Agent/%E4%BC%81%E4%B8%9AAI/" class="widget-link">
+        <span>企业AI</span>
+        <span class="widget-count">5</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/%E4%BC%81%E4%B8%9AAI/" class="widget-link">
+        <span>企业AI</span>
+        <span class="widget-count">3</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E6%94%BF%E7%AD%96/%E4%BC%81%E4%B8%9AAI/" class="widget-link">
+        <span>企业AI</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E5%85%A8%E7%90%83%E8%B6%8B%E5%8A%BF/" class="widget-link">
+        <span>全球趋势</span>
+        <span class="widget-count">13</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/" class="widget-link">
+        <span>基础设施</span>
+        <span class="widget-count">13</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/Agent/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/" class="widget-link">
+        <span>基础设施</span>
+        <span class="widget-count">3</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/Agent/%E4%BC%81%E4%B8%9AAI/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/" class="widget-link">
+        <span>基础设施</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E5%AE%8F%E8%A7%82%E7%A0%94%E7%A9%B6/" class="widget-link">
+        <span>宏观研究</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/Agent/%E5%B7%A5%E4%BD%9C%E6%B5%81/" class="widget-link">
+        <span>工作流</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84/" class="widget-link">
+        <span>技术架构</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84/" class="widget-link">
+        <span>技术架构</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E6%94%AF%E4%BB%98%E7%A7%91%E6%8A%80/" class="widget-link">
+        <span>支付科技</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/%E9%87%91%E8%9E%8D%E5%88%86%E6%9E%90/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E6%94%AF%E4%BB%98%E7%A7%91%E6%8A%80/" class="widget-link">
+        <span>支付科技</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E6%94%BF%E7%AD%96/" class="widget-link">
+        <span>政策</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/%E6%94%BF%E7%AD%96/" class="widget-link">
+        <span>政策</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E8%81%8C%E4%B8%9A%E8%B6%8B%E5%8A%BF/" class="widget-link">
+        <span>职业趋势</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/" class="widget-link">
+        <span>行业观察</span>
+        <span class="widget-count">57</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/%E9%87%91%E8%9E%8D%E5%88%86%E6%9E%90/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/" class="widget-link">
+        <span>行业观察</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/" class="widget-link">
+        <span>行业观察</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/%E9%87%91%E8%9E%8D%E5%88%86%E6%9E%90/" class="widget-link">
+        <span>金融分析</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E9%87%91%E8%9E%8D%E5%88%86%E6%9E%90/" class="widget-link">
+        <span>金融分析</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/%E9%87%91%E8%9E%8D%E8%A7%82%E5%AF%9F/" class="widget-link">
+        <span>金融观察</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/categories/AI%E8%B5%84%E8%AE%AF/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/%E9%87%91%E8%9E%8D%E8%B6%8B%E5%8A%BF/" class="widget-link">
+        <span>金融趋势</span>
+        <span class="widget-count">1</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+
+
+<div class="widget widget-tags">
+  <h3 class="widget-title">Tags</h3>
+  <div class="tag-cloud">
+    
+      <a href="/tags/A2A/" class="tag-cloud-item" data-count="1">
+        #A2A
+      </a>
+    
+      <a href="/tags/AI/" class="tag-cloud-item" data-count="57">
+        #AI
+      </a>
+    
+      <a href="/tags/AI-Agent/" class="tag-cloud-item" data-count="1">
+        #AI Agent
+      </a>
+    
+      <a href="/tags/AI%E4%BA%A7%E5%93%81/" class="tag-cloud-item" data-count="1">
+        #AI产品
+      </a>
+    
+      <a href="/tags/AI%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/" class="tag-cloud-item" data-count="2">
+        #AI基础设施
+      </a>
+    
+      <a href="/tags/AI%E5%B7%A5%E5%85%B7/" class="tag-cloud-item" data-count="1">
+        #AI工具
+      </a>
+    
+      <a href="/tags/AI%E7%94%9F%E6%80%81/" class="tag-cloud-item" data-count="2">
+        #AI生态
+      </a>
+    
+      <a href="/tags/AI%E7%BB%8F%E6%B5%8E/" class="tag-cloud-item" data-count="2">
+        #AI经济
+      </a>
+    
+      <a href="/tags/AI%E7%BC%96%E7%A8%8B/" class="tag-cloud-item" data-count="2">
+        #AI编程
+      </a>
+    
+      <a href="/tags/AP2/" class="tag-cloud-item" data-count="1">
+        #AP2
+      </a>
+    
+      <a href="/tags/AWS/" class="tag-cloud-item" data-count="35">
+        #AWS
+      </a>
+    
+      <a href="/tags/Agent/" class="tag-cloud-item" data-count="30">
+        #Agent
+      </a>
+    
+      <a href="/tags/Agentic-AI/" class="tag-cloud-item" data-count="2">
+        #Agentic AI
+      </a>
+    
+      <a href="/tags/Agents/" class="tag-cloud-item" data-count="2">
+        #Agents
+      </a>
+    
+      <a href="/tags/Ai2/" class="tag-cloud-item" data-count="25">
+        #Ai2
+      </a>
+    
+      <a href="/tags/Amazon/" class="tag-cloud-item" data-count="1">
+        #Amazon
+      </a>
+    
+      <a href="/tags/Anthropic/" class="tag-cloud-item" data-count="42">
+        #Anthropic
+      </a>
+    
+      <a href="/tags/Apple/" class="tag-cloud-item" data-count="1">
+        #Apple
+      </a>
+    
+      <a href="/tags/Bedrock/" class="tag-cloud-item" data-count="1">
+        #Bedrock
+      </a>
+    
+      <a href="/tags/CPU/" class="tag-cloud-item" data-count="1">
+        #CPU
+      </a>
+    
+      <a href="/tags/Canada/" class="tag-cloud-item" data-count="1">
+        #Canada
+      </a>
+    
+      <a href="/tags/ChatGPT/" class="tag-cloud-item" data-count="1">
+        #ChatGPT
+      </a>
+    
+      <a href="/tags/China/" class="tag-cloud-item" data-count="1">
+        #China
+      </a>
+    
+      <a href="/tags/Claude/" class="tag-cloud-item" data-count="3">
+        #Claude
+      </a>
+    
+      <a href="/tags/Claude-Code/" class="tag-cloud-item" data-count="1">
+        #Claude Code
+      </a>
+    
+      <a href="/tags/Claude-Design/" class="tag-cloud-item" data-count="3">
+        #Claude Design
+      </a>
+    
+      <a href="/tags/Cloud/" class="tag-cloud-item" data-count="1">
+        #Cloud
+      </a>
+    
+      <a href="/tags/Codex/" class="tag-cloud-item" data-count="1">
+        #Codex
+      </a>
+    
+      <a href="/tags/Compute/" class="tag-cloud-item" data-count="4">
+        #Compute
+      </a>
+    
+      <a href="/tags/Control-Plane/" class="tag-cloud-item" data-count="1">
+        #Control Plane
+      </a>
+    
+      <a href="/tags/Cost-Attribution/" class="tag-cloud-item" data-count="1">
+        #Cost Attribution
+      </a>
+    
+      <a href="/tags/Crypto/" class="tag-cloud-item" data-count="3">
+        #Crypto
+      </a>
+    
+      <a href="/tags/Deep-Research/" class="tag-cloud-item" data-count="1">
+        #Deep Research
+      </a>
+    
+      <a href="/tags/Deliverables/" class="tag-cloud-item" data-count="1">
+        #Deliverables
+      </a>
+    
+      <a href="/tags/Deployment/" class="tag-cloud-item" data-count="1">
+        #Deployment
+      </a>
+    
+      <a href="/tags/Design/" class="tag-cloud-item" data-count="1">
+        #Design
+      </a>
+    
+      <a href="/tags/Distribution/" class="tag-cloud-item" data-count="1">
+        #Distribution
+      </a>
+    
+      <a href="/tags/Earth-Observation/" class="tag-cloud-item" data-count="1">
+        #Earth Observation
+      </a>
+    
+      <a href="/tags/Enterprise/" class="tag-cloud-item" data-count="1">
+        #Enterprise
+      </a>
+    
+      <a href="/tags/Enterprise-AI/" class="tag-cloud-item" data-count="9">
+        #Enterprise AI
+      </a>
+    
+      <a href="/tags/Environment/" class="tag-cloud-item" data-count="1">
+        #Environment
+      </a>
+    
+      <a href="/tags/Environment-Engineering/" class="tag-cloud-item" data-count="1">
+        #Environment Engineering
+      </a>
+    
+      <a href="/tags/Evaluation/" class="tag-cloud-item" data-count="3">
+        #Evaluation
+      </a>
+    
+      <a href="/tags/GPT-5/" class="tag-cloud-item" data-count="1">
+        #GPT-5
+      </a>
+    
+      <a href="/tags/Gemini/" class="tag-cloud-item" data-count="1">
+        #Gemini
+      </a>
+    
+      <a href="/tags/GitHub-Copilot/" class="tag-cloud-item" data-count="1">
+        #GitHub Copilot
+      </a>
+    
+      <a href="/tags/Google/" class="tag-cloud-item" data-count="9">
+        #Google
+      </a>
+    
+      <a href="/tags/Google-Cloud/" class="tag-cloud-item" data-count="4">
+        #Google Cloud
+      </a>
+    
+      <a href="/tags/Google-DeepMind/" class="tag-cloud-item" data-count="6">
+        #Google DeepMind
+      </a>
+    
+      <a href="/tags/Governance/" class="tag-cloud-item" data-count="7">
+        #Governance
+      </a>
+    
+      <a href="/tags/Grok/" class="tag-cloud-item" data-count="1">
+        #Grok
+      </a>
+    
+      <a href="/tags/Harness-Engineering/" class="tag-cloud-item" data-count="1">
+        #Harness Engineering
+      </a>
+    
+      <a href="/tags/Inbox/" class="tag-cloud-item" data-count="1">
+        #Inbox
+      </a>
+    
+      <a href="/tags/Industrial-AI/" class="tag-cloud-item" data-count="2">
+        #Industrial AI
+      </a>
+    
+      <a href="/tags/Inference/" class="tag-cloud-item" data-count="2">
+        #Inference
+      </a>
+    
+      <a href="/tags/Infrastructure/" class="tag-cloud-item" data-count="16">
+        #Infrastructure
+      </a>
+    
+      <a href="/tags/Japan/" class="tag-cloud-item" data-count="6">
+        #Japan
+      </a>
+    
+      <a href="/tags/K%E7%BA%BF/" class="tag-cloud-item" data-count="1">
+        #K线
+      </a>
+    
+      <a href="/tags/MCP/" class="tag-cloud-item" data-count="1">
+        #MCP
+      </a>
+    
+      <a href="/tags/Memory/" class="tag-cloud-item" data-count="2">
+        #Memory
+      </a>
+    
+      <a href="/tags/Meta/" class="tag-cloud-item" data-count="16">
+        #Meta
+      </a>
+    
+      <a href="/tags/Microsoft/" class="tag-cloud-item" data-count="20">
+        #Microsoft
+      </a>
+    
+      <a href="/tags/Multi-Cloud/" class="tag-cloud-item" data-count="1">
+        #Multi-Cloud
+      </a>
+    
+      <a href="/tags/NVIDIA/" class="tag-cloud-item" data-count="12">
+        #NVIDIA
+      </a>
+    
+      <a href="/tags/Nvidia/" class="tag-cloud-item" data-count="7">
+        #Nvidia
+      </a>
+    
+      <a href="/tags/OpenAI/" class="tag-cloud-item" data-count="18">
+        #OpenAI
+      </a>
+    
+      <a href="/tags/PSP/" class="tag-cloud-item" data-count="1">
+        #PSP
+      </a>
+    
+      <a href="/tags/Packaging/" class="tag-cloud-item" data-count="1">
+        #Packaging
+      </a>
+    
+      <a href="/tags/Payment/" class="tag-cloud-item" data-count="1">
+        #Payment
+      </a>
+    
+      <a href="/tags/Policy/" class="tag-cloud-item" data-count="1">
+        #Policy
+      </a>
+    
+      <a href="/tags/Polymarket/" class="tag-cloud-item" data-count="4">
+        #Polymarket
+      </a>
+    
+      <a href="/tags/Power/" class="tag-cloud-item" data-count="1">
+        #Power
+      </a>
+    
+      <a href="/tags/Prediction-Market/" class="tag-cloud-item" data-count="3">
+        #Prediction Market
+      </a>
+    
+      <a href="/tags/Production-AI/" class="tag-cloud-item" data-count="1">
+        #Production AI
+      </a>
+    
+      <a href="/tags/Productivity/" class="tag-cloud-item" data-count="1">
+        #Productivity
+      </a>
+    
+      <a href="/tags/Qwen/" class="tag-cloud-item" data-count="3">
+        #Qwen
+      </a>
+    
+      <a href="/tags/Registry/" class="tag-cloud-item" data-count="1">
+        #Registry
+      </a>
+    
+      <a href="/tags/Reliability/" class="tag-cloud-item" data-count="1">
+        #Reliability
+      </a>
+    
+      <a href="/tags/Robotics/" class="tag-cloud-item" data-count="2">
+        #Robotics
+      </a>
+    
+      <a href="/tags/Runtime/" class="tag-cloud-item" data-count="8">
+        #Runtime
+      </a>
+    
+      <a href="/tags/Sandbox/" class="tag-cloud-item" data-count="1">
+        #Sandbox
+      </a>
+    
+      <a href="/tags/Scientific-Discovery/" class="tag-cloud-item" data-count="1">
+        #Scientific Discovery
+      </a>
+    
+      <a href="/tags/Security/" class="tag-cloud-item" data-count="2">
+        #Security
+      </a>
+    
+      <a href="/tags/Simulation/" class="tag-cloud-item" data-count="3">
+        #Simulation
+      </a>
+    
+      <a href="/tags/Singapore/" class="tag-cloud-item" data-count="6">
+        #Singapore
+      </a>
+    
+      <a href="/tags/Sovereign-AI/" class="tag-cloud-item" data-count="4">
+        #Sovereign AI
+      </a>
+    
+      <a href="/tags/Stablecoin/" class="tag-cloud-item" data-count="2">
+        #Stablecoin
+      </a>
+    
+      <a href="/tags/TTS/" class="tag-cloud-item" data-count="1">
+        #TTS
+      </a>
+    
+      <a href="/tags/Testing/" class="tag-cloud-item" data-count="1">
+        #Testing
+      </a>
+    
+      <a href="/tags/Tool-Use/" class="tag-cloud-item" data-count="1">
+        #Tool Use
+      </a>
+    
+      <a href="/tags/ToolSimulator/" class="tag-cloud-item" data-count="1">
+        #ToolSimulator
+      </a>
+    
+      <a href="/tags/UK/" class="tag-cloud-item" data-count="5">
+        #UK
+      </a>
+    
+      <a href="/tags/UKRI/" class="tag-cloud-item" data-count="1">
+        #UKRI
+      </a>
+    
+      <a href="/tags/US/" class="tag-cloud-item" data-count="1">
+        #US
+      </a>
+    
+      <a href="/tags/Web/" class="tag-cloud-item" data-count="1">
+        #Web
+      </a>
+    
+      <a href="/tags/Web-Agent/" class="tag-cloud-item" data-count="1">
+        #Web Agent
+      </a>
+    
+      <a href="/tags/Web3/" class="tag-cloud-item" data-count="4">
+        #Web3
+      </a>
+    
+      <a href="/tags/White-Collar/" class="tag-cloud-item" data-count="1">
+        #White Collar
+      </a>
+    
+      <a href="/tags/Work-Interface/" class="tag-cloud-item" data-count="1">
+        #Work Interface
+      </a>
+    
+      <a href="/tags/Workflow/" class="tag-cloud-item" data-count="3">
+        #Workflow
+      </a>
+    
+      <a href="/tags/Workforce/" class="tag-cloud-item" data-count="3">
+        #Workforce
+      </a>
+    
+      <a href="/tags/Workspace/" class="tag-cloud-item" data-count="1">
+        #Workspace
+      </a>
+    
+      <a href="/tags/Xcode/" class="tag-cloud-item" data-count="1">
+        #Xcode
+      </a>
+    
+      <a href="/tags/x402/" class="tag-cloud-item" data-count="1">
+        #x402
+      </a>
+    
+      <a href="/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/" class="tag-cloud-item" data-count="1">
+        #个人成长
+      </a>
+    
+      <a href="/tags/%E4%BA%8B%E6%95%85%E5%A4%8D%E7%9B%98/" class="tag-cloud-item" data-count="1">
+        #事故复盘
+      </a>
+    
+      <a href="/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/" class="tag-cloud-item" data-count="2">
+        #云计算
+      </a>
+    
+      <a href="/tags/%E4%BA%92%E8%81%94%E7%BD%91%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/" class="tag-cloud-item" data-count="1">
+        #互联网基础设施
+      </a>
+    
+      <a href="/tags/%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/" class="tag-cloud-item" data-count="1">
+        #交易策略
+      </a>
+    
+      <a href="/tags/%E4%BA%A7%E5%93%81%E4%BF%A1%E4%BB%BB/" class="tag-cloud-item" data-count="1">
+        #产品信任
+      </a>
+    
+      <a href="/tags/%E4%BA%A7%E5%93%81%E6%88%98%E7%95%A5/" class="tag-cloud-item" data-count="1">
+        #产品战略
+      </a>
+    
+      <a href="/tags/%E4%BA%A7%E5%93%81%E8%B6%8B%E5%8A%BF/" class="tag-cloud-item" data-count="1">
+        #产品趋势
+      </a>
+    
+      <a href="/tags/%E4%BC%81%E4%B8%9A%E6%9C%8D%E5%8A%A1/" class="tag-cloud-item" data-count="1">
+        #企业服务
+      </a>
+    
+      <a href="/tags/%E4%BC%81%E4%B8%9A%E8%BD%AF%E4%BB%B6/" class="tag-cloud-item" data-count="2">
+        #企业软件
+      </a>
+    
+      <a href="/tags/%E4%BC%B0%E5%80%BC/" class="tag-cloud-item" data-count="1">
+        #估值
+      </a>
+    
+      <a href="/tags/%E5%85%A8%E7%90%83AI/" class="tag-cloud-item" data-count="2">
+        #全球AI
+      </a>
+    
+      <a href="/tags/%E5%85%A8%E7%90%83%E7%AB%9E%E4%BA%89/" class="tag-cloud-item" data-count="1">
+        #全球竞争
+      </a>
+    
+      <a href="/tags/%E5%85%A8%E7%90%83%E8%B5%84%E6%9C%AC/" class="tag-cloud-item" data-count="1">
+        #全球资本
+      </a>
+    
+      <a href="/tags/%E5%88%9B%E6%84%8F%E5%B7%A5%E5%85%B7/" class="tag-cloud-item" data-count="1">
+        #创意工具
+      </a>
+    
+      <a href="/tags/%E5%88%B6%E5%BA%A6%E5%BB%BA%E8%AE%BE/" class="tag-cloud-item" data-count="1">
+        #制度建设
+      </a>
+    
+      <a href="/tags/%E5%8A%B3%E5%8A%A8%E5%B8%82%E5%9C%BA/" class="tag-cloud-item" data-count="1">
+        #劳动市场
+      </a>
+    
+      <a href="/tags/%E5%90%88%E8%A7%84/" class="tag-cloud-item" data-count="1">
+        #合规
+      </a>
+    
+      <a href="/tags/%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F/" class="tag-cloud-item" data-count="2">
+        #商业模式
+      </a>
+    
+      <a href="/tags/%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/" class="tag-cloud-item" data-count="1">
+        #图像生成
+      </a>
+    
+      <a href="/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/" class="tag-cloud-item" data-count="1">
+        #大模型
+      </a>
+    
+      <a href="/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/" class="tag-cloud-item" data-count="3">
+        #工作流
+      </a>
+    
+      <a href="/tags/%E5%B8%82%E5%9C%BA%E5%AE%9A%E4%BB%B7/" class="tag-cloud-item" data-count="1">
+        #市场定价
+      </a>
+    
+      <a href="/tags/%E5%B8%82%E5%9C%BA%E5%BE%AE%E8%A7%82%E7%BB%93%E6%9E%84/" class="tag-cloud-item" data-count="1">
+        #市场微观结构
+      </a>
+    
+      <a href="/tags/%E5%B9%B3%E5%8F%B0%E5%85%AC%E5%8F%B8/" class="tag-cloud-item" data-count="1">
+        #平台公司
+      </a>
+    
+      <a href="/tags/%E5%B9%BF%E5%91%8A/" class="tag-cloud-item" data-count="1">
+        #广告
+      </a>
+    
+      <a href="/tags/%E6%94%AF%E4%BB%98/" class="tag-cloud-item" data-count="3">
+        #支付
+      </a>
+    
+      <a href="/tags/%E6%94%AF%E4%BB%98%E8%A1%8C%E4%B8%9A/" class="tag-cloud-item" data-count="1">
+        #支付行业
+      </a>
+    
+      <a href="/tags/%E6%94%B6%E5%8D%95/" class="tag-cloud-item" data-count="1">
+        #收单
+      </a>
+    
+      <a href="/tags/%E6%95%B0%E5%AD%97%E7%BB%8F%E6%B5%8E/" class="tag-cloud-item" data-count="4">
+        #数字经济
+      </a>
+    
+      <a href="/tags/%E6%99%BA%E8%83%BD%E4%BD%93/" class="tag-cloud-item" data-count="1">
+        #智能体
+      </a>
+    
+      <a href="/tags/%E6%9C%AA%E6%9D%A5%E5%B7%A5%E4%BD%9C/" class="tag-cloud-item" data-count="1">
+        #未来工作
+      </a>
+    
+      <a href="/tags/%E6%9C%BA%E4%BC%9A%E5%9C%B0%E5%9B%BE/" class="tag-cloud-item" data-count="1">
+        #机会地图
+      </a>
+    
+      <a href="/tags/%E6%A6%82%E7%8E%87/" class="tag-cloud-item" data-count="1">
+        #概率
+      </a>
+    
+      <a href="/tags/%E6%A6%82%E7%8E%87%E4%BA%A4%E6%98%93/" class="tag-cloud-item" data-count="1">
+        #概率交易
+      </a>
+    
+      <a href="/tags/%E6%A6%82%E7%8E%87%E6%80%9D%E8%80%83/" class="tag-cloud-item" data-count="1">
+        #概率思考
+      </a>
+    
+      <a href="/tags/%E6%A8%A1%E5%9E%8B%E4%BA%BA%E6%A0%BC/" class="tag-cloud-item" data-count="1">
+        #模型人格
+      </a>
+    
+      <a href="/tags/%E6%A8%A1%E5%9E%8B%E5%85%AC%E5%8F%B8/" class="tag-cloud-item" data-count="1">
+        #模型公司
+      </a>
+    
+      <a href="/tags/%E6%A8%A1%E5%9E%8B%E5%8D%87%E7%BA%A7/" class="tag-cloud-item" data-count="1">
+        #模型升级
+      </a>
+    
+      <a href="/tags/%E6%A8%A1%E5%9E%8B%E6%B2%BB%E7%90%86/" class="tag-cloud-item" data-count="1">
+        #模型治理
+      </a>
+    
+      <a href="/tags/%E7%94%9F%E4%BA%A7%E7%8E%87/" class="tag-cloud-item" data-count="2">
+        #生产率
+      </a>
+    
+      <a href="/tags/%E7%94%9F%E6%88%90%E5%BC%8FAI/" class="tag-cloud-item" data-count="1">
+        #生成式AI
+      </a>
+    
+      <a href="/tags/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C/" class="tag-cloud-item" data-count="1">
+        #用户体验
+      </a>
+    
+      <a href="/tags/%E7%99%BD%E9%A2%86/" class="tag-cloud-item" data-count="1">
+        #白领
+      </a>
+    
+      <a href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/" class="tag-cloud-item" data-count="1">
+        #程序员
+      </a>
+    
+      <a href="/tags/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/" class="tag-cloud-item" data-count="1">
+        #系统架构
+      </a>
+    
+      <a href="/tags/%E7%B3%BB%E7%BB%9F%E8%83%BD%E5%8A%9B/" class="tag-cloud-item" data-count="1">
+        #系统能力
+      </a>
+    
+      <a href="/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/" class="tag-cloud-item" data-count="1">
+        #系统设计
+      </a>
+    
+      <a href="/tags/%E8%81%8C%E4%B8%9A/" class="tag-cloud-item" data-count="1">
+        #职业
+      </a>
+    
+      <a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/" class="tag-cloud-item" data-count="1">
+        #自动化
+      </a>
+    
+      <a href="/tags/%E8%9E%8D%E8%B5%84/" class="tag-cloud-item" data-count="1">
+        #融资
+      </a>
+    
+      <a href="/tags/%E8%A1%8C%E4%B8%BA%E5%88%86%E6%9E%90/" class="tag-cloud-item" data-count="1">
+        #行为分析
+      </a>
+    
+      <a href="/tags/%E8%B4%A2%E5%AF%8C%E8%B7%AF%E5%BE%84/" class="tag-cloud-item" data-count="1">
+        #财富路径
+      </a>
+    
+      <a href="/tags/%E8%B4%A6%E6%88%B7%E7%90%86%E8%AE%BA/" class="tag-cloud-item" data-count="1">
+        #账户理论
+      </a>
+    
+      <a href="/tags/%E8%B5%84%E6%9C%AC%E9%87%8D%E6%9E%84/" class="tag-cloud-item" data-count="1">
+        #资本重构
+      </a>
+    
+      <a href="/tags/%E8%B7%A8%E5%A2%83%E6%94%AF%E4%BB%98/" class="tag-cloud-item" data-count="1">
+        #跨境支付
+      </a>
+    
+      <a href="/tags/%E9%83%A8%E7%BD%B2/" class="tag-cloud-item" data-count="1">
+        #部署
+      </a>
+    
+      <a href="/tags/%E9%87%91%E8%9E%8D/" class="tag-cloud-item" data-count="1">
+        #金融
+      </a>
+    
+      <a href="/tags/%E9%87%91%E8%9E%8D%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/" class="tag-cloud-item" data-count="1">
+        #金融基础设施
+      </a>
+    
+      <a href="/tags/%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA/" class="tag-cloud-item" data-count="1">
+        #金融市场
+      </a>
+    
+      <a href="/tags/%E9%87%91%E8%9E%8D%E6%9C%8D%E5%8A%A1/" class="tag-cloud-item" data-count="1">
+        #金融服务
+      </a>
+    
+      <a href="/tags/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4/" class="tag-cloud-item" data-count="1">
+        #阿里巴巴
+      </a>
+    
+      <a href="/tags/%E9%A2%84%E6%B5%8B%E5%B8%82%E5%9C%BA/" class="tag-cloud-item" data-count="1">
+        #预测市场
+      </a>
+    
+      <a href="/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86/" class="tag-cloud-item" data-count="1">
+        #风险管理
+      </a>
+    
+  </div>
+</div>
+
+
+
+<div class="widget widget-archive">
+  <h3 class="widget-title">Archive</h3>
+  <ul class="widget-list">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      <a href="/archives" class="widget-link">
+        <span>2026 / 05</span>
+        <span class="widget-count">8</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="/archives" class="widget-link">
+        <span>2026 / 04</span>
+        <span class="widget-count">52</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+
+    </aside>
+    
+  </div>
+</main>
+
+  <footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-info">
+      <p>&copy; 2024 - 2026 <a href="/">小触AI</a></p>
+      <p class="footer-powered">
+        Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a>
+        &middot; Theme <strong>Pretext AI</strong>
+        &middot; Text engine by <a href="https://github.com/chenglou/pretext" target="_blank" rel="noopener">Pretext</a>
+      </p>
+    </div>
+    
+    <div class="footer-social">
+      
+      
+    </div>
+    
+  </div>
+</footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
