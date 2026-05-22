@@ -1,36 +1,58 @@
 <svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1600" height="900" fill="#F6F5F0"/>
   <defs>
-    <linearGradient id="glow" x1="0" x2="1">
-      <stop offset="0%" stop-color="#5B8CFF"/>
-      <stop offset="100%" stop-color="#7B61FF"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1020"/>
+      <stop offset="55%" stop-color="#131B34"/>
+      <stop offset="100%" stop-color="#24163E"/>
     </linearGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000000" flood-opacity="0.10"/>
+    <radialGradient id="roadGlow" cx="50%" cy="56%" r="55%">
+      <stop offset="0%" stop-color="#7CD4FF" stop-opacity="0.95"/>
+      <stop offset="45%" stop-color="#7B61FF" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#7B61FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lane" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5EC8FF"/>
+      <stop offset="100%" stop-color="#A66BFF"/>
+    </linearGradient>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
   </defs>
-  <text x="800" y="78" text-anchor="middle" font-size="40" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">Agentic AI Is Entering Google’s Default Traffic Lanes</text>
-  <text x="800" y="118" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" fill="#666666">The real shift is not a better model alone, but AI behavior moving into Search, Maps, YouTube, Gemini, and Cloud at default scale.</text>
-  <rect x="210" y="210" width="1180" height="470" rx="30" fill="#FFFFFF" filter="url(#shadow)"/>
-  <circle cx="800" cy="445" r="118" fill="#111111"/>
-  <text x="800" y="432" text-anchor="middle" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#F6F5F0" font-weight="700">Agentic</text>
-  <text x="800" y="468" text-anchor="middle" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#F6F5F0" font-weight="700">Behavior</text>
-  <circle cx="430" cy="305" r="84" fill="#EEF3FF" stroke="#DDE4F5" stroke-width="2"/>
-  <text x="430" y="297" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#326BFF" font-weight="700">Search</text>
-  <text x="430" y="330" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">AI Overviews</text>
-  <circle cx="1170" cy="305" r="84" fill="#F3EEFF" stroke="#E3DBFF" stroke-width="2"/>
-  <text x="1170" y="297" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#7B61FF" font-weight="700">Gemini</text>
-  <text x="1170" y="330" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">App / AI Mode</text>
-  <circle cx="430" cy="585" r="84" fill="#FFF3E9" stroke="#F0E0CF" stroke-width="2"/>
-  <text x="430" y="577" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#C67A2D" font-weight="700">Maps</text>
-  <text x="430" y="610" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">default action</text>
-  <circle cx="1170" cy="585" r="84" fill="#F1F8EE" stroke="#D8E7D2" stroke-width="2"/>
-  <text x="1170" y="577" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#3B8C4E" font-weight="700">YouTube</text>
-  <text x="1170" y="610" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#111111">Cloud / surfaces</text>
-  <line x1="500" y1="335" x2="695" y2="405" stroke="url(#glow)" stroke-width="6" stroke-linecap="round"/>
-  <line x1="1100" y1="335" x2="905" y2="405" stroke="url(#glow)" stroke-width="6" stroke-linecap="round"/>
-  <line x1="500" y1="555" x2="695" y2="485" stroke="url(#glow)" stroke-width="6" stroke-linecap="round"/>
-  <line x1="1100" y1="555" x2="905" y2="485" stroke="url(#glow)" stroke-width="6" stroke-linecap="round"/>
-  <rect x="180" y="760" width="1240" height="58" rx="16" fill="#111111"/>
-  <text x="800" y="797" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#F6F5F0">The new contest is not only over who builds agents, but who embeds agent behavior into the consumer internet’s default traffic system.</text>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="800" cy="470" r="330" fill="url(#roadGlow)"/>
+  <text x="800" y="88" text-anchor="middle" font-size="42" font-family="Arial, Helvetica, sans-serif" fill="#F8FAFF" font-weight="700">Agentic AI Is Leaving the Lab</text>
+  <text x="800" y="132" text-anchor="middle" font-size="25" font-family="Arial, Helvetica, sans-serif" fill="#B9C5E6">and entering Google’s default consumer traffic lanes</text>
+  <path d="M140 720 C 360 640, 520 560, 690 470" stroke="url(#lane)" stroke-width="18" fill="none" stroke-linecap="round" filter="url(#softGlow)"/>
+  <path d="M1460 720 C 1240 640, 1080 560, 910 470" stroke="url(#lane)" stroke-width="18" fill="none" stroke-linecap="round" filter="url(#softGlow)"/>
+  <path d="M310 240 C 470 295, 575 350, 710 425" stroke="url(#lane)" stroke-width="14" fill="none" stroke-linecap="round" opacity="0.92"/>
+  <path d="M1290 240 C 1130 295, 1025 350, 890 425" stroke="url(#lane)" stroke-width="14" fill="none" stroke-linecap="round" opacity="0.92"/>
+  <circle cx="800" cy="470" r="118" fill="#F8FAFF"/>
+  <circle cx="800" cy="470" r="98" fill="#111827"/>
+  <text x="800" y="456" text-anchor="middle" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#FFFFFF" font-weight="700">Agentic</text>
+  <text x="800" y="492" text-anchor="middle" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#FFFFFF" font-weight="700">Gemini Era</text>
+  <g>
+    <circle cx="250" cy="735" r="62" fill="#0F172A" stroke="#55C7FF" stroke-width="3"/>
+    <text x="250" y="728" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#EAF6FF" font-weight="700">Search</text>
+    <text x="250" y="758" text-anchor="middle" font-size="15" font-family="Arial, Helvetica, sans-serif" fill="#9CCBFF">AI Overviews</text>
+  </g>
+  <g>
+    <circle cx="1350" cy="735" r="62" fill="#0F172A" stroke="#A26BFF" stroke-width="3"/>
+    <text x="1350" y="728" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#F5EDFF" font-weight="700">Gemini</text>
+    <text x="1350" y="758" text-anchor="middle" font-size="15" font-family="Arial, Helvetica, sans-serif" fill="#D1BCFF">App / AI Mode</text>
+  </g>
+  <g>
+    <circle cx="310" cy="220" r="58" fill="#0F172A" stroke="#5EEAD4" stroke-width="3"/>
+    <text x="310" y="214" text-anchor="middle" font-size="23" font-family="Arial, Helvetica, sans-serif" fill="#E9FFF9" font-weight="700">Maps</text>
+    <text x="310" y="242" text-anchor="middle" font-size="14" font-family="Arial, Helvetica, sans-serif" fill="#9FE7D9">default actions</text>
+  </g>
+  <g>
+    <circle cx="1290" cy="220" r="58" fill="#0F172A" stroke="#F59E0B" stroke-width="3"/>
+    <text x="1290" y="214" text-anchor="middle" font-size="23" font-family="Arial, Helvetica, sans-serif" fill="#FFF6E8" font-weight="700">YouTube</text>
+    <text x="1290" y="242" text-anchor="middle" font-size="14" font-family="Arial, Helvetica, sans-serif" fill="#FFD38A">Cloud surfaces</text>
+  </g>
+  <text x="800" y="826" text-anchor="middle" font-size="23" font-family="Arial, Helvetica, sans-serif" fill="#F8FAFF">The next AI battle is not only over model quality, but over who routes everyday consumer behavior through default product surfaces.</text>
 </svg>
