@@ -1,0 +1,48 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1324"/>
+      <stop offset="100%" stop-color="#1A1D39"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#39D0FF"/>
+      <stop offset="100%" stop-color="#9B6BFF"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="800" y="88" text-anchor="middle" font-size="40" font-family="Arial, Helvetica, sans-serif" fill="#F8FAFF" font-weight="700">From K-Line Signal to Order Execution</text>
+  <text x="800" y="130" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#B7C3E5">A trading edge is not a number alone. It is a decision system that survives contact with odds, liquidity, and risk.</text>
+  <path d="M180 700 C 360 620, 470 560, 600 470" stroke="url(#flow)" stroke-width="18" fill="none" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M600 470 C 720 390, 820 360, 980 350" stroke="url(#flow)" stroke-width="18" fill="none" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M980 350 C 1130 345, 1240 400, 1410 515" stroke="url(#flow)" stroke-width="18" fill="none" stroke-linecap="round" filter="url(#glow)"/>
+  <g>
+    <circle cx="230" cy="720" r="74" fill="#111827" stroke="#39D0FF" stroke-width="3"/>
+    <text x="230" y="710" text-anchor="middle" font-size="26" font-family="Arial, Helvetica, sans-serif" fill="#EAFBFF" font-weight="700">Signal</text>
+    <text x="230" y="742" text-anchor="middle" font-size="16" font-family="Arial, Helvetica, sans-serif" fill="#9EDFF0">direction + strength</text>
+  </g>
+  <g>
+    <circle cx="600" cy="470" r="88" fill="#111827" stroke="#6CE8C7" stroke-width="3"/>
+    <text x="600" y="460" text-anchor="middle" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#F2FFF9" font-weight="700">Pattern</text>
+    <text x="600" y="494" text-anchor="middle" font-size="17" font-family="Arial, Helvetica, sans-serif" fill="#A8F1DD">intercept noise</text>
+  </g>
+  <g>
+    <circle cx="995" cy="350" r="94" fill="#111827" stroke="#FFB454" stroke-width="3"/>
+    <text x="995" y="338" text-anchor="middle" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#FFF7EA" font-weight="700">Odds &amp;</text>
+    <text x="995" y="374" text-anchor="middle" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#FFF7EA" font-weight="700">Liquidity</text>
+  </g>
+  <g>
+    <circle cx="1390" cy="530" r="90" fill="#F8FAFF"/>
+    <circle cx="1390" cy="530" r="72" fill="#111827"/>
+    <text x="1390" y="518" text-anchor="middle" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#FFFFFF" font-weight="700">Order</text>
+    <text x="1390" y="552" text-anchor="middle" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#FFFFFF" font-weight="700">Execution</text>
+  </g>
+  <rect x="170" y="780" width="1260" height="50" rx="14" fill="#111827"/>
+  <text x="800" y="813" text-anchor="middle" font-size="23" font-family="Arial, Helvetica, sans-serif" fill="#F8FAFF">What matters is not who computes a signal, but who can turn it into disciplined execution without mistaking noise for alpha.</text>
+</svg>
