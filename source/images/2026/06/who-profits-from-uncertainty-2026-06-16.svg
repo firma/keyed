@@ -1,0 +1,54 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A1020"/>
+      <stop offset="100%" stop-color="#1F2142"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#46D2FF"/>
+      <stop offset="100%" stop-color="#A06BFF"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="800" y="86" text-anchor="middle" font-size="42" font-family="Arial, Helvetica, sans-serif" fill="#F8FAFF" font-weight="700">Who Profits From Uncertainty?</text>
+  <text x="800" y="128" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#BCC7E8">The most stable money is often earned not by predicting the future, but by turning the future into a standardized product and a tradable market.</text>
+  <circle cx="800" cy="448" r="122" fill="#F8FAFF"/>
+  <circle cx="800" cy="448" r="98" fill="#111827"/>
+  <text x="800" y="436" text-anchor="middle" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#FFFFFF" font-weight="700">Market</text>
+  <text x="800" y="472" text-anchor="middle" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#FFFFFF" font-weight="700">Structure</text>
+  <path d="M200 680 C 380 585, 510 520, 690 458" stroke="url(#beam)" stroke-width="18" fill="none" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M1400 680 C 1220 585, 1090 520, 910 458" stroke="url(#beam)" stroke-width="18" fill="none" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M320 225 C 470 300, 585 360, 710 420" stroke="url(#beam)" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <path d="M1280 225 C 1130 300, 1015 360, 890 420" stroke="url(#beam)" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <g>
+    <circle cx="220" cy="705" r="72" fill="#111827" stroke="#46D2FF" stroke-width="3"/>
+    <text x="220" y="697" text-anchor="middle" font-size="23" font-family="Arial, Helvetica, sans-serif" fill="#EAFBFF" font-weight="700">Lottery</text>
+    <text x="220" y="727" text-anchor="middle" font-size="15" font-family="Arial, Helvetica, sans-serif" fill="#A2DDF0">high rake fantasy</text>
+  </g>
+  <g>
+    <circle cx="1380" cy="705" r="72" fill="#111827" stroke="#A06BFF" stroke-width="3"/>
+    <text x="1380" y="697" text-anchor="middle" font-size="23" font-family="Arial, Helvetica, sans-serif" fill="#F3ECFF" font-weight="700">Binary</text>
+    <text x="1380" y="727" text-anchor="middle" font-size="15" font-family="Arial, Helvetica, sans-serif" fill="#D2C0FF">fees and spread</text>
+  </g>
+  <g>
+    <circle cx="320" cy="205" r="62" fill="#111827" stroke="#5EEAD4" stroke-width="3"/>
+    <text x="320" y="198" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#E8FFF8" font-weight="700">Weather</text>
+    <text x="320" y="226" text-anchor="middle" font-size="14" font-family="Arial, Helvetica, sans-serif" fill="#A3E9DB">rules and settlement</text>
+  </g>
+  <g>
+    <circle cx="1280" cy="205" r="62" fill="#111827" stroke="#F59E0B" stroke-width="3"/>
+    <text x="1280" y="198" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#FFF6E8" font-weight="700">Price</text>
+    <text x="1280" y="226" text-anchor="middle" font-size="14" font-family="Arial, Helvetica, sans-serif" fill="#FFD38A">probability as product</text>
+  </g>
+  <rect x="615" y="700" width="370" height="82" rx="22" fill="#FFFFFF" opacity="0.96"/>
+  <text x="800" y="735" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#111827" font-weight="700">Fees • Rake • Spread</text>
+  <text x="800" y="764" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#111827">Rulemaking • Liquidity • Settlement</text>
+  <text x="800" y="836" text-anchor="middle" font-size="24" font-family="Arial, Helvetica, sans-serif" fill="#F8FAFF">The strongest edge belongs to whoever turns uncertainty into a market and captures the structure around it.</text>
+</svg>
