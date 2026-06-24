@@ -1,0 +1,37 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF8EF"/>
+      <stop offset="100%" stop-color="#EEF6FF"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#101828" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg2)"/>
+  <text x="800" y="88" text-anchor="middle" font-size="42" font-family="Arial, Helvetica, sans-serif" fill="#111111" font-weight="700">AI Warning Infrastructure Shift</text>
+  <text x="800" y="130" text-anchor="middle" font-size="22" font-family="Arial, Helvetica, sans-serif" fill="#606777">The center of value moves from interaction quality to earlier warning, wider coverage, and lower real-world loss.</text>
+  <rect x="250" y="220" width="1100" height="470" rx="34" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="320" y="285" width="260" height="112" rx="24" fill="#EAF8FF"/>
+  <text x="450" y="330" text-anchor="middle" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#1773D0" font-weight="700">Old frame</text>
+  <text x="450" y="364" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#2D3547">chat, answers, content, copilot</text>
+  <rect x="670" y="285" width="260" height="112" rx="24" fill="#F4EEFF"/>
+  <text x="800" y="330" text-anchor="middle" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#6E47E5" font-weight="700">Shift</text>
+  <text x="800" y="364" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#2D3547">from interface to real-world risk layer</text>
+  <rect x="1020" y="285" width="260" height="112" rx="24" fill="#ECFBF4"/>
+  <text x="1150" y="330" text-anchor="middle" font-size="28" font-family="Arial, Helvetica, sans-serif" fill="#17845A" font-weight="700">New frame</text>
+  <text x="1150" y="364" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#2D3547">warning, lead time, coverage, response</text>
+  <circle cx="800" cy="520" r="108" fill="#111827"/>
+  <text x="800" y="506" text-anchor="middle" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#FFFFFF" font-weight="700">Public Safety</text>
+  <text x="800" y="545" text-anchor="middle" font-size="30" font-family="Arial, Helvetica, sans-serif" fill="#FFFFFF" font-weight="700">Infrastructure</text>
+  <path d="M580 342 L670 342" stroke="#111827" stroke-width="6" stroke-linecap="round"/>
+  <path d="M930 342 L1020 342" stroke="#111827" stroke-width="6" stroke-linecap="round"/>
+  <path d="M800 397 L800 412" stroke="#111827" stroke-width="6" stroke-linecap="round"/>
+  <rect x="360" y="615" width="280" height="92" rx="24" fill="#FFF5ED"/>
+  <text x="500" y="654" text-anchor="middle" font-size="26" font-family="Arial, Helvetica, sans-serif" fill="#B6631A" font-weight="700">7-day river floods</text>
+  <text x="500" y="686" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#2D3547">forecast horizon</text>
+  <rect x="960" y="615" width="280" height="92" rx="24" fill="#FFF0F0"/>
+  <text x="1100" y="654" text-anchor="middle" font-size="26" font-family="Arial, Helvetica, sans-serif" fill="#B63A3A" font-weight="700">24h flash floods</text>
+  <text x="1100" y="686" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#2D3547">urban warning window</text>
+  <text x="800" y="812" text-anchor="middle" font-size="23" font-family="Arial, Helvetica, sans-serif" fill="#111111">The most important AI systems may increasingly be judged not by how they speak, but by how early they help societies react.</text>
+</svg>
